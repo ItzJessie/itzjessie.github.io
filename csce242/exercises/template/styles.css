@@ -1,0 +1,53 @@
+/*Structure*/
+body {
+    background:url(images/exercise2.webp);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content {
+    background: white;
+    width: 70%;
+    margin: auto; /*center*/
+    padding: 5px;
+    border: 1px solid yellowgreen;
+    border-radius: 5%;
+    box-shadow: 10px 10px darkgoldenrod;
+}
+
+header, footer {
+    background: darkblue;
+    padding: 5px;
+    color: aliceblue;
+}
+/*Navigation*/
+#main-nav ul {
+    padding-left: 0%;
+}
+
+#main-nav li {
+    list-style: none; /*remove bullets from list*/
+    display: inline-block;
+}
+
+#main-nav a:hover {
+    color: crimson;
+    border-bottom:1px solid white;
+
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none; /*remove underlines*/
+    border-bottom: 1px solid transparents;
+}
+
+/*Typography*/
+/*paragraph in the footer*/
+
+header h1 {
+    text-align: center;
+}
+
+
+footer p {
+    text-align: center;
+}

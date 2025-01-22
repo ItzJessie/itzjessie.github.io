@@ -1,0 +1,84 @@
+/*Jessie Brown*/
+/*Beginning style sheet*/
+
+/*!structures whole page*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(images/waterfall.jpeg);
+    
+}
+
+/*!about section*/
+#about {
+    background: #FFA07A;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #f58458;
+    border-radius: 5%;
+    box-shadow: 10px 10px #d08364;
+}
+
+/*!navigation section*/
+#main-nav ul {
+    padding-left: 0%;
+}
+
+/* removes bullet*/
+#main-nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+/*adds color when hover*/
+#main-nav a:hover {
+    color: white;
+    border-bottom: 1px solid #D3D3D3; 
+}
+
+/*change text color and removes underline*/
+#main-nav a {
+    color: #007A7A;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+/*!typography section*/
+/*header title color*/
+header h1 {
+    text-align: center;
+    color: #004B4B;
+}
+
+/*header assign. color*/
+header h2 {
+    color: #2F4F4F;
+    text-align: center;
+}
+
+/* realigning links*/
+header ul {
+    text-align: center;
+}
+
+/*main name color*/
+main h3 {
+    color:#333333;
+    text-align: center;
+}
+
+/*main paragraph color*/
+main p {
+    text-align: center;
+    color: #004B4B;
+}
+
+/*footer color*/
+footer p {
+    text-align: center;
+    color: black;
+}
+
+
+
+/*Ending style sheet*/

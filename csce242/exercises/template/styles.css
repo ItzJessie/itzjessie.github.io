@@ -37,7 +37,7 @@ header, footer {
 #main-nav a {
     color: white;
     text-decoration: none; /*remove underlines*/
-    border-bottom: 1px solid transparents;
+    border-bottom: 1px solid transparent;
 }
 
 /*Typography*/

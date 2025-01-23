@@ -1,0 +1,31 @@
+/*Structure*/
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#content {
+    width: 85%;
+    margin: auto;
+}
+
+#main-header {
+    background: skyblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*main navigation*/
+#main-nav li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: blueviolet;
+}
+
+#main-nav a {
+    text-decoration: none;
+}
+
+/*Typography*/
+#main-header h1 {
+    text-align: center;
+}

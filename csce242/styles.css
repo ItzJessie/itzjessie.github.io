@@ -45,36 +45,36 @@ body {
 
 /*!typography section*/
 /*header title color*/
-header h1 {
+#main-header h1 {
     text-align: center;
     color: #004B4B;
 }
 
 /*header assign. color*/
-header h2 {
+#main-header h2 {
     color: #2F4F4F;
     text-align: center;
 }
 
 /* realigning links*/
-header ul {
+#main-header ul {
     text-align: center;
 }
 
 /*main name color*/
-main h3 {
+#main h3 {
     color:#333333;
     text-align: center;
 }
 
 /*main paragraph color*/
-main p {
+#main p {
     text-align: center;
     color: #004B4B;
 }
 
 /*footer color*/
-footer p {
+#main-footer  {
     text-align: center;
     color: black;
 }

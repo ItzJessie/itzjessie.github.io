@@ -79,6 +79,16 @@ body {
     color: black;
 }
 
+/*!Flexbox section*/
+@media (min-width: 900px) {
+    #main-nav ul, .flex-container {
+        display: flex;
+    }
+    #main-nav, .col1of3 {
+        flex: 1;
+    }
+}
+
 
 
 /*Ending style sheet*/

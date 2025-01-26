@@ -1,6 +1,6 @@
 /*Structure*/
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #content {
@@ -8,21 +8,50 @@ body {
     margin: auto;
 }
 
-#main-header {
+#main-header, #main-footer {
     background: skyblue;
     padding: 5px;
-    border-radius: 5px;
 }
+
+#main-header {
+    border-radius: 5px 0 0;
+}
+
+#main-footer {
+    border-radius: 0 0 5px;
+}
+
+
+#page-content {
+    background: rgb(197, 191, 112);
+    padding: 5px;
+}
+
+.content-section {
+    background: seashell;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
 
 /*main navigation*/
 #main-nav li {
     list-style-type: none;
     display: inline-block;
-    background-color: blueviolet;
+    
 }
 
 #main-nav a {
     text-decoration: none;
+    background:rgb(197, 191, 112);
+    padding: 5px;
+    color: white;
+    border-radius: 2px;
+}
+
+#main-nav a:hover {
+    color:brown;
 }
 
 /*Typography*/

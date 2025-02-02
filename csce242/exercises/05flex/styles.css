@@ -15,6 +15,8 @@ body {
 header, footer {
     background: #2b91ad;
     color: white;
+    position: relative;
+    padding: 20px 0;
 }
 
 main {
@@ -33,6 +35,13 @@ main {
     margin-top: 20px;
     padding: 5px;
     text-align: center;
+    position: relative;
+}
+
+.idea-img p {
+    padding: 5px;
+    background: #2b91ad;
+    color: white;
 }
 
 .gallery {
@@ -48,27 +57,86 @@ main {
     padding: 5px;
 }
 
+
+/*Animation DEsign*/
+#animation-fun {
+    background: #2b91ad;
+    padding: 20px;
+    height: 200px;
+    position: relative;
+}
+
+#ball {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background: white;
+    animation: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes bounce {
+    0% {
+        background-color: red;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        top: 100px;
+    }
+    100% {
+        background-color: aqua;
+        top: 0px;
+    }
+}
+
+/*Playing with Positioning */
+#main-logo {
+    position: absolute;
+    left: 50px;
+    
+}
+
 /*Navigation*/
-#main-nav ul {
+#sub-nav {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+#main-nav ul, #sub-nav ul{
     padding-left: 0%;
 }
 
-#main-nav li {
-    list-style-type: none; /*remove bullets from list*/
-    background: #FFB58A;
+#main-nav li, #sub-nav li {
+    list-style-type:none; /*remove bullets from list*/
     text-align: center;
-    border-bottom:1px solid white;
+    border-bottom: 1px solid white;
 }
 
-#main-nav a {
+#main-nav li {
+    background: #FFB58A;
+    
+}
+
+#sub-nav li {
+    margin: 0 5px;
+}
+
+#main-nav a, #sub-nav a {
     color: white;
     text-decoration: none; /*remove underlines*/
     border-bottom: 1px solid transparent;
 }
 
+#main-nav a:hover, #sub-nav a:hover {
+    border-bottom:1px solid white;
+}
+
+
 #main-nav a:hover {
     color: crimson;
-    border-bottom:1px solid white;
 }
 
 /*Typography*/
@@ -119,6 +187,12 @@ footer p {
 
         .node {
             flex-basis: 30%;
+        }
+
+        .idea-img p {
+            position: absolute;
+            padding: 5px;
+            bottom: 0;
         }
     
 }

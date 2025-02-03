@@ -1,6 +1,7 @@
 <!--assignment04-->
 <!--Jessie_Brown-->
 <!DOCTYPE html>
+<!--Start HTML-->
 <html lang="eng">
     <head>
         <link rel="stylesheet" href="styles.css">
@@ -8,17 +9,20 @@
     </head>
     <body>
         <div id="content">
-            <header>
+            <!--!Start Header-->
+            <header> 
+                <!--Top-Mid-Nav-->
                 <nav id="main-nav">
-                    <ul class="columns"> GATEWAYS FOR:
+                    <ul class="column header"> GATEWAYS FOR:
                         <li><a href="#">STUDENTS</a></li>
                         <li><a href="#">FACULTY & STAFF</a></li>
                         <li><a href="#">ALUMNI</a></li>
                         <li><a href="#">PARENTS & FAMILIES</a></li>
                     </ul>
                 </nav>
+                <!--Top-Right-Nav-->
                 <nav id="sub-nav">
-                    <ul class="columns">
+                    <ul class="column header">
                         <li><a href="#">CALENDAR</a></li>
                         <li><a href="#">MAP</a></li>
                         <li><a href="#">DIRECTORY</a></li>
@@ -27,37 +31,54 @@
                     </ul>
                 </nav>
                 <!--break title and search in half (flex 1)-->
-                <div class="columns">
+                <div class="column header">
                 <section class= "one header columns">
-                    <section class="col1">
+                    <section class="header1">
                         <!--Logo img-->
-                        <div>
-                            <img id="main-logo" src="https://picsum.photos/70">
-                            <a href="#">University of South Carolina</a>
+                        <img class="main-logo" src="https://picsum.photos/50">
+                        <div class="header-logo">
+                            <a href="#">
+                                <span class="small-text">UNIVERSITY OF</span> <br>      <span class="bold-text">South Carolina</span>
+                            </a>
+                            <style>
+                                .small-text {
+                                    font-size:13px;   
+                                }
+                            </style>
+                            <style>
+                                .bold-text {
+                                    font-weight: bold;
+                                    font-weight: 2;
+                                    font-size: 30px;
+                                }
+                            </style>
                         </div>
                     </section>
                 </section>
-                <section class= "sec header columns">
-                    <section class="col1">
+                <section class= "second header ">
+                    <section class="header2">
                         <!--search bar-->
                        <p>SEARCH SC.EDU</p>
                    </section>
                 </section>
                 </div>
             </header>
+            <!--!End Header-->
+            <!--!Start Main-->
             <main>
+                <div class="middle-section">
                 <section class="title">
-                <h1>
+                <h1 class="main-title">
                     <a href="#">College of Arts and Sciences</a>
                 </h1>
                 </section>
                     <div class="big-image">
                         <!--image gallery-->
-                        <img src="https://place-hold.it/1110px565p/none/white.png&fontsize=12">
+                        <img class="main-img" src="https://place-hold.it/1140px580p/none/white.png&fontsize=12">
                         <div class="box">
-                        <h4>
+                        <h1>
                             <a href="#">FITTEST TEEN ON EARTH >></a>
-                        </h4>
+                        </h1>
                         <p>USC Biology Freshman Dominates CrossFit 
                             Games</p>
                         </div>
@@ -67,7 +88,6 @@
                     <hr>
                     </div>
                     <div class="columns">
-                        
                                 <section class="college lists columns">
                                     
                                     <nav id="body-nav">
@@ -83,12 +103,9 @@
                                             <li><a href="#">Support the College</a></li>
                                             <li><a href="#">My Arts and Sciences</a></li>
                                         </ul>
-                                    </nav>
-                                    
+                                    </nav>  
                                 </section>
-                           
-                            <section class="three gallery columns"> 
-                                
+                            <section class="three gallery columns">   
                                 <section class="node">
                                     <img src="https://fakeimg.pl/250x100" alt="">
                                     <h4>
@@ -178,7 +195,7 @@
                             </div>
                             <div>
                                 <h3>USC alum, Medal of Honor recipient recognized at national championship</h3>
-                                <p>University of South Carolina alumnus and Medal of Honor recipient Marine Corporal (retired) Kyle Carpenter will be recognized during Monday’s national championship college football game. </p>
+                                <p>University of South Carolina alumnus and Medal of Honor recipient Marine Corporal (retired) Kyle Carpenter will be recognized during Monday's national championship college football game. </p>
                             </div>                       
                         </section>
                         <hr>
@@ -200,6 +217,7 @@
                         </nav>
                         </footer>
                 </section>
+            </div>
                 <section id="low-footer">
                     <footer>
                         <div class="flex-container">
@@ -227,7 +245,6 @@
                                     <h3>COLLEGES & SCHOOLS</h3>
                                     <div class="flex-container03">
                                         <div class="col1of2">
-                                            
                                                 <li><a href="#">Arts and Sciences</a></li>
                                                 <li><a href="#">Business</a></li>
                                                 <li><a href="#">Education</a></li>
@@ -240,7 +257,6 @@
                                                 <li><a href="#">Medicine (Greenville)</a></li>
                                                 <li><a href="#">Music</a></li>
                                                 <li><a href="#">Nursing</a></li>
-                                            
                                         </div>
                                         <div class="col1of2">
                                             <li><a href="#">Pharmacy</a></li>
@@ -289,7 +305,8 @@
                     </footer>
                 </section>
             </main>
-            <!--!Footer
+            <!--!End Main-->
+           <!--!Start Footer-->
             <footer>
                 <p>&copy; 
                     <a href="#">University of South Carolina</a>
@@ -307,7 +324,8 @@
                     <a href="#">Contact</a>
                 </p>
             </footer>
-        -->
+        <!--!End Footer-->
         </div>
     </body>
 </html>
+<!--End HTML-->

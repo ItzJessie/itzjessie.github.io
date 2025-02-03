@@ -397,14 +397,12 @@ footer a {
     width: 1640px;
     height: 700px;
     margin: 0 auto;
-    border: 11px solid lightgrey;
 }
 
 .flex-container01 {
     width: 1600px;
     height: 300px;
     margin: 0 auto;
-    border: 11px solid lightgrey;
 }
 
 .col1 {
@@ -421,17 +419,23 @@ footer a {
     position: relative;
 }
 
+.end-foot {
+    position: relative;
+    bottom: 0px;
+    top: 500px;
+    background-color: black;
+}
+
 .img01, .img02, .img03 {
     padding: 10px;
 }
 
 .col {
-    width: 1620px;
+    width: 2300px;
     height: 320px;
-    background-color: #bd2d39;
+    background-color: #70000a;
     padding: 1px;
     text-align: center;
-    border: 10px solid black;
     border-radius: 10px;
 }
 

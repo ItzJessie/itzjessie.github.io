@@ -19,17 +19,18 @@ body {
     box-shadow: 10px 10px #d08364;
 }
 
-.col1of3, .col1of2 {
+.col1of4, .col1of2 {
     background-color: #004B4B;
     padding: 5px;
     margin: 0 auto;
     border-radius: 3px;
 }
 
-.col1, .col2, .col3, .colpro1, .colpro2 {
+.col1, .col2, .col3, .colpro1, .colpro2, .col4 {
     padding-left: 0px;
     margin-top: 0;
     padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 /*!navigation section*/
@@ -63,7 +64,7 @@ body {
     color: #004B4B;
 }
 
-.col1of3 a, .col1of2 a {
+.col1of4 a, .col1of2 a {
     text-decoration: none;
     color: white;
 }
@@ -111,8 +112,9 @@ main img {
 @media (min-width: 900px) {
     #main-nav ul, .flex-container {
         display: flex;
+        flex-wrap: wrap;
     }
-    #main-nav, .col1of3, .colpro1, .colpro2 {
+    #main-nav, .col1of4, .colpro1, .colpro2 {
         flex: 1;
     }
     

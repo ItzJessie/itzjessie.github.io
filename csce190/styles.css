@@ -1,2 +1,106 @@
-/*1-27-2025*/
+/*Current Date: 2-3-2025*/
 /*Jessie Brown*/
+/*Beginning StyleSheet*/
+body {
+    background-color: rgb(55, 43, 43);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 2px solid rgb(34, 27, 27);
+    box-shadow: 10px 10px 5px 12px lightblue;
+    padding: 4px;
+    height: 800px;
+}
+
+hr {
+    width: 96%;
+    color: rgb(250, 249, 249);
+    margin: 20px auto;
+    box-shadow: 1px 1px whitesmoke;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 3px black;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+.person {
+    margin: 0 auto;
+}
+
+.work {
+    text-align: center;
+}
+
+.me {
+    text-align: center;
+    text-shadow: 2px 1px black;
+}
+
+.about {
+    text-align: center;
+}
+
+.contact {
+    text-shadow: 2px 1px black;
+    margin: 0;
+    text-align: left;
+    padding-left: 28px;
+}
+
+.class {
+    margin: 0;
+}
+
+.skills {
+    text-align: center;
+}
+
+.assign {
+    text-align: center;
+}
+
+.projects {
+    text-align: center;
+}
+
+.bodyp {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.bodyp p, #p1 {
+    color: rgb(214, 225, 234);
+    font-size: 8px;
+    text-align: left;
+    padding-left: 20px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bodyp h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#p1 {
+    text-align: left;
+    font-size: 8px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20xpx;
+}
+
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8px;
+    text-align: center;
+}
+/*Ending StyleSheet*/

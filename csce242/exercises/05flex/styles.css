@@ -1,6 +1,12 @@
 /*Structure*/
+:root {
+    --main-background-color:#cdecef;
+    --primary-color:#2b91ad;
+    --gallery-color:#ffb58a;
+}
+
 body {
-    background: #cdecef;;
+    background: var(--main-background-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,7 +19,7 @@ body {
 }
 
 header, footer {
-    background: #2b91ad;
+    background: var(--primary-color);
     color: white;
     position: relative;
     padding: 20px 0;
@@ -28,7 +34,7 @@ main {
 }
 
 .idea:nth-child(even) {
-    background: #CDECEF;
+    background: var(--main-background-color);
 }
 
 .idea-img {
@@ -40,12 +46,12 @@ main {
 
 .idea-img p {
     padding: 5px;
-    background: #2b91ad;
+    background: var(--primary-color);
     color: white;
 }
 
 .gallery {
-    background: #ffb58a;
+    background: var();
 }
 
 .links {
@@ -61,7 +67,7 @@ main {
 #animation-fun {
     background: #2b91ad;
     padding: 20px;
-    height: 200px;
+    height: 300px;
     position: relative;
 }
 
@@ -71,22 +77,30 @@ main {
     border-radius: 50px;
     background: white;
     animation: bounce;
+    position: relative;
     animation-iteration-count: infinite;
-    animation-duration: 1s;
+    animation-duration: 9s;
 }
 
 @keyframes bounce {
     0% {
         background-color: red;
         top: 0px;
+        left: 0px;
     }
-    50% {
-        background-color: blue;
-        top: 100px;
+    20% {background-color: rgb(255, 208, 0);}
+    40% {background-color: aqua;}
+    60% {
+        background-color: rgb(36, 215, 30);
+        left: 100px;
+        top: 200px;
+    
     }
+    80% {background-color: blue;}
     100% {
-        background-color: aqua;
+        background-color: rgb(255, 191, 0);
         top: 0px;
+        left: 0;
     }
 }
 

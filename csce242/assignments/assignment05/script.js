@@ -1,3 +1,45 @@
-// window.onload = () => {
-//     document.write("hello, world!");
-//  };
+// Sources: ChatGPT, Coding ALL-IN-ONE by Chris Minnick
+
+// Column 1
+document.addEventListener("DOMContentLoaded", function() {
+    let messageP = document.getElementById("message");
+    
+    messageP.addEventListener("click", function(event) {
+       let newLine = document.createElement("br");
+       let helloText = document.createTextNode("Hello");
+       
+       messageP.appendChild(newLine);
+       messageP.appendChild(helloText);
+    });
+});
+
+// Column 2
+document.getElementById('colorPalette').addEventListener('input', function() {
+    let starP = document.getElementById('image-color');
+    starP.style.color = this.value;
+});
+
+document.getElementById('color-btn').addEventListener('click', function() {
+    let colorPicker = document.getElementById('colorPalette');
+    colorPicker.click();
+});
+
+// Column 3
+const image1 = "images/koala.jpeg";
+const image2 = "images/star.jpeg";
+
+let nextImage = 1;
+
+let imageP = document.getElementById("imagePicker");
+
+imageP.addEventListener("click", changeImage);
+
+function changeImage() {
+    if (nextImage === 1) {
+        imageP.src = image1;
+        nextImage = 2;
+    } else {
+        imageP.src = image2;
+        nextImage = 1;
+    }
+}

@@ -1,4 +1,4 @@
-// Sources: ChatGPT, Coding ALL-IN-ONE by Chris Minnick
+// Sources: ChatGPT, Coding ALL-IN-ONE by Chris Minnick, W3Schools
 
 // Column 1
 document.addEventListener("DOMContentLoaded", function() {
@@ -19,27 +19,26 @@ document.getElementById('colorPalette').addEventListener('input', function() {
     starP.style.color = this.value;
 });
 
-document.getElementById('color-btn').addEventListener('click', function() {
-    let colorPicker = document.getElementById('colorPalette');
-    colorPicker.click();
-});
 
 // Column 3
-const image1 = "images/koala.jpeg";
-const image2 = "images/star.jpeg";
+document.addEventListener("DOMContentLoaded", function() {
+    const image1 = "images/eye.gif";
+    const image2 = "images/star.jpeg";
 
-let nextImage = 1;
+    let nextImage = 1;
 
-let imageP = document.getElementById("imagePicker");
+    let imageP = document.getElementById("imagePicker");
 
-imageP.addEventListener("click", changeImage);
+    imageP.addEventListener("click", changeImage);
 
-function changeImage() {
-    if (nextImage === 1) {
-        imageP.src = image1;
-        nextImage = 2;
-    } else {
-        imageP.src = image2;
-        nextImage = 1;
+    function changeImage() {
+        console.log("Changing image");
+        if (nextImage === 1) {
+            imageP.src = image1;
+            nextImage = 2;
+        } else {
+            imageP.src = image2;
+            nextImage = 1;
+        }
     }
-}
+});

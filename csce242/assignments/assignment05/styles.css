@@ -66,6 +66,11 @@ body {
 	font-size: 128px;
 }
 
+.imagesK {
+	width: 200px;
+	height: 200px;
+}
+
 /*Typography*/
 /*paragraph in the footer*/
 header h1 {

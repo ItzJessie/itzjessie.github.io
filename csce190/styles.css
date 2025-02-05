@@ -14,12 +14,12 @@ hr {
     width: 96%;
     color: rgb(250, 249, 249);
     margin: 20px auto;
-    box-shadow: 1px 1px whitesmoke;
+    
 }
 
 h1 {
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px black;
+    
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ h2 {
 
 .me {
     text-align: center;
-    text-shadow: 1px 1px black;
+    
 }
 
 .about {
@@ -45,7 +45,7 @@ h2 {
 }
 
 .contact {
-    text-shadow: 1px 1px black;
+    
     margin: 0;
     text-align: left;
     padding-left: 28px;
@@ -76,7 +76,7 @@ h2 {
     color: rgb(214, 225, 234);
     font-size: 8px;
     text-align: left;
-    padding: 0;
+    padding-left: 20px;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

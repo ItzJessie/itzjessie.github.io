@@ -1,7 +1,7 @@
 /*Structure*/
 :root {
 	--main-background-color:#cdecef;
-	--column-color:#bd2d39;
+	--column-color: #eadcdc;
 }
 
 body {
@@ -106,7 +106,6 @@ footer p {
 		height: 500px;
 		align-items: baseline;
 		margin: 0 auto;
-		flex-shrink: 1;
 	}
 	
 	.column1 {

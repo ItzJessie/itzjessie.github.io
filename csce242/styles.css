@@ -2,15 +2,19 @@
 /*Beginning style sheet*/
 
 /*!structures whole page*/
+:root {
+    --main-background-color: #e89173;
+    --nav-color: #007A7A;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: url(images/waterfall.jpeg);
-    
 }
 
 /*!about section*/
 #about {
-    background: #FFA07A;
+    background: var(--main-background-color);
     width: 80%;
     margin: auto;
     padding: 30px;
@@ -19,14 +23,14 @@ body {
     box-shadow: 10px 10px #d08364;
 }
 
-.col1of4, .col1of2 {
+.col1of5, .col1of2 {
     background-color: #004B4B;
     padding: 5px;
     margin: 0 auto;
     border-radius: 3px;
 }
 
-.col1, .col2, .col3, .colpro1, .colpro2, .col4 {
+.col1, .col2, .col3, .colpro1, .colpro2, .col4, .col5 {
     padding-left: 0px;
     margin-top: 0;
     padding-right: 10px;
@@ -52,7 +56,7 @@ body {
 
 /*change text color and removes underline*/
 #main-nav a {
-    color: #007A7A;
+    color: var(--nav-color);
     text-decoration: none;
     border-bottom: 1px solid transparent;
 }
@@ -64,7 +68,7 @@ body {
     color: #004B4B;
 }
 
-.col1of4 a, .col1of2 a {
+.col1of5 a, .col1of2 a {
     text-decoration: none;
     color: white;
 }
@@ -93,7 +97,7 @@ body {
 }
 
 /*footer color*/
-#main-footer, .col1of4, .col1of2  {
+#main-footer, .col1of5, .col1of2  {
     text-align: center;
     color: black;
 }
@@ -107,14 +111,13 @@ main img {
     padding: 2px;
 }
 
-
 /*!Flexbox section*/
 @media (min-width: 900px) {
     #main-nav ul, .flex-container {
         display: flex;
         flex-wrap: wrap;
     }
-    #main-nav, .col1of4, .colpro1, .colpro2 {
+    #main-nav, .col1of5, .colpro1, .colpro2 {
         flex: 1;
     }
     
@@ -122,9 +125,5 @@ main img {
         display: flex;
         padding: 5px;
     }
-    
 }
-
-
-
 /*Ending style sheet*/

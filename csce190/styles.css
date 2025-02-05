@@ -19,7 +19,6 @@ hr {
 
 h1 {
     color: rgb(255, 255, 255);
-    
     text-align: center;
 }
 
@@ -33,11 +32,18 @@ h2 {
 
 .work {
     text-align: center;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    width: 10%;
+    margin: 0 auto;
 }
 
 .me {
     text-align: center;
-    
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    width: 20%;
+    margin: 0 auto;
 }
 
 .about {
@@ -45,8 +51,9 @@ h2 {
 }
 
 .contact {
-    
-    margin: 0;
+    border: 2px solid black;
+    width: 40%;
+    margin: 0 auto;
     text-align: left;
     padding-left: 28px;
 }
@@ -61,7 +68,13 @@ h2 {
 
 .assign {
     text-align: center;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    width: 35%;
+    margin: 0 auto;
+    padding: 0;
 }
+
 
 .projects {
     text-align: center;

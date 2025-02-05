@@ -5,7 +5,7 @@ body {
     background-color: rgb(55, 43, 43);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: 2px solid rgb(34, 27, 27);
-    box-shadow: 10px 10px 5px 12px lightblue;
+    box-shadow: 10px 10px 10px 10px lightblue;
     padding: 4px;
     height: 800px;
 }
@@ -19,7 +19,7 @@ hr {
 
 h1 {
     color: rgb(255, 255, 255);
-    text-shadow: 1px 3px black;
+    text-shadow: 1px 1px black;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ h2 {
 
 .me {
     text-align: center;
-    text-shadow: 2px 1px black;
+    text-shadow: 1px 1px black;
 }
 
 .about {
@@ -45,7 +45,7 @@ h2 {
 }
 
 .contact {
-    text-shadow: 2px 1px black;
+    text-shadow: 1px 1px black;
     margin: 0;
     text-align: left;
     padding-left: 28px;
@@ -76,7 +76,6 @@ h2 {
     color: rgb(214, 225, 234);
     font-size: 8px;
     text-align: left;
-    padding-left: 20px;
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -89,12 +88,11 @@ h2 {
 #p1 {
     text-align: left;
     font-size: 8px;
-    padding: 0;
     margin: 0;
     position: relative;
     bottom: 3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 20xpx;
+    padding: 0 0 0 20px;
 }
 
 

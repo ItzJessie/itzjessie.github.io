@@ -63,6 +63,10 @@ main {
     padding: 5px;
 }
 
+.hidden {
+    display: none;
+}
+
 /*Animation DEsign*/
 #animation-fun {
     background: #2b91ad;

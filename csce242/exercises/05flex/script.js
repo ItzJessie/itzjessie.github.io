@@ -23,8 +23,26 @@ document.getElementById("btn-click-two").onclick = () => {
       document.getElementById("feeling").innerHTML = 
       "You are feeling: " + event.currentTarget.value;
    
-  
-   
+ }
+
+ document.getElementById("toggle-nav").onclick = () => {
+  document.getElementById("nav-items").classList.toggle("hide-small");
+ }
+
+ document.getElementById("btn-word").onclick = () => {
+  const color = document.getElementById("colorP").value.toLowerCase().trim();
+  let mood = "Happy";
+
+  if (color == "red") {
+    mood = "Rage";
+  } else if (color == "green") {
+    mood = "bread winner"
+  } else {
+    mood = "I'm cooling."
+  }
+
+  document.getElementById("color-mP").innerHTML = 
+  `You choose ${color}. You are feeling ${mood}.`
  }
 
  

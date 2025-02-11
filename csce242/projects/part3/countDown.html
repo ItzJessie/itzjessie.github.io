@@ -3,29 +3,44 @@
 <html lang="eng">
     <head>
         <link rel="stylesheet" href="styles.css">
-        <title>Countdown</title>
+        <title>Countdown Timer</title>
     </head>
     <body>
         <div id="content">
             <header>
+                <h2>COUNTDOWN TIMER</h2>
+                <hr>
                 <nav id="main-nav">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home.html">Home</a></li>
                         <li><a href="#">Countdown</a></li>
+                        <li><a href="#">Game Analytics</a></li>
                         <li><a href="#">Upcoming Release</a></li>
                         <li><a href="#">Support Us</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
+                <button id="back-btn" type="button" ><img src="" alt="back-arrow"></button>
+                <br><br>
             </header>
             <main>
-                <li id="drop-list">
-                    <ul>CHOOSE GAME</ul>
-                    <ul>GTAVI</ul>
-                    <ul>ELDEN RING 2</ul>
-                    <ul>GTAVI ONLINE</ul>
-                </li>
-                <div id="gaming-Countdown"></div>
+                <label for="submit"> Choose a game:
+                    <select name="games" id="games" required>
+                        <option value="mk-9">Mario Kart 9</option>
+                        <option value="gta-6">Grand Theft Auto VI</option>
+                        <option value="er-2">Elden Ring 2</option>
+                        <option value="gta-6O">Grand Theft Auto VI Online</option>
+                        <option value="poe-2">Path of Exile 2</option>
+                        <option value="bo-3">Black Ops 3 Remastered</option>
+                    </select>
+                    <input id="submit" type="submit" value="Submit"/>
+                </label>
+                <br><br>
+
+                <br><br>
+                <div id="gaming-Countdown">
+                    <div id="game-name">"Game" Countdown</div>
+                </div>
             </main>
             <footer>
             </footer>

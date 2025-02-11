@@ -115,6 +115,13 @@ main {
 }
 
 /*!Navigation*/
+#toggle-nav div {
+    width:25px;
+    height: 25px;
+    background-color: var(--gallery-color);
+    margin: 6px 0;
+}
+
 #sub-nav {
     position: absolute;
     top: 0;
@@ -175,8 +182,16 @@ footer p {
     text-align: center;
 }
 
+.hide-small {
+    display: none;
+}
+
 /*Larger screens*/
 @media only screen and (min-width: 768px) {
+        #toggle-nav {
+            display: none;
+        }
+
         .columns  {
             display:flex;
         }
@@ -218,5 +233,9 @@ footer p {
             position: absolute;
             padding: 5px;
             bottom: 0;
+        }
+
+        .hide-small {
+            display: flex;
         }
 }

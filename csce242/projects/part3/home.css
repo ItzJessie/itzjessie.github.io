@@ -20,6 +20,11 @@ body {
 	left: 95%;
 }
 
+#clickable-word a {
+		color: #000000;
+		text-decoration: none;
+	
+}
 
 #clickable-word {
 	display: flex;

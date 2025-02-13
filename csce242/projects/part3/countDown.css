@@ -13,24 +13,25 @@ body {
 	height: 100%;
 }
 
-.line {
-	width: 43%;
+.main-title {
 	position: relative;
-	right: 260px;
-	color: white;
+	left: 10%;
+}
+
+.line {
+	width: 80%;
+	margin: 10px auto;
+	border: none;
+	height: 2px;
+	background: rgba(255, 255, 255, 0.5);
 }
 
 #back {
-	position: relative;
-	bottom: 24px;
-	left: 30px;
-	width: 40px;
-	height: 40px;
-}
-
-.title {
-	position: relative;
-	left: 10%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 20px;
+	width: 50px;
 }
 
 #gaming-Countdown {
@@ -76,6 +77,14 @@ body {
 	border-radius: 10px;
 }
 
+label {
+	padding-left: 200px;
+}
+
+.countTitles {
+
+}
+
 #main-nav {
 	position: absolute;
 	top: 0;
@@ -105,7 +114,7 @@ body {
 .dayTitle, .hoursTitle, .minTitle, .secTitle {
 	font-size: 1.5rem;
 	font-weight: bold;
-	color: #ffffff;
+	color: #000000;
 }
 
 .dayTitle {

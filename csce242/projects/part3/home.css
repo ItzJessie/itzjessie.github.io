@@ -1,7 +1,12 @@
+/*Sources: ChatGPT, Coding ALL-IN-ONE by Chris Minnick, W3Schools
+*/
+
 :root {
 	--background-color: #ffffff;
 	--circle-color: #ff0000;
 	--text-color: black;
+	--click-word:#000000;
+	--click-shadow: red;
 }
 
 body {
@@ -21,7 +26,7 @@ body {
 }
 
 #clickable-word a {
-		color: #000000;
+		color: var(--click-word);
 		text-decoration: none;
 	
 }
@@ -42,7 +47,7 @@ body {
 	bottom: 200px;
 	left: 50%;
 	transform: translateX(-50%);
-	box-shadow: 0 0 20px red;
+	box-shadow: 0 0 20px var(--click-shadow);
 	
 }
 
@@ -75,11 +80,47 @@ body {
 
 /*Navigation*/
 #toggle-nav div {
-    width:25px;
+    width:30px;
     height: 2px;
-    background-color: var(--gallery-color);
+    background-color: var(--text-color);
     margin: 6px 0;
+	
 }
+
+#main-nav {
+	position: absolute;
+	top: 0;
+	left: 4px;
+}
+
+#main-nav ul {
+	padding-left: 0;
+}
+
+#main-nav li {
+	list-style-type:none; /*remove bullets from list*/
+	text-align: center;
+	border-bottom: 1px solid black;
+	border-bottom-right-radius: 9px;
+	font-size: 1.5em;
+}
+
+#main-nav a {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px solid transparent; /*remove underlines*/
+}
+
+#main-nav a:hover {
+	color: crimson;
+	border-bottom: 1px solid #000000;
+}
+
+.nav-items a.active {
+	background-color: dodgerblue;
+	color: white;
+}
+
 
 /*Typography?*/
 h1 {
@@ -87,8 +128,9 @@ h1 {
 }
 
 
+
 .hide-small {
-    display: none;
+	display: none;
 }
 
 .hidden {
@@ -96,14 +138,35 @@ h1 {
 }
 
 /*Larger Media*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
+	.columns {
+		display: flex;
+	}
 
-	#toggle-nav {
+	#main-nav li {
+		display: none;
+	}
+
+	#toggle-nav div {
+		display: none;
+	}
+	
+
+}
+
+@media only screen and (min-width: 1200px) {
+	#main-nav li {
+		flex: 1;
+		border-bottom: 0;
 		display: none;
 	}
 
 	.hide-small {
 		display: flex;
 	}
-	
+
+	#toggle-nav div {
+		display: none;
+	}
+
 }

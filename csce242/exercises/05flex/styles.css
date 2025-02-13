@@ -3,6 +3,8 @@
     --main-background-color:#cdecef;
     --primary-color:#2b91ad;
     --gallery-color:#ffb58a;
+    --ball-color: black;
+    --donation-percent: 0%;
 }
 
 body {
@@ -75,38 +77,30 @@ main {
     position: relative;
 }
 
-#ball {
+#ball, #circle {
     height: 30px;
     width: 30px;
     border-radius: 50px;
-    background: white;
-    animation: bounce;
+    background: var(--ball-color);
     position: relative;
+    left: 35%;
+}
+
+#ball area {
+    position: relative;
+    height: 300px;
+}
+
+#ball {
+    animation-name: bounce;
     animation-iteration-count: infinite;
     animation-duration: 9s;
 }
 
 @keyframes bounce {
-    0% {
-        background-color: red;
-        top: 0px;
-        left: 0px;
-    }
-    20% {background-color: rgb(255, 208, 0);}
-    40% {background-color: aqua;}
-    60% {
-        background-color: rgb(36, 215, 30);
-        left: 100px;
-        top: 200px;
     
     }
-    80% {background-color: blue;}
-    100% {
-        background-color: rgb(255, 191, 0);
-        top: 0px;
-        left: 0;
-    }
-}
+
 
 /*Playing with Positioning */
 #main-logo {
@@ -239,3 +233,52 @@ footer p {
             display: flex;
         }
 }
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    width: 100%;
+    height: 500px;
+}
+
+#container p {
+    text-align: center;
+}
+
+#in-box {
+
+    width: 50px;
+    height: 200px;
+    border: 3px solid #000000;
+    background: linear-gradient(0deg, red 0% var(--donation-percent),white var(--donation-percent) 100%);
+}
+
+#donation-message {
+    width: 100px;
+    height: 200px;
+    border: 3px solid black;
+    
+}
+
+#therm-box {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+}
+
+#add {
+    width: 50px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+#donate {
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+}
+

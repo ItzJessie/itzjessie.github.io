@@ -1,0 +1,101 @@
+:root {
+	--background-color: #f5f5f5;
+	--circle-color: #ff0000;
+	--text-color: black;
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 20px;
+}
+
+
+#container {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.item {
+	background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.game1 {
+	background: #ff7f50;
+	transform: scale(1);
+}
+
+.game2 {
+	background: #ffc250;
+	transform: scale(1);
+}
+
+.game3 {
+	background: #ffcd50;
+	transform: scale(1);
+}
+
+.game4 {
+	background: #ff5f50;
+	transform: scale(1);
+}
+
+.game5 {
+	background: #f8a83f;
+	transform: scale(1);
+}
+
+.game6 {
+	background: #fff650;
+	transform: scale(1);
+}
+
+
+
+
+
+
+
+#main-nav {
+	position: absolute;
+	top: 0;
+	right: 4px;
+}
+
+#main-nav ul {
+	padding-left: 0%;
+	display: -webkit-box;
+}
+
+#main-nav li {
+	list-style-type:none; /*remove bullets from list*/
+	margin: 0 5px
+}
+
+#main-nav a {
+	color: #000000;
+	text-decoration: none; /*remove underlines*/
+}
+
+#main-nav a:hover {
+	color: crimson;
+	border-bottom: 1px solid #000000;
+}
+
+#back {
+	position: relative;
+	bottom: 24px;
+	left: 30px;
+	width: 40px;
+	height: 40px;
+}

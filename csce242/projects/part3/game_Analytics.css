@@ -1,0 +1,94 @@
+:root {
+	--background-color: #f5f5f5;
+	--circle-color: #ff0000;
+	--text-color: black;
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 20px;
+	
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.game {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.game section {
+	background: linear-gradient(135deg, #ff7eb3, #ff758c);
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	width: 200px;
+	text-align: center;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	font-weight: bold;
+}
+
+.game section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.step1, .process1, .implement1 {
+	background: #ff7f50;
+}
+.step2, .process2, .implement2 {
+	background: #ff477e;
+}
+.step3, .process3, .implement3 {
+	background: #5a4fcf;
+}
+.step4, .process4, .implement4 {
+	background: #22a76e;
+}
+
+
+
+
+#main-nav {
+	position: absolute;
+	top: 0;
+	right: 4px;
+}
+
+#main-nav ul {
+	padding-left: 0%;
+	display: -webkit-box;
+}
+
+#main-nav li {
+	list-style-type:none; /*remove bullets from list*/
+	margin: 0 5px
+}
+
+#main-nav a {
+	color: #000000;
+	text-decoration: none; /*remove underlines*/
+}
+
+#main-nav a:hover {
+	color: crimson;
+	border-bottom: 1px solid #000000;
+}
+
+#back {
+	position: relative;
+	bottom: 24px;
+	left: 30px;
+	width: 40px;
+	height: 40px;
+}
+

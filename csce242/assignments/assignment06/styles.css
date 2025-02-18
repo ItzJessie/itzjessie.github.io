@@ -1,3 +1,5 @@
+/*Sources: ChatGPT, Coding ALL-IN-ONE by Chris Minnick, W3Schools*/
+
 :root {
 	--body: #f4f4f4;
 	--toggle-a: darkred;
@@ -70,7 +72,6 @@ img {
 	background-color: inherit;
 	border-radius: 50%;
 	position: absolute;
-	
 }
 
 #heart::before {
@@ -90,6 +91,10 @@ img {
 .section {
 	display: none;
 	margin-top: 20px;
+	width: 50%;
+	margin: 0 auto;
+	background-color: var(--heart);
+	padding: 10px;
 }
 
 .active {

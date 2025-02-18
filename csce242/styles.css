@@ -5,6 +5,14 @@
 :root {
     --main-background-color: #e89173;
     --nav-color: #007A7A;
+    --border: #f58458;
+    --box-shadow: #d08364;
+    --col-color: #004B4B;
+    --nav-hover: white;
+    --nav-border: #D3D3D3;
+    --main-header: #2F4F4F;
+    --main-h3: #333333;
+    --footer: black;
 }
 
 body {
@@ -18,19 +26,31 @@ body {
     width: 80%;
     margin: auto;
     padding: 30px;
-    border: 1px solid #f58458;
+    border: 1px solid var(--border);
     border-radius: 5%;
-    box-shadow: 10px 10px #d08364;
+    box-shadow: 10px 10px var(--box-shadow);
 }
 
-.col1of5, .col1of3 {
-    background-color: #004B4B;
+.col1of6, .col1of3 {
+    background-color: var(--col-color);
     padding: 5px;
     margin: 0 auto;
     border-radius: 3px;
 }
 
-.col1, .col2, .col3, .colpro1, .colpro2, .colpro3, .col4, .col5 {
+.col1, .col2, .col3, .col4, .col5, .col6 {
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.colpro1, .colpro2, .colpro3 {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.col1, .col2, .col3, .colpro1, .colpro2, .colpro3, .col4, .col5, .col6 {
     padding-left: 0px;
     margin-top: 0;
     padding-right: 10px;
@@ -50,8 +70,8 @@ body {
 
 /*adds color when hover*/
 #main-nav a:hover {
-    color: white;
-    border-bottom: 1px solid #D3D3D3; 
+    color: var(--nav-hover);
+    border-bottom: 1px solid var(--nav-border);
 }
 
 /*change text color and removes underline*/
@@ -65,17 +85,17 @@ body {
 /*header title color*/
 #main-header h1 {
     text-align: center;
-    color: #004B4B;
+    color: var(--col-color);
 }
 
-.col1of5 a, .col1of3 a {
+.col1of6 a, .col1of3 a {
     text-decoration: none;
-    color: white;
+    color: var(--nav-hover);
 }
 
 /*header assign. color*/
 #main-header h2, #main-content h2 {
-    color: #2F4F4F;
+    color: var(--main-header);
     text-align: center;
 }
 
@@ -86,20 +106,20 @@ body {
 
 /*main name color*/
 #main h3 {
-    color:#333333;
+    color: var(--main-h3);
     text-align: center;
 }
 
 /*main paragraph color*/
 #main p {
     text-align: center;
-    color: #004B4B;
+    color: var(--col-color);
 }
 
 /*footer color*/
-#main-footer, .col1of5, .col1of3  {
+#main-footer, .col1of6, .col1of3  {
     text-align: center;
-    color: black;
+    color: var(--footer);
 }
 
 main img {
@@ -117,7 +137,7 @@ main img {
         display: flex;
         flex-wrap: wrap;
     }
-    #main-nav, .col1of5, .colpro1, .colpro2, .colpro3 {
+    #main-nav, .col1of6, .colpro1, .colpro2, .colpro3 {
         flex: 1;
     }
     

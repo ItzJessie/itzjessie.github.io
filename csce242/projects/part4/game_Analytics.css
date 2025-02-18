@@ -1,7 +1,13 @@
 :root {
 	--background-color: #f5f5f5;
 	--circle-color: #ff0000;
-	--text-color: #b75656;
+	--text-color: black;
+	--glow-00: rgb(211, 149, 149);
+	--glow-01: rgb(162, 33, 33);
+	--glow-02: rgb(213, 39, 39);
+	--glow-03: rgb(214, 36, 36);
+	--glow-04: rgb(255, 0, 0);
+	--click-shadow: red;
 }
 
 body {
@@ -95,6 +101,25 @@ body {
 #main-nav a:hover {
 	color: crimson;
 	border-bottom: 1px solid #000000;
+}
+
+#nav-items a.active {
+	animation: glow 1s ease-in-out infinite alternate;
+	color: var(--background-color);
+}
+
+@keyframes glow {
+	0% {
+		text-shadow: 0 0 10px var(--glow-00), 0 0 20px var(--glow-01);
+	}
+	
+	80% {
+		text-shadow: 0 0 10px var(--glow-02), 0 0 20px var(--glow-03);
+	}
+	
+	100% {
+		text-shadow: 0 0 20px var(--click-shadow), 0 0 30px var(--glow-04);
+	}
 }
 
 #back {

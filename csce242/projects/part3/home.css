@@ -1,5 +1,4 @@
-/*Sources: ChatGPT, Coding ALL-IN-ONE by Chris Minnick, W3Schools
-*/
+/*Sources: ChatGPT, Coding ALL-IN-ONE by Chris Minnick, W3Schools*/
 
 :root {
 	--background-color: #ffffff;
@@ -13,15 +12,10 @@
 	--glow-02: rgb(213, 39, 39);
 	--glow-03: rgb(214, 36, 36);
 	--glow-04: rgb(255, 0, 0);
-	
 }
 
 body {
 	background-color: var(--background-color);
-}
-
-/*NEW*/
-body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -29,11 +23,10 @@ body {
 	overflow-x: hidden;
 }
 
-/*NEW*/
-#content, #container {
-	width: 100vw; /* Ensures they take up the full screen width */
+#content  {
+	width: 100vw;
 	height: 100vh;
-	position: relative; /* Ensures they don’t interfere with fixed elements */
+	position: relative;
 }
 
 #login {
@@ -44,9 +37,6 @@ body {
 	right: 4px;
 }
 
-
-
-/*OLD*/
 #container {
 	display: flex;
     flex-wrap: wrap;
@@ -56,7 +46,6 @@ body {
 	height: 800px;
 }
 
-
 #container p {
 	text-align: center;
 }
@@ -64,7 +53,6 @@ body {
 #clickable-word a {
 		color: var(--click-word);
 		text-decoration: none;
-	
 }
 
 #clickable-word {
@@ -187,7 +175,6 @@ h1 {
 	display: none;
 }
 
-
 /*Smaller Media*/
 @media only screen and (max-width: 400px) {
 	#quote {
@@ -202,7 +189,6 @@ h1 {
 
 /*Medium Media*/
 @media only screen and (max-width: 800px) {
-	
 	.columns {
 		display: flex;
 	}
@@ -231,6 +217,3 @@ h1 {
 		display: flex;
 	}
 }
-
-
-

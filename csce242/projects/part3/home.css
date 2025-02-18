@@ -7,6 +7,13 @@
 	--text-color: black;
 	--click-word:#000000;
 	--click-shadow: red;
+	--hover-a: crimson;
+	--glow-00: rgb(211, 149, 149);
+	--glow-01: rgb(162, 33, 33);
+	--glow-02: rgb(213, 39, 39);
+	--glow-03: rgb(214, 36, 36);
+	--glow-04: rgb(255, 0, 0);
+	
 }
 
 body {
@@ -119,16 +126,11 @@ body {
     margin: 6px 0;
 }
 
-
-
-
 #main-nav {
 	position: absolute;
 	top: 0;
 	left: 4px;
 }
-
-
 
 #main-nav ul {
 	padding-left: 0;
@@ -137,40 +139,38 @@ body {
 #main-nav li {
 	list-style-type:none;
 	text-align: center;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid var(--text-color);
 	border-bottom-right-radius: 9px;
 	font-size: 1.5em;
 }
 
-
-
 #main-nav a {
-	color: black;
+	color: var(--text-color);
 	text-decoration: none;
 	border-bottom: 1px solid transparent; /*remove underlines*/
 }
 
 #main-nav a:hover {
-	color: crimson;
-	border-bottom: 1px solid #000000;
+	color: var(--hover-a);
+	border-bottom: 1px solid var(--text-color);
 }
 
 #nav-items a.active {
 	animation: glow 1s ease-in-out infinite alternate;
-	color: rgb(255, 255, 255);
+	color: var(--background-color);
 }
 
 @keyframes glow {
 	0% {
-		text-shadow: 0 0 10px rgb(211, 149, 149), 0 0 20px rgb(162, 33, 33);
+		text-shadow: 0 0 10px var(--glow-00), 0 0 20px var(--glow-01);
 	}
 
 	80% {
-		text-shadow: 0 0 10px rgb(213, 39, 39), 0 0 20px rgb(214, 36, 36);
+		text-shadow: 0 0 10px var(--glow-02), 0 0 20px var(--glow-03);
 	}
 
 	100% {
-		text-shadow: 0 0 20px red, 0 0 30px rgb(255, 0, 0);
+		text-shadow: 0 0 20px var(--click-shadow), 0 0 30px var(--glow-04);
 	}
 }
 

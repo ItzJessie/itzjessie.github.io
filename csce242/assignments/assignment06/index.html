@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <h1>Assignment 8</h1>
+        <h2>If Statements</h2>
+        <ul class="menu">
+            <li onclick="showSection('traveling')">Exercise 1</li> |
+            <li onclick="showSection('color-heart')">Exercise 2</li>
+        </ul>
+
+        <!-- Small Dropdown Menu -->
+        <div class="dropdown">
+            <div class="dropdown-btn" onclick="toggleDropdown()">
+                Select Exercise <span id="arrow">▼</span>
+            </div>
+            <ul class="dropdown-menu" id="dropdown-menu">
+                <li onclick="showSection('traveling'); toggleDropdown();">Exercise 1</li>
+                <li onclick="showSection('color-heart'); toggleDropdown();">Exercise 2</li>
+            </ul>
+        </div>
+
+        <div id="traveling" class="section">
+            <h3>Traveling</h3>
+            <p>Enter your mode of transportation:</p>
+            <input type="text" id="transport" oninput="updateTransport()">
+            <br>
+            <img id="transport-img" src="images/bike.png" alt="">
+
+        </div>
+
+        <div id="color-heart" class="section">
+            <h3>Color My Heart</h3>
+            <button onclick="changeColor('red')">Red</button>
+            <button onclick="changeColor('green')">Green</button>
+            <button onclick="changeColor('blue')">Blue</button>
+            <br>
+            <div id="heart"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+<footer><p>&copy; Jessie Brown</p></footer>
+</html>

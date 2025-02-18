@@ -82,7 +82,7 @@ document.getElementById("btn-click-two").onclick = () => {
 
     if (isNaN(donation) || donation <= 0) {
       document.getElementById("donation-error").classList.remove("hidden");
-      return;
+      
     }
 
     // update donations

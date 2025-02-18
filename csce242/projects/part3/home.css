@@ -39,7 +39,7 @@ body {
 
 
 
-/*OLD*/ /*
+/*OLD*/
 #container {
 	display: flex;
     flex-wrap: wrap;
@@ -48,7 +48,7 @@ body {
 	width: 800px;
 	height: 800px;
 }
-/*OLD*/
+
 
 #container p {
 	text-align: center;
@@ -111,63 +111,23 @@ body {
 	text-align: center;
 }
 
-/*Navigation
+/*Navigation*/
 #toggle-nav div {
     width:30px;
     height: 2px;
     background-color: var(--text-color);
     margin: 6px 0;
 }
-*/
 
-/*NEW*/
-#toggle-nav div {
-	width: 30px;
-	height: 3px;
-	background-color: #d23838;
-	margin: 6px 0;
-}
 
-/*NEW*/
-#toggle-nav {
-	position: fixed;
-	top: 20px;
-	left: 20px; /* Ensures it stays visible */
-	width: 50px;
-	height: 50px;
-	background-color: black; /* Visible background for testing */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 5px;
-	cursor: pointer;
-	z-index: 1100;
-}
 
-/*
+
 #main-nav {
 	position: absolute;
 	top: 0;
 	left: 4px;
 }
-*/
 
-/*NEW*/
-#main-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.9);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	transition: transform 0.3s ease-in-out;
-	transform: translateX(-100%); /* Ensure it's hidden initially */
-	z-index: 1000;
-}
 
 
 #main-nav ul {
@@ -195,32 +155,6 @@ body {
 	border-bottom: 1px solid #000000;
 }
 
-/*New*/
-#nav-items {
-	list-style: none;
-	padding: 0;
-	text-align: center;
-	width: 100%; /* Ensure full width */
-}
-
-/*NEW/*/
-#nav-items li {
-	margin: 20px 0;
-	width: 100%;
-	text-align: center;
-}
-
-/*NEW*/
-#nav-items a {
-	color: white; /* Make links visible */
-	font-size: 2rem;
-	text-decoration: none;
-	display: block;
-	padding: 10px 0;
-}
-/*End NEW*/
-
-
 #nav-items a.active {
 	animation: glow 1s ease-in-out infinite alternate;
 	color: rgb(255, 255, 255);
@@ -245,8 +179,6 @@ h1 {
 	text-align: center;
 }
 
-
-
 .hide-small {
 	display: none;
 }
@@ -270,31 +202,26 @@ h1 {
 
 /*Medium Media*/
 @media only screen and (max-width: 800px) {
-	/*
+	
 	.columns {
 		display: flex;
-	}
-	*/
-	#main-nav {
-		transform: translateX(-100%);
 	}
 	
 	#toggle-nav {
 		display: flex;
 	}
-	/*
+	
 	#main-nav li {
 		display: none;
 	}
-	 */
-	/*
+	
 	.hide-small {
 		display: flex;
 	}
-	 */
+	
 }
 
-/*Larger Media
+/*Larger Media*/
 @media only screen and (max-width: 1200px) {
 	#main-nav li {
 		flex: 1;
@@ -304,6 +231,6 @@ h1 {
 		display: flex;
 	}
 }
- */
+
 
 

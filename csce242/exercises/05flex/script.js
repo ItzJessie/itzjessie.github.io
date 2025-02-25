@@ -4,95 +4,95 @@
 
 // Version 2 Execution of anonymous code
 
-document.getElementById("btn-click-one").onclick = () => {
-   document.getElementById("message-one").innerHTML = "be happy";
-}
+// document.getElementById("btn-click-one").onclick = () => {
+//    document.getElementById("message-one").innerHTML = "be happy";
+// }
 
-// Change color
-document.getElementById("btn-click-two").onclick = () => {
-   const messageP = document.getElementById("message-two");
-   messageP.innerHTML = "be sad";
-   messageP.classList.add("win");
- }
+// // Change color
+// document.getElementById("btn-click-two").onclick = () => {
+//    const messageP = document.getElementById("message-two");
+//    messageP.innerHTML = "be sad";
+//    messageP.classList.add("win");
+//  }
 
- document.getElementById("btn-click-three").onclick = () => {
-   document.getElementById("message-one").innerHTML = "";
- }
+//  document.getElementById("btn-click-three").onclick = () => {
+//    document.getElementById("message-one").innerHTML = "";
+//  }
 
- document.getElementById("feeling").onkeydown = (event) => {
-      document.getElementById("feeling").innerHTML = 
-      "You are feeling: " + event.currentTarget.value;
+//  document.getElementById("feeling").onkeydown = (event) => {
+//       document.getElementById("feeling").innerHTML = 
+//       "You are feeling: " + event.currentTarget.value;
    
- }
+//  }
 
- document.getElementById("toggle-nav").onclick = () => {
-  document.getElementById("nav-items").classList.toggle("hide-small");
- }
+//  document.getElementById("toggle-nav").onclick = () => {
+//   document.getElementById("nav-items").classList.toggle("hide-small");
+//  }
 
- document.getElementById("btn-word").onclick = () => {
-  const color = document.getElementById("colorP").value.toLowerCase().trim();
-  let mood = "Happy";
+//  document.getElementById("btn-word").onclick = () => {
+//   const color = document.getElementById("colorP").value.toLowerCase().trim();
+//   let mood = "Happy";
 
-  if (color == "red") {
-    mood = "Rage";
-  } else if (color == "green") {
-    mood = "bread winner"
-  } else {
-    mood = "I'm cooling."
-  }
+//   if (color == "red") {
+//     mood = "Rage";
+//   } else if (color == "green") {
+//     mood = "bread winner"
+//   } else {
+//     mood = "I'm cooling."
+//   }
 
-  document.getElementById("color-mP").innerHTML = 
-  `You choose ${color}. You are feeling ${mood}.`
- }
+//   document.getElementById("color-mP").innerHTML = 
+//   `You choose ${color}. You are feeling ${mood}.`
+//  }
 
- let pos = 0;
- const changeCirclePos = (increment) => {
-  pos += increment;
-  document.getElementById("ball").style.setProperty("top", pos + "px");
- }
+//  let pos = 0;
+//  const changeCirclePos = (increment) => {
+//   pos += increment;
+//   document.getElementById("ball").style.setProperty("top", pos + "px");
+//  }
 
- document.getElementById("down-btn").onclick = () => {
-  console.log("down button clicked");
-  pos++;
-  changeCirclePos(10);
+//  document.getElementById("down-btn").onclick = () => {
+//   console.log("down button clicked");
+//   pos++;
+//   changeCirclePos(10);
 
- }
+//  }
 
- document.getElementById("up-btn").onclick = () => {
-  console.log("up button clicked");
-  pos--;
-  changeCirclePos(-10);
+//  document.getElementById("up-btn").onclick = () => {
+//   console.log("up button clicked");
+//   pos--;
+//   changeCirclePos(-10);
 
- }
+//  }
 
- document.getElementById("pick-btn").onchange = (event) => {
-  const color = event.currentTarget.value;
-  //document.getElementById("ball").style.setProperty("background-color", color);
-  document.getElementById("ball").style.setProperty("--ball-color", color);
+//  document.getElementById("pick-btn").onchange = (event) => {
+//   const color = event.currentTarget.value;
+//   //document.getElementById("ball").style.setProperty("background-color", color);
+//   document.getElementById("ball").style.setProperty("--ball-color", color);
 
- }
+//  }
 
 
- const GOAL = 1000;
- let donations = 0;
+//  const GOAL = 1000;
+//  let donations = 0;
 
- document.getElementById("goal-display").innerHTML = `Goal $${GOAL}`;
-    const donation = document.getElementById("donate").value;
-    document.getElementById("donation-error").classList.add("hidden");
+//  document.getElementById("goal-display").innerHTML = `Goal $${GOAL}`;
+//     const donation = document.getElementById("donate").value;
+//     document.getElementById("donation-error").classList.add("hidden");
 
-    if (isNaN(donation) || donation <= 0) {
-      document.getElementById("donation-error").classList.remove("hidden");
+//     if (isNaN(donation) || donation <= 0) {
+//       document.getElementById("donation-error").classList.remove("hidden");
       
-    }
+//     }
 
     // update donations
-    donations += donation;
+    // donations += donation;
 
     // show donation message
-    document.getElementById("donation-message").innerHTML = `$${GOAL - donations} to go!`;
+    // document.getElementById("donation-message").innerHTML = `$${GOAL - donations} to go!`;
     
     // update the progress bar
-    document.getElementById("in-box").style.setProperty("--donation-percent", donationPercent + "%");
+    // document.getElementById("in-box").style.setProperty("--donation-percent", donationPercent + "%");
 
     // reset the input
    
@@ -107,5 +107,33 @@ document.getElementById("btn-click-two").onclick = () => {
  // otherwise update the donations and display in console;
 
  
+ // 2-18-25
+ // Loops
+ document.getElementById("btn-display").onclick = () => {
+  const startNum = document.getElementById("txt-start").value;
+  const endNum = document.getElementById("txt-end").value;
+  const displayArea = document.getElementById("start-num-order");
+  displayArea.innerHTML = "";
+  const errorDisplay = document.getElementById("error-num-order");
+  errorDisplay.innerHTML = "";
+  const favMessage = document.getElementById("messageP");
+  favMessage.innerHTML = "";
+
+  if (parseInt(endNum) < parseInt(startNum)) {
+    errorDisplay.innerHTML = `${endNum} is less than ${startNum}.`;
+    return;
+  }
+
+  for (let i = startNum; i <= endNum; i++) {
+    const li = document.createElement("li");
+    li.innerHTML = i;
+    displayArea.append(li);
+
+    li.onclick = () => {
+      favMessage.innerHTML = `Your number clicked is ${i}.`;
+    }
+  }
+
+ }
 
 

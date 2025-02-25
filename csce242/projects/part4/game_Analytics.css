@@ -130,3 +130,9 @@ body {
 	width: 50px;
 }
 
+@media screen and (max-width: 800px) {
+	#main-nav {
+		display: none;
+	}
+}
+

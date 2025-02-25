@@ -280,5 +280,30 @@ footer p {
     width: 100px;
     height: 20px;
     margin: 0 auto;
+} 
+
+#display-stairs {
+    position: relative;
+    left: 100px;
+    top: 0;
+}
+
+#stairs-column {
+   border-left: 2px solid black;
+   
+   border-right: 2px solid black;
+   width: 50px;
+   position: relative;
+   left: 100px;
+   top: 0px;
+}
+
+
+.hide-ladder {
+
+   width: 50px;
+   position: relative;
+   left: 100px;
+   border-left: 2px solid black;
 }
 

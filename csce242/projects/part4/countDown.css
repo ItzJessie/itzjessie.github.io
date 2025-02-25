@@ -2,7 +2,7 @@
 	--background-color: #f5f5f5;
 	--line-bgd-color: rgba(255, 255, 255, 0.5);
 	--text-color: black;
-	--gaming-countdown-color:#b0acac; 
+	--gaming-countdown-color:#e3c1c1; 
 	--day-color: #f8f6f6;
 	--glow-00: rgb(211, 149, 149);
 	--glow-01: rgb(162, 33, 33);
@@ -10,6 +10,8 @@
 	--glow-03: rgb(214, 36, 36);
 	--glow-04: rgb(255, 0, 0);
 	--click-shadow: red;
+	--game-name-color: green;
+	--game-text-color: white;
 }
 
 body {
@@ -174,12 +176,18 @@ label {
 
 #game-name {
 	text-align: center;
-	background-color: green;
+	background-color: var(--game-name-color);
 	width: 500px;
 	margin: 0 auto;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
-	color: white;
+	color: var(--game-text-color);
+}
+
+@media screen and (max-width: 800px) {
+	#main-nav {
+		display: none;
+	}
 }
 
 

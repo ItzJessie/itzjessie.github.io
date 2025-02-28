@@ -1,0 +1,72 @@
+/*Sources: ChatGPT, Coding ALL-IN-ONE by Chris Minnick, W3Schools*/
+
+:root {
+	--body: #f4f4f4;
+	--toggle-a: darkred;
+	--content00: white;
+	--content01: black;
+	--heart: grey;
+	--menu--hover: blue;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: var(--body);
+}
+
+
+
+/*Game section*/
+.game {
+	background: #423b3b;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	margin: 0 auto;
+	width: 350px;
+	height: 600px;
+	
+}
+
+
+/*Navigation*/
+
+/*Typography*/
+#title {
+	text-align: center;
+}
+
+#main-footer {
+	text-align: center;
+    color: var(--toggle-a);
+}
+
+
+footer {
+	padding: 10px;
+}
+
+
+img {
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+	#main-nav-items {
+		display: flex;
+	}
+	
+	#main-nav-items li {
+        flex: 1;
+    }
+	
+	#game-list {
+		display: flex;
+	}
+	
+	.games {
+		flex: 1;
+	}
+}

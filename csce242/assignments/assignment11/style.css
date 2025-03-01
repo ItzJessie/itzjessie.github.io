@@ -9,6 +9,8 @@
 	--menu--hover: blue;
 }
 
+
+
 body {
 	font-family: Arial, sans-serif;
 	background-color: var(--body);
@@ -20,6 +22,7 @@ body {
 	font-size: 30px;
 	float: right;
 	font-weight:bold;
+	
 }
 
 /*Game section*/
@@ -30,7 +33,6 @@ body {
 	margin: 0 auto;
 	width: 350px;
 	height: 250px;
-	
 }
 
 
@@ -39,6 +41,14 @@ body {
 /*Typography*/
 #title {
 	text-align: center;
+}
+
+#class-title {
+	color: var(--toggle-a) ;
+}
+
+.tile {
+	color: var(--toggle-a);
 }
 
 

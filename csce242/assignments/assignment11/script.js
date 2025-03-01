@@ -1,10 +1,11 @@
+// length, difficulty, age, availability,
 class Game {
-    constructor(title, length, difficulty, age, availability, pic) {
+    constructor(title, pic) {
         this.title = title;
-        this.length = length;
-        this.difficulty = difficulty;
-        this.age = age;
-        this.availability = availability;
+        // this.length = length;
+        // this.difficulty = difficulty;
+        // this.age = age;
+        // this.availability = availability;
         this.pic = pic;
     }
     
@@ -18,10 +19,10 @@ class Game {
         
         const infoList = document.createElement("ul");
         gameSection.appendChild(infoList);
-        infoList.append(this.ListItem(this.length));
-        infoList.append(this.ListItem(this.difficulty));
-        infoList.append(this.ListItem(`Age: ${this.age}`));
-        infoList.append(this.ListItem(this.availability));
+        // infoList.append(this.ListItem(this.length));
+        // infoList.append(this.ListItem(this.difficulty));
+        // infoList.append(this.ListItem(`Age: ${this.age}`));
+        // infoList.append(this.ListItem(this.availability));
         
         gameSection.appendChild(this.picture(this.pic));
         
@@ -52,19 +53,25 @@ window.onload = ( ) => {
     let gameList = document.getElementById("game-list");  
     
     games.push(
-        new Game("Super Mario Bros", "8 Hrs", "easy-to-learn", 20, "Nintendo Switch", "supermariobros.jpg"));
+        new Game("Super Mario Bros", "supermariobros.jpg"));
     games.push(
-        new Game("DC Universe", "20 Hrs", "challenging", 10, "All Platforms", "dcuniverse.jpg" )
+        new Game("DC Universe", "dcuniverse.jpg" )
     );
     games.push(
-        new Game("Black Ops 6", "8 Hrs", "skill-needed", 1, "All Platforms", "blackops6.jpg" )
+        new Game("Black Ops 6", "blackops6.jpg" )
+    );
+    games.push(
+        new Game("Red Dead Redemption 2", "rd2.jpg" )
+    );
+    games.push(
+        new Game("Cyberpunk 2077", "cp2077.jpg" )
     );
 
     
     for (let i in games) {
-
-
         gameList.append(games[i].item);
     }
 };
 
+
+// "8 Hrs", "skill-needed", 1, "All Platforms",

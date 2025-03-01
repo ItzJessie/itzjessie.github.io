@@ -12,19 +12,24 @@
 body {
 	font-family: Arial, sans-serif;
 	background-color: var(--body);
+	text-align: center;
 }
 
-
+.close {
+	color: var(--toggle-a);
+	font-size: 30px;
+	float: right;
+	font-weight:bold;
+}
 
 /*Game section*/
 .game {
 	background: #423b3b;
 	padding: 5px;
-	border-radius: 5px;
 	color: white;
 	margin: 0 auto;
 	width: 350px;
-	height: 600px;
+	height: 250px;
 	
 }
 
@@ -35,6 +40,7 @@ body {
 #title {
 	text-align: center;
 }
+
 
 #main-footer {
 	text-align: center;
@@ -48,9 +54,9 @@ footer {
 
 
 img {
-	width: 250px;
-	height: 250px;
-	margin: 0 auto;
+	width: 175px;
+	height: 175px;
+	
 }
 
 @media (min-width: 900px) {

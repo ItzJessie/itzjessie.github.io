@@ -1,0 +1,158 @@
+:root {
+	--background-color: #f5f5f5;
+	--circle-color: #ff0000;
+	--text-color: black;
+	--glow-00: rgb(211, 149, 149);
+	--glow-01: rgb(162, 33, 33);
+	--glow-02: rgb(213, 39, 39);
+	--glow-03: rgb(214, 36, 36);
+	--glow-04: rgb(255, 0, 0);
+	--click-shadow: red;
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 20px;
+}
+
+.main-title {
+	position: relative;
+	left: 10%;
+}
+
+.line {
+	width: 80%;
+	margin: 10px auto;
+	border: none;
+	height: 2px;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+	align-items: center;
+	max-width: 80%;
+	margin: 0 auto;
+	justify-content: center;
+	gap: 20px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.game {
+	width: 350px;
+	height: 150px;
+	border-radius: 15px;
+}
+
+.item-title {
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 5px 10px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	width: 330px;
+	bottom: 26px;
+}
+
+#main-nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: auto;
+	padding: 10px 20px;
+}
+
+#main-nav ul {
+	padding-left: 0%;
+	display: -webkit-box;
+}
+
+#main-nav li {
+	list-style-type:none; /*remove bullets from list*/
+	margin: 0 5px
+}
+
+#main-nav a {
+	color: #000000;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+#main-nav a:hover {
+	color: crimson;
+	border-bottom: 1px solid #000000;
+}
+
+#nav-items a.active {
+	animation: glow 1s ease-in-out infinite alternate;
+	color: var(--background-color);
+}
+
+@keyframes glow {
+	0% {
+		text-shadow: 0 0 10px var(--glow-00), 0 0 20px var(--glow-01);
+	}
+	
+	80% {
+		text-shadow: 0 0 10px var(--glow-02), 0 0 20px var(--glow-03);
+	}
+	
+	100% {
+		text-shadow: 0 0 20px var(--click-shadow), 0 0 30px var(--glow-04);
+	}
+}
+
+#back {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 20px;
+	width: 50px;
+}
+
+@media (max-width: 768px) {
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	#main-nav {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	#main-nav a {
+		padding: 10px;
+		width: 100%;
+	}
+	
+}
+
+@media (max-width: 480px) {
+	.container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+}
+
+@media screen and (max-width: 800px) {
+	#main-nav {
+		display: none;
+	}
+}

@@ -1,0 +1,88 @@
+<!--1_21_25-->
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link rel="stylesheet" href="countDown.css">
+        <title>Countdown Timer</title>
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <h2 class="main-title">COUNTDOWN TIMER</h2>
+                <hr class="line">
+                <nav id="main-nav">
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="columns hide-small">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a class="active" href="#">Countdown</a></li>
+                        <li><a href="game_Analytics.html">Game Analytics</a></li>
+                        <li><a href="upcomingRelease.html">Upcoming Release</a></li>
+                        <li><a href="supportUs.html">Support Us</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <a href="home.html">
+                    <img id="back" src="images/back.png" alt="back arrow">
+                </a>
+                <br><br>
+            </header>
+            <main>
+                <label for="games"> Choose a game:
+                    <select name="games" id="games" required>
+                        <option value="mk-9">Mario Kart 9</option>
+                        <option value="gta-6">Grand Theft Auto VI</option>
+                        <option value="er-2">Elden Ring 2</option>
+                        <option value="gta-6O">Grand Theft Auto VI Online</option>
+                        <option value="poe-2">Path of Exile 2</option>
+                        <option value="bo-3">Black Ops 3 Remastered</option>
+                    </select>
+                </label>
+                <br><br>
+
+                <br><br>
+                <div id="game-name">"Game" Countdown</div>
+                <div id="gaming-Countdown">
+                        <div id="count-container">
+                            <div id="dayGroup">
+                                <div id="day01">0</div>
+                                <div id="day02">0</div>
+                            </div>
+
+                            <h1>:</h1>
+                            <div id="hourGroup">
+                                <div id="hour01">1</div>
+                                <div id="hour02">1</div>
+                            </div>
+                            <h1>:</h1>
+                            <div id="minGroup">
+                                <div id="min01">2</div>
+                                <div id="min02">2</div>
+                            </div>
+                            <h1>:</h1>
+                            <div id="secGroup">
+                                <div id="sec01">3</div>
+                                <div id="sec02">3</div>
+                            </div>
+                        </div>
+
+                </div>
+
+                <section class="countTitles">
+                    <h1 class="dayTitle">Days</h1>
+                    <h1 class="hoursTitle">Hours</h1>
+                    <h1 class="minTitle">Minutes</h1>
+                    <h1 class="secTitle">Seconds</h1>
+                </section>
+
+            </main>
+            <footer>
+            </footer>
+        </div>
+
+    </body>
+</html>

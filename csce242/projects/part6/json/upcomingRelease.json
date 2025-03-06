@@ -1,6 +1,7 @@
 [
     {
         "name": "Grand Theft Auto VI",
+        "image": "images/gtavi.jpeg",
         "developer": "Rockstar Games",
         "price":"100.00",
         "difficulty":"Varies; typically offers adjustable difficulty settings to cater to a wide range of players.",
@@ -10,6 +11,7 @@
     },
     {
         "name": "Grand Theft Auto VI Online",
+        "image": "images/gta_Online.jpeg",
         "developer": "Rockstar Games",
         "price":"00.00",
         "difficulty":"Varies; depends on player interactions and missions",
@@ -19,6 +21,7 @@
     },
     {
         "name": "Elden Ring 2",
+        "image": "images/elden_ring2.jpg",
         "developer": "FromSoftware",
         "price":"70.00",
         "difficulty":"Expected to be challenging, following the tradition of FromSoftware's titles.",
@@ -28,6 +31,7 @@
     },
     {
         "name": "Path of Exile 2",
+        "image": "images/poe2.jpeg",
         "developer": "Grinding Gear Games",
         "price":"30.00",
         "difficulty":"Known for its challenging gameplay and complex mechanics.",
@@ -37,6 +41,7 @@
     },
     {
         "name": "Mario Kart 9",
+        "image": "images/mario_Kart9.jpeg",
         "developer": "Nintendo",
         "price":"60.00",
         "difficulty":"Accessible to players of all ages, with varying levels of challenge.",
@@ -46,6 +51,7 @@
     },
     {
         "name": "Call of Duty: Black Ops 3 Remastered",
+        "image": "images/b03.jpeg",
         "developer": "Treyarch / Activision",
         "price":"70.00",
         "difficulty":"Offers various difficulty settings to accommodate different player skill levels.",

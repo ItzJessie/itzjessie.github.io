@@ -11,7 +11,7 @@ const getGames = async () => {
 }
 
 const showGames = async () => {
-    let games = getGames();
+    let games = await getGames();
     let gamesSection = document.getElementById("games-section");
 
 
@@ -22,11 +22,16 @@ const showGames = async () => {
 };
 
 const getGameItem = (game) =>  {
-    let section = DocumentFragment.createElement("section");
+    let section = document.createElement("section");
 
     let h3 = document.createElement("h3");
     h3.innerHTML = game.name;
     section.append(h3);
+
+    let img = document.createElement("img");
+    img.src = game.image;
+    section.append(img);
+    
 
     let ul = document.createElement("ul");
     section.append(ul);
@@ -34,8 +39,7 @@ const getGameItem = (game) =>  {
     ul.append(getLi(`Price: $${game.price}`));
     ul.append(getLi(game.difficulty));
     ul.append(getLi(game.description));
-    ul.append(getLi(`Rating: $${game.rating}`));
-    ul.append(getLi(game.reviews));
+    ul.append(getLi(`Rating: ${game.rating}`));
 
     section.append(getReviews(game.reviews));
 

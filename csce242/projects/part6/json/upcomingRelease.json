@@ -58,5 +58,25 @@
         "description":"A potential remaster of the 2015 first-person shooter, featuring enhanced graphics and updated gameplay mechanics.",
         "rating":"Mature (M)",
         "reviews":["If released, it's expected to be praised for visual improvements and nostalgic value, though some may critique the necessity of a remaster.", "Good, to come", "Beautiful and comfortable"]
+    },
+    {
+        "name": "Pokemon Legends: Z-A",
+        "image": "images/pl.jpeg",
+        "developer": "Nintendo",
+        "price":"70.00",
+        "difficulty":"Offers various difficulty settings for different player skill levels.",
+        "description":"Game will take place entirely within Lumiose City, where Pokémon coexist with humans in locations known as Wild Zones.During the course of the story, the legendary Pokémon Zygarde takes an interest in the player character.",
+        "rating":"Everyone (E)",
+        "reviews":["User reviews are not available for this game yet."]
+    },
+    {
+        "name": "Borderlands 4",
+        "image": "images/bl4.jpeg",
+        "developer": "Gearbox Software",
+        "price":"70.00",
+        "difficulty":"range of challenges, from solo play to intense co-op action",
+        "description":"Borderlands 4 is a looter shooter that continues the tradition of the series with a focus on loot, mayhem, and cooperative gameplay. Players break free from a dangerous hidden planet as one of four new Vault Hunters, each with unique abilities and playstyles. The game promises to deliver a fresh and exciting experience with a vast array of weapons and enemies.",
+        "rating":"Mature (M)",
+        "reviews":["excited about the potential for a new and improved experience, though some may critique the necessity of a remaster.", "game can adapt to the evolving gaming trends"]
     }
 ]

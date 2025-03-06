@@ -40,8 +40,7 @@ const getGameItem = (game) =>  {
     ul.append(getLi(game.difficulty));
     ul.append(getLi(game.description));
     ul.append(getLi(`Rating: ${game.rating}`));
-
-    section.append(getReviews(game.reviews));
+    ul.append(getReviews(game.reviews));
 
 
     return section

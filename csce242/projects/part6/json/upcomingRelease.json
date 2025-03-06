@@ -50,7 +50,7 @@
         "reviews":["Anticipated to receive positive reviews for its fun gameplay and new features."]
     },
     {
-        "name": "Call of Duty: Black Ops 3 Remastered",
+        "name": "Black Ops 3 Remastered",
         "image": "images/b03.jpeg",
         "developer": "Treyarch / Activision",
         "price":"70.00",
@@ -61,7 +61,7 @@
     },
     {
         "name": "Pokemon Legends: Z-A",
-        "image": "images/pl.jpeg",
+        "image": "images/pl.jpg",
         "developer": "Nintendo",
         "price":"70.00",
         "difficulty":"Offers various difficulty settings for different player skill levels.",

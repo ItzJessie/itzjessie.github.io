@@ -11,7 +11,7 @@
     },
     {
         "name": "Grand Theft Auto VI Online",
-        "image": "images/gta_Online.jpeg",
+        "image": "<a href='https://www.rockstargames.com/gta-online'><img src='images/gta_Online.jpeg' alt='Grand Theft Auto VI Online'></a>",
         "developer": "Rockstar Games",
         "price":"00.00",
         "difficulty":"Varies; depends on player interactions and missions",
@@ -61,7 +61,7 @@
     },
     {
         "name": "Pokemon Legends: Z-A",
-        "image": "images/pl.jpg",
+        "image": "images/pl.jpeg",
         "developer": "Nintendo",
         "price":"70.00",
         "difficulty":"Offers various difficulty settings for different player skill levels.",

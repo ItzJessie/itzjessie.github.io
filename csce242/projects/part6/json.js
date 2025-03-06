@@ -1,5 +1,5 @@
-const getShoes = async () => {
-    const url = "https://portiaportia.github.io/json/shoes.json";
+const getGames = async () => {
+    const url = "https://itzjessie.github.io/csce242/projects/part6/json/upcomingRelease.json";
 
     try {
         const response = await fetch(url);
@@ -10,8 +10,57 @@ const getShoes = async () => {
 
 }
 
-const showShoes = () => {
-    let shoes = getShoes();
+const showGames = async () => {
+    let games = getGames();
+    let gamesSection = document.getElementById("games-section");
+
+
+    games.forEach((game) => {
+        console.log(game);
+    });
+
 };
 
-window.onload = () => showShoes();
+const getGameItem = (game) =>  {
+    let section = DocumentFragment.createElement("section");
+
+    let h3 = document.createElement("h3");
+    h3.innerHTML = game.name;
+    section.append(h3);
+
+    let ul = document.createElement("ul");
+    section.append(ul);
+    ul.append(getLi(game.developer));
+    ul.append(getLi(`Price: $${game.price}`));
+    ul.append(getLi(game.difficulty));
+    ul.append(getLi(game.description));
+    ul.append(getLi(`Rating: $${game.rating}`));
+    ul.append(getLi(game.reviews));
+
+    section.append(getReviews(game.reviews));
+
+
+    return section
+};
+
+const getLi = data => {
+    const li = document.createElement("li");
+    li.textContent = data;
+    return li;
+};
+
+const getReviews = (reviews) => {
+    const section = document.createElement("section");
+
+    reviews.forEach(review => {
+        const p = document.createElement("p");
+        p.textContent = review;
+        section.append(p);
+    });
+    return section;
+};
+
+
+
+
+window.onload = () => showGames();

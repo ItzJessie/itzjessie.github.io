@@ -2,24 +2,30 @@
 	--background-color: #f5f5f5;
 	--circle-color: #ff0000;
 	--text-color: black;
-	--glow-00: rgb(211, 149, 149);
-	--glow-01: rgb(162, 33, 33);
-	--glow-02: rgb(213, 39, 39);
-	--glow-03: rgb(214, 36, 36);
-	--glow-04: rgb(255, 0, 0);
-	--click-shadow: red;
+	--box-color: rgb(122, 124, 182);
+	--glow-00: rgb(105, 105, 245);
+	--glow-01: rgb(112, 112, 213);
+	--glow-02: rgb(81, 81, 184);
+	--glow-03: rgb(62, 62, 135);
+	--glow-04: rgb(33, 33, 72);
+	--click-shadow: rgb(106, 0, 255);
+	--first-box: lightyellow;
+	--second-box: lightblue;
 }
 
 body {
 	background-color: var(--background-color);
+	background-image: url("images/space.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 20px;
 }
 
 #back01 {
-	border: 3px solid black;
-	background-color: gray;
+	border: 3px solid var(--text-color);
+	background-color: var(--box-color);
 	border-radius: 5px;
 	width: 80%;
 	height: 650px;
@@ -29,8 +35,8 @@ body {
 }
 
 #back02 {
-	border: 3px solid black;
-	background-color: gray;
+	border: 3px solid var(--text-color);
+	background-color: var(--box-color);
 	border-radius: 5px;
 	width: 95%;
 	height: 600px;
@@ -38,16 +44,18 @@ body {
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	
 }
 
 #out-box {
-	border: 3px solid black;
-	background-color: gray;
+	border: 3px solid var(--text-color);
+	background-color: var(--box-color);
 	border-radius: 15px;
 	width: 100%;
 	height: 580px;
 	margin: 0 auto;
 	align-content: center;
+	
 	
 }
 
@@ -55,7 +63,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items:center;
-	gap: 50px;
+	gap: 450px;
 }
 
 .contact-box {
@@ -67,29 +75,29 @@ body {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	background-color: lightyellow;
+	background-color: var(--first-box);
 	padding: 10px;
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 2px 10px var(--text-color);
 }
 
 .blue-box {
-	background-color: lightblue;
+	background-color: var(--second-box);
 }
 
 .yellow-box {
-	background-color: lightyellow;
+	background-color: var(--first-box);
 }
 
 input {
 	margin: 10px 0;
 	padding: 5px;
-	border: 1px solid black;
+	border: 1px solid var(--text-color);
 	border-radius: 5px;
 }
 
 button {
-	background-color: white;
-	border: 1px solid black;
+	background-color: var(--background-color);
+	border: 1px solid var(--text-color);
 	padding: 5px 10px;
 	cursor: pointer;
 }
@@ -103,8 +111,9 @@ button {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	background-color: lightblue;
+	background-color: var(--second-box);
 	padding: 10px;
+	box-shadow: 2px 2px 10px var(--text-color);
 }
 
 
@@ -131,14 +140,14 @@ button {
 }
 
 #main-nav a {
-	color: #000000;
+	color: var(--text-color);
 	text-decoration: none;
 	padding: 10px 15px;
 }
 
 #main-nav a:hover {
-	color: crimson;
-	border-bottom: 1px solid #000000;
+	color: var(--background-color);
+	border-bottom: 1px solid var(--text-color);
 }
 
 #nav-items a.active {

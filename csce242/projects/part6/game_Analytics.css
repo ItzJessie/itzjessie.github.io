@@ -2,16 +2,26 @@
 	--background-color: #f5f5f5;
 	--circle-color: #ff0000;
 	--text-color: black;
-	--glow-00: rgb(211, 149, 149);
-	--glow-01: rgb(162, 33, 33);
-	--glow-02: rgb(213, 39, 39);
-	--glow-03: rgb(214, 36, 36);
-	--glow-04: rgb(255, 0, 0);
-	--click-shadow: red;
+	--glow-00: rgb(105, 105, 245);
+	--glow-01: rgb(112, 112, 213);
+	--glow-02: rgb(81, 81, 184);
+	--glow-03: rgb(62, 62, 135);
+	--glow-04: rgb(33, 33, 72);
+	--click-shadow: rgb(106, 0, 255);
+	--line-color: grey;
+	--game-col1: #7ed0ff;
+	--game-col2: #ad65c7; 
+	--step1-color: #ff7f50;  
+	--step2-color: #ff477e;  
+	--step3-color: #5a4fcf;  
+	--step4-color: #22a76e; 
 }
 
 body {
 	background-color: var(--background-color);
+	background-image: url("images/space.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 20px;
@@ -28,26 +38,26 @@ body {
 	margin: 10px auto;
 	border: none;
 	height: 2px;
-	background: rgba(255, 255, 255, 0.5);
+	background: var(--line-color);
 }
 
 #container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 30px;
+	gap: 90px;
 }
 
 .game {
 	display: flex;
 	justify-content: center;
-	gap: 20px;
+	gap: 90px;
 	flex-wrap: wrap;
 }
 
 .game section {
-	background: linear-gradient(135deg, #ff7eb3, #ff758c);
-	color: white;
+	background: linear-gradient(135deg, var(--game-col1), var(--game-col2));
+	color: var(--background-color);
 	padding: 20px;
 	border-radius: 10px;
 	width: 200px;
@@ -58,29 +68,34 @@ body {
 
 .game section:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px var(--text-color);
 }
 
 .step1, .process1, .implement1 {
-	background: #ff7f50;
+	background: var(--step1-color);
 }
 .step2, .process2, .implement2 {
-	background: #ff477e;
+	background: var(--step2-color);
 }
 .step3, .process3, .implement3 {
-	background: #5a4fcf;
+	background: var(--step3-color);
 }
 .step4, .process4, .implement4 {
-	background: #22a76e;
+	background: var(--step4-color);
 }
 
 
 
 
 #main-nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 	position: absolute;
 	top: 0;
-	right: 4px;
+	right: 0;
+	width: auto;
+	padding: 10px 20px;
 }
 
 #main-nav ul {
@@ -94,13 +109,14 @@ body {
 }
 
 #main-nav a {
-	color: #000000;
+	color: var(--text-color);
 	text-decoration: none; /*remove underlines*/
+	padding: 10px 15px;
 }
 
 #main-nav a:hover {
-	color: crimson;
-	border-bottom: 1px solid #000000;
+	color: var(--background-color);
+	border-bottom: 1px solid var(--text-color);
 }
 
 #nav-items a.active {
@@ -128,6 +144,19 @@ body {
 	left: 10px;
 	font-size: 20px;
 	width: 50px;
+}
+
+@media (max-width: 768px) {
+	#main-nav {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	#main-nav a {
+		padding: 10px;
+		width: 100%;
+	}
+	
 }
 
 @media screen and (max-width: 800px) {

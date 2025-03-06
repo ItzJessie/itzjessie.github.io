@@ -16,7 +16,7 @@ const showGames = async () => {
 
 
     games.forEach((game) => {
-        console.log(game);
+        gamesSection.append(getGameItem(game));
     });
 
 };

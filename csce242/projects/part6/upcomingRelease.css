@@ -51,6 +51,7 @@ body {
 	width: 350px;
 	height: 400px;
 	overflow: auto;
+	background-color: rgba(245, 245, 245, 0.5); /* 50% opacity */
 }
 
 .list {

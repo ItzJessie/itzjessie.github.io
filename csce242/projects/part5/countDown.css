@@ -1,0 +1,269 @@
+:root {
+	--background-color: #f5f5f5;
+	--line-bgd-color: grey;
+	--text-color: black;
+	--gaming-countdown-color:#a397ca86; 
+	--day-color: #f8f6f6;
+	--glow-00: rgb(105, 105, 245);
+	--glow-01: rgb(112, 112, 213);
+	--glow-02: rgb(81, 81, 184);
+	--glow-03: rgb(62, 62, 135);
+	--glow-04: rgb(33, 33, 72);
+	--click-shadow: rgb(106, 0, 255);
+	--game-name-color: rgba(46, 39, 39, 0.273);
+	--game-text-color: white;
+}
+
+body {
+	background-color: var(--background-color);
+	background-image: url("images/space.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 20px;
+}
+
+#content {
+	width: 100%;
+	height: 100%;
+}
+
+.main-title {
+	position: relative;
+	left: 10%;
+}
+
+.countTitles {
+	margin: 0 auto;
+}
+
+.line {
+	width: 80%;
+	margin: 10px auto;
+	border: none;
+	height: 2px;
+	background: var(--line-bgd-color);
+}
+
+#back {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 20px;
+	width: 50px;
+}
+
+#gaming-Countdown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid var(--text-color);
+	flex-direction: column;
+	width: 800px;
+	height: 200px;
+	margin: 0 auto;
+	background-color: var(--gaming-countdown-color);
+	border-radius: 20px;
+}
+
+#count-container {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	text-align: center;
+	
+}
+
+
+#monthGroup, #dayGroup, #hourGroup, #minGroup, #secGroup {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	
+}
+
+#month01, #month02, #day01, #day02, #hour01, #hour02, #min01, #min02, #sec01, #sec02  {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 80px;
+	font-size: 50px;
+	color: var(--day-color);
+	background-color: var(--text-color);
+	border-radius: 10px;
+}
+
+label {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+	background-color: var(--glow-00);
+	padding: 8px 15px;
+	border-radius: 10px;
+	text-shadow: 0 0 10px var(--glow-01), 0 0 15px var(--click-shadow);
+	transition: text-shadow 0.3s ease-in-out;
+	display: block; /* Changed to block for better centering */
+	width: fit-content; /* Width based on content */
+	max-width: 80%; /* Prevent from getting too wide */
+	margin-left: auto;
+	margin-right: auto; /* Auto margins for horizontal centering */
+}
+
+#main-nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: auto;
+	padding: 10px 20px;
+}
+
+#main-nav ul {
+	padding-left: 0%;
+	display: -webkit-box;
+}
+
+#main-nav li {
+	list-style-type:none; /*remove bullets from list*/
+	margin: 0 5px
+}
+
+#main-nav a {
+	color: var(--text-color);
+	text-decoration: none; /*remove underlines*/
+	padding: 10px 15px;
+}
+
+#main-nav a:hover {
+	color: var(--background-color);
+	border-bottom: 1px solid var(--text-color);
+}
+
+#nav-items a.active {
+	animation: glow 1s ease-in-out infinite alternate;
+	color: var(--day-color);
+}
+
+@keyframes glow {
+	0% {
+		text-shadow: 0 0 10px var(--glow-00), 0 0 20px var(--glow-01);
+	}
+	
+	80% {
+		text-shadow: 0 0 10px var(--glow-02), 0 0 20px var(--glow-03);
+	}
+	
+	100% {
+		text-shadow: 0 0 20px var(--click-shadow), 0 0 30px var(--glow-04);
+	}
+}
+
+.monthTitle, .dayTitle, .hoursTitle, .minTitle, .secTitle {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--text-color);
+}
+
+.monthTitle {
+	position: relative;
+	bottom: 60px;
+	right: 290px;
+	text-align: center;
+}
+
+
+.dayTitle {
+	position: relative;
+	bottom: 108px;
+	right: 145px;
+	text-align: center;
+}
+
+.hoursTitle {
+	position: relative;
+	bottom: 156px;
+	right: 5px;
+	text-align: center;
+}
+
+.minTitle {
+	position: relative;
+	bottom: 203px;
+	left: 145px;
+	text-align: center;
+}
+
+.secTitle {
+	position: relative;
+	bottom: 250px;
+	left: 292px;
+	text-align: center;
+}
+
+#startCountdown, #resetCountdown {
+	display: inline-block;
+	margin: 10px;
+	width: 100px;  /* Increased from 80px */
+	height: 100px; /* Increased from 80px */
+	border-radius: 50%;
+	font-size: 18px; /* Increased from 16px */
+	cursor: pointer;
+	border: none;
+	background-color: var(--text-color);
+	color: var(--day-color);
+	transition: transform 0.2s, box-shadow 0.3s;
+}
+
+#startCountdown:active, #resetCountdown:active {
+	transform: scale(0.9);
+	box-shadow: 0 0 15px var(--click-shadow), 0 0 30px var(--glow-02);
+}
+
+/* Create a container div around the buttons with this class */
+.button-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+	margin: 15px 0;
+}
+
+#game-name {
+	text-align: center;
+	background-color: var(--game-name-color);
+	width: 500px;
+	margin: 0 auto;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	color: var(--game-text-color);
+}
+
+@media (max-width: 768px) {
+	#main-nav {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	#main-nav a {
+		padding: 10px;
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 800px) {
+	#main-nav {
+		display: none;
+	}
+}
+
+
+

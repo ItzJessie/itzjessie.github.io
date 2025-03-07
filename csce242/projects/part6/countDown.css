@@ -60,7 +60,7 @@ body {
 	align-items: center;
 	border: 3px solid var(--text-color);
 	flex-direction: column;
-	width: 600px;
+	width: 800px;
 	height: 200px;
 	margin: 0 auto;
 	background-color: var(--gaming-countdown-color);
@@ -76,7 +76,7 @@ body {
 }
 
 
-#dayGroup, #hourGroup, #minGroup, #secGroup {
+#monthGroup, #dayGroup, #hourGroup, #minGroup, #secGroup {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -85,7 +85,7 @@ body {
 	
 }
 
-#day01, #day02, #hour01, #hour02, #min01, #min02, #sec01, #sec02  {
+#month01, #month02, #day01, #day02, #hour01, #hour02, #min01, #min02, #sec01, #sec02  {
     display: flex;
 	align-items: center;
 	justify-content: center;
@@ -98,8 +98,21 @@ body {
 }
 
 label {
-	padding-left: 300px;
-	
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+	background-color: var(--glow-00);
+	padding: 8px 15px;
+	border-radius: 10px;
+	text-shadow: 0 0 10px var(--glow-01), 0 0 15px var(--click-shadow);
+	transition: text-shadow 0.3s ease-in-out;
+	display: block; /* Changed to block for better centering */
+	width: fit-content; /* Width based on content */
+	max-width: 80%; /* Prevent from getting too wide */
+	margin-left: auto;
+	margin-right: auto; /* Auto margins for horizontal centering */
 }
 
 #main-nav {
@@ -153,38 +166,74 @@ label {
 	}
 }
 
-.dayTitle, .hoursTitle, .minTitle, .secTitle {
+.monthTitle, .dayTitle, .hoursTitle, .minTitle, .secTitle {
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: var(--text-color);
 }
 
-.dayTitle {
+.monthTitle {
 	position: relative;
 	bottom: 60px;
-	right: 220px;
+	right: 290px;
+	text-align: center;
+}
+
+
+.dayTitle {
+	position: relative;
+	bottom: 108px;
+	right: 145px;
 	text-align: center;
 }
 
 .hoursTitle {
 	position: relative;
-	bottom: 110px;
-	right: 80px;
+	bottom: 156px;
+	right: 5px;
 	text-align: center;
 }
 
 .minTitle {
 	position: relative;
-	bottom: 160px;
-	left: 220px;
+	bottom: 203px;
+	left: 145px;
 	text-align: center;
 }
 
 .secTitle {
 	position: relative;
-	bottom: 205px;
-	left: 70px;
+	bottom: 250px;
+	left: 292px;
 	text-align: center;
+}
+
+#startCountdown, #resetCountdown {
+	display: inline-block;
+	margin: 10px;
+	width: 100px;  /* Increased from 80px */
+	height: 100px; /* Increased from 80px */
+	border-radius: 50%;
+	font-size: 18px; /* Increased from 16px */
+	cursor: pointer;
+	border: none;
+	background-color: var(--text-color);
+	color: var(--day-color);
+	transition: transform 0.2s, box-shadow 0.3s;
+}
+
+#startCountdown:active, #resetCountdown:active {
+	transform: scale(0.9);
+	box-shadow: 0 0 15px var(--click-shadow), 0 0 30px var(--glow-02);
+}
+
+/* Create a container div around the buttons with this class */
+.button-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+	margin: 15px 0;
 }
 
 #game-name {

@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Grand Theft Auto VI",
+        "image": "images/gtavi.jpeg",
+        "developer": "Rockstar Games",
+        "price":"100.00",
+        "difficulty":"Varies; typically offers adjustable difficulty settings to cater to a wide range of players.",
+        "description":"The latest installment in the Grand Theft Auto series, set in the state of Leonida, featuring the neon-soaked streets of Vice City and beyond. Promises the biggest, most immersive evolution of the series yet.",
+        "rating":"Mature (M) rating due to graphic content",
+        "reviews":["Given the series' history, it's expected to receive critical acclaim for its open-world design, storytelling, and gameplay mechanics.","I love this game","best game by best company", "It was not a disappointment"]
+    },
+    {
+        "name": "Grand Theft Auto VI Online",
+        "image": "images/gta_Online.jpeg",
+        "developer": "Rockstar Games",
+        "price":"00.00",
+        "difficulty":"Varies; depends on player interactions and missions",
+        "description":"An online multiplayer action-adventure game set in the Grand Theft Auto universe, allowing players to explore, complete missions, and engage in various activities with others.",
+        "rating":"Mature (M) rating due to graphic content",
+        "reviews":["Continues to receive positive feedback for its expansive content and regular updates.", "Great online multiplayer game"]
+    },
+    {
+        "name": "Elden Ring 2",
+        "image": "images/elden_ring2.jpg",
+        "developer": "FromSoftware",
+        "price":"70.00",
+        "difficulty":"Expected to be challenging, following the tradition of FromSoftware's titles.",
+        "description":"A potential sequel to the critically acclaimed action RPG, Elden Ring, known for its expansive open world and intricate lore.",
+        "rating":"Mature (M)",
+        "reviews":["It's anticipated to receive praise for its depth, difficulty, and world-building."]
+    },
+    {
+        "name": "Path of Exile 2",
+        "image": "images/poe2.jpeg",
+        "developer": "Grinding Gear Games",
+        "price":"30.00",
+        "difficulty":"Known for its challenging gameplay and complex mechanics.",
+        "description":"A sequel to the popular action RPG, introducing a new campaign, revamped gameplay mechanics, and an updated skill system.",
+        "rating":"Mature (M)",
+        "reviews":[" Early Access has been well-received, with players praising its depth and improvements over the original.", "Good, not great", "Beautiful not comfortable"]
+    },
+    {
+        "name": "Mario Kart 9",
+        "image": "images/mario_Kart9.jpeg",
+        "developer": "Nintendo",
+        "price":"60.00",
+        "difficulty":"Accessible to players of all ages, with varying levels of challenge.",
+        "description":"The next entry in the beloved kart-racing series, featuring new tracks, characters, and mechanics.",
+        "rating":"Everyone (E)",
+        "reviews":["Anticipated to receive positive reviews for its fun gameplay and new features."]
+    },
+    {
+        "name": "Black Ops 3 Remastered",
+        "image": "images/b03.jpeg",
+        "developer": "Treyarch / Activision",
+        "price":"70.00",
+        "difficulty":"Offers various difficulty settings to accommodate different player skill levels.",
+        "description":"A potential remaster of the 2015 first-person shooter, featuring enhanced graphics and updated gameplay mechanics.",
+        "rating":"Mature (M)",
+        "reviews":["If released, it's expected to be praised for visual improvements and nostalgic value, though some may critique the necessity of a remaster.", "Good, to come", "Beautiful and comfortable"]
+    },
+    {
+        "name": "Pokemon Legends: Z-A",
+        "image": "images/pl.jpeg",
+        "developer": "Nintendo",
+        "price":"70.00",
+        "difficulty":"Offers various difficulty settings for different player skill levels.",
+        "description":"Game will take place entirely within Lumiose City, where Pokémon coexist with humans in locations known as Wild Zones.During the course of the story, the legendary Pokémon Zygarde takes an interest in the player character.",
+        "rating":"Everyone (E)",
+        "reviews":["User reviews are not available for this game yet."]
+    },
+    {
+        "name": "Borderlands 4",
+        "image": "images/bl4.jpeg",
+        "developer": "Gearbox Software",
+        "price":"70.00",
+        "difficulty":"range of challenges, from solo play to intense co-op action",
+        "description":"Borderlands 4 is a looter shooter that continues the tradition of the series with a focus on loot, mayhem, and cooperative gameplay. Players break free from a dangerous hidden planet as one of four new Vault Hunters, each with unique abilities and playstyles. The game promises to deliver a fresh and exciting experience with a vast array of weapons and enemies.",
+        "rating":"Mature (M)",
+        "reviews":["excited about the potential for a new and improved experience, though some may critique the necessity of a remaster.", "game can adapt to the evolving gaming trends"]
+    }
+]

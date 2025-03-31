@@ -39,7 +39,7 @@ body {
     flex-wrap: wrap;
 }
 
-.col1of8, .col1of7 {
+.col1of8, .col1of8 {
     background-color: var(--col-color);
     padding: 5px;
     margin: 0 auto;
@@ -59,7 +59,7 @@ body {
 
 
 
-.colpro1, .colpro2, .colpro3, .colpro4, .colpro5, .colpro6, .colpro7 {
+.colpro1, .colpro2, .colpro3, .colpro4, .colpro5, .colpro6, .colpro7, .colpro8 {
     max-width: 45%; 
     height: auto;
     box-sizing: border-box;
@@ -67,7 +67,7 @@ body {
     margin: 0 auto;
 }
 
-.col1, .col2, .col3, .colpro1, .colpro2, .colpro3, .colpro4, .colpro5, .colpro6, .colpro7, .col4, .col5, .col6, .col7, .col8 {
+.col1, .col2, .col3, .colpro1, .colpro2, .colpro3, .colpro4, .colpro5, .colpro6, .colpro7, .colpro8,  .col4, .col5, .col6, .col7, .col8 {
     padding-left: 0px;
     margin-top: 0;
     padding-right: 10px;
@@ -105,7 +105,7 @@ body {
     color: var(--col-color);
 }
 
-.col1of8 a, .col1of7 a {
+.col1of8 a, .col1of8 a {
     text-decoration: none;
     color: var(--nav-hover);
 }
@@ -134,7 +134,7 @@ body {
 }
 
 /*footer color*/
-#main-footer, .col1of8, .col1of7  {
+#main-footer, .col1of8, .col1of8  {
     text-align: center;
     color: var(--footer);
 }
@@ -154,7 +154,7 @@ main img {
         display: flex;
         flex-wrap: wrap;
     }
-    #main-nav, .col1of8, .colpro1, .colpro2, .colpro3, .colpro4, .colpro5, .colpro6, .colpro7 {
+    #main-nav, .col1of8, .colpro1, .colpro2, .colpro3, .colpro4, .colpro5, .colpro6, .colpro7, .colpro8 {
         flex: 1;
     }
     

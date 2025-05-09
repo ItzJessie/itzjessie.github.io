@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactUs.css">
+</head>
+<body>
+<header>
+    <nav id="main-nav">
+        <div id="toggle-nav">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-items" class="column hide-small">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="countDown.html">Countdown</a></li>
+            <li><a href="game_Analytics.html">Game Analytics</a></li>
+            <li><a href="upcomingRelease.html">Upcoming Release</a></li>
+            <li><a href="supportUs.html">Support Us</a></li>
+            <li><a class="active" href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <a href="supportUs.html">
+        <img id="back" src="images/back.png" alt="back arrow">
+    </a>
+    <br><br>
+</header>
+<main>
+    <br><br>
+    <div id="back01">
+        <div id="back02">
+            <div class="contact-container">
+                <form id="contact-form" action="mailto:jessiebrownjapan@gmail.com" method="post" enctype="text/plain">
+                    <h1>Contact Us</h1>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                    <p id="form-status"></p>
+                </form>
+                
+                <div class="iframe-container">
+                    <h2>Find Us Here</h2>
+                    <iframe src="https://www.google.com/maps/embed?..." frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+
+    <script src="contactUs.js"></script>
+</body>
+</html>

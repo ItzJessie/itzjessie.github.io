@@ -1,0 +1,236 @@
+/*Sources: ChatGPT, Coding ALL-IN-ONE by Chris Minnick, W3Schools*/
+
+:root {
+	--background-color: #ffffff;
+	--circle-color: #5a4fcf;
+	--text-color: rgb(255, 188, 188);
+	--click-word:#000000;
+	--click-shadow: #5a4fcf;
+	--hover-a: #fcfbfd;
+	--glow-00: rgb(105, 105, 245);
+	--glow-01: rgb(112, 112, 213);
+	--glow-02: rgb(81, 81, 184);
+	--glow-03: rgb(62, 62, 135);
+	--glow-04: rgb(33, 33, 72);
+	
+	--text-color: rgb(171, 144, 208);
+}
+
+body {
+	background-image: url("images/space.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#content  {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+#login {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 4px;
+}
+
+#container {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    text-align: center;
+}
+
+#container p {
+	text-align: center;
+}
+
+#clickable-word a:hover {
+	box-shadow: 0 0 15px var(--glow-00), 0 0 30px var(--click-shadow);
+    color: var(--glow-00);
+    border-color: var(--glow-00);
+}
+
+#clickable-word a {
+	display: inline-block;
+	padding: 35px; /* Increased padding to make circle bigger */
+	border: 3px solid var(--text-color); /* Circular border */
+	border-radius: 50%; /* Makes it a circle */
+	text-decoration: none;
+	color: var(--text-color);
+	transition: all 0.3s ease-in-out;
+	font-size: 1.2em; /* Added larger font size to match bigger circle */
+}
+
+#clickable-word {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes glow {
+	0% {
+		text-shadow: 0 0 10px var(--glow-00), 0 0 20px var(--glow-01);
+	}
+	
+	80% {
+		text-shadow: 0 0 10px var(--glow-02), 0 0 20px var(--glow-03);
+	}
+	
+	100% {
+		text-shadow: 0 0 20px var(--click-shadow), 0 0 30px var(--glow-04);
+	}
+}
+
+#quote {
+	font-family: "Berlingske Sans Extracondensed", sans-serif;
+	font-size: 20px;
+	position: fixed;
+	bottom:130px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	display: block;
+	color: var(--text-color);
+}
+
+#tap-p {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	position: fixed;
+	bottom: 350px; /* Increased from 180px to move it higher */
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+#title {
+	font-size: 30px;
+    font-family: "Berlingske Sans Extracondensed", sans-serif;
+    position: fixed;
+    bottom: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+	text-align: center;
+}
+
+/*Navigation*/
+#toggle-nav div {
+    width:30px;
+    height: 2px;
+    background-color: var(--text-color);
+    margin: 6px 0;
+}
+
+#main-nav {
+	position: absolute;
+	top: 0;
+	left: 4px;
+}
+
+#main-nav ul {
+	padding-left: 0;
+}
+
+#main-nav li {
+	list-style-type:none;
+	text-align: center;
+	border-bottom: 1px solid var(--text-color);
+	border-bottom-right-radius: 9px;
+	font-size: 1.5em;
+}
+
+#main-nav a {
+	color: var(--text-color);
+	text-decoration: none;
+	border-bottom: 1px solid transparent; /*remove underlines*/
+}
+
+#main-nav a:hover {
+	color: var(--hover-a);
+	border-bottom: 1px solid var(--text-color);
+}
+
+#nav-items a.active {
+	animation: glow 1s ease-in-out infinite alternate;
+	color: var(--background-color);
+}
+
+@keyframes glow {
+	0% {
+		text-shadow: 0 0 10px var(--glow-00), 0 0 20px var(--glow-01);
+	}
+
+	80% {
+		text-shadow: 0 0 10px var(--glow-02), 0 0 20px var(--glow-03);
+	}
+
+	100% {
+		text-shadow: 0 0 20px var(--click-shadow), 0 0 30px var(--glow-04);
+	}
+}
+
+/*Typography?*/
+h1 {
+	text-align: center;
+}
+
+.hide-small {
+	display: none;
+}
+
+.hidden {
+	display: none;
+}
+
+/*Smaller Media*/
+@media only screen and (max-width: 400px) {
+	#quote {
+		display: none;
+	}
+	
+	#toggle-nav {
+		left: 10px;
+		top: 10px;
+	}
+}
+
+/*Medium Media*/
+@media only screen and (max-width: 800px) {
+	.columns {
+		display: flex;
+	}
+	
+	#toggle-nav {
+		display: flex;
+	}
+	
+	#main-nav li {
+		display: none;
+	}
+	
+	.hide-small {
+		display: flex;
+	}
+	
+}
+
+/*Larger Media*/
+@media only screen and (max-width: 1200px) {
+	#main-nav li {
+		flex: 1;
+		border-bottom: 0;
+	}
+	.hide-small {
+		display: flex;
+	}
+}

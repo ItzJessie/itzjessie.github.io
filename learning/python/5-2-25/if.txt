@@ -1,0 +1,17 @@
+I wake up
+If Im hungry
+    I eat breakfast
+
+I leave my house 
+if its cloudy
+    I bring an umbrella 
+otherwise
+    I bring sunglasses
+
+Im at a restaurant
+if i am want meat
+    i order a steak
+Otherwise if i want pasta
+    i order spaghetti & balls
+otherwise
+    I order a salad.

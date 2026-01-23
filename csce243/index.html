@@ -5,29 +5,106 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div id="main-content">
-            <h1>CSCE 242: Website Applications</h1>
-            <h2>Jessie Brown</h2>
-            <a
-                href="https://github.com/ItzJessie/itzjessie.github.io/tree/main/csce243"
-                >Jessie Brown Github</a
-            >
-            <p>
-                Utilize HTML and CSS to design the front-end of a website;
-                matching a given specification.
-            </p>
+        <div id="about">
+            <header id="main-header">
+                <!--!Class name-->
+                <h3>Jessie Brown</h3>
+                <h1>CSCE 242: Website Applications</h1>
+                <h2>Assignments</h2>
+                <!--
+                    <nav id="main-nav">
+                        <ul>
+                            link to assignments folder in directory
+                            <li><a href="assignments/assignment01/index.html">Assignment 1 - Basic HTML</a></li>
+                            <li><a href="assignments/assignment02/index.html">Assignment 2 - Basic CSS</a></li>
+                            <li><a href="assignments/assignment03/index.html">Assignment 3 - Page Layout</a></li>
+                        </ul>
+                    </nav>
+                    -->
+            </header>
+            <main id="main-content">
+                <div class="flex-container">
+                    <div class="col1">
+                        <section class="col1of3">
+                            <a href="assignments/01-basic html/index.html"
+                                >Assignment 1 - Basic HTML</a
+                            >
+                            <p></p>
+                            <img
+                                src="assignments/01-basic html/images/assignment01.png"
+                                alt="assignment01"
+                            />
+                            <p>
+                                Assignment 1 explains through the beginning
+                                techniques of html such as html layout,
+                                paragraph tags, h tags, and introducing the ways
+                                to link to further websites.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="col2">
+                        <section class="col1of3">
+                            <a href="assignments/02-basic css/index.html"
+                                >Assignment 2 - Basic CSS</a
+                            >
+                            <p></p>
+                            <img
+                                src="assignments/02-basic css/images/assignment02.png"
+                                alt="assignment02"
+                            />
+                            <p>
+                                Assignment 2 brings the website to life by going
+                                further deep into the design and layout of the
+                                website. It includes the nav-bar for location
+                                and includes areas designated.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="col3">
+                        <section class="col1of3">
+                            <a href="assignments/03-page layout/index.html"
+                                >Assignment 3 - Page Setup</a
+                            >
+                            <p></p>
+                            <img
+                                src="assignments/03-page layout/images/assignment03.png"
+                                alt="assignment03"
+                            />
+                            <p>
+                                Assignment 3 explores the use of flex and media
+                                share and how it impacts the website for mobile
+                                devices and desktop browsers. It includes
+                                multiple columns.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+
+                <h2>Projects</h2>
+                <div class="flex-container">
+                    <div class="col1">
+                        <section class="col1of3">
+                            <a href="project/part1/CSCE-242-Project-Part-1.pdf"
+                                >Project Part 1 - Project Development</a
+                            >
+                            <p></p>
+                            <img
+                                src="project/part1/images/part1.png"
+                                alt="project part 1"
+                            />
+                            <p>
+                                Project part 1 includes a description and layout
+                                for the project. It explores the design of the
+                                project and how it involves the user interface.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer id="main-footer">
+                <!--!Copyright-->
+                <p>&copy;JJB</p>
+            </footer>
         </div>
-        <h2>Assignments</h2>
-        <ol>
-            <li>
-                <a href="assignments/01-basic html/index.html">Basic HTML</a>
-            </li>
-            <li>
-                <a href="assignments/02-basic css/index.html">Basic CSS</a>
-            </li>
-            <li>
-                <a href="assignments/03-page layout/index.html">Page Layout</a>
-            </li>
-        </ol>
     </body>
 </html>

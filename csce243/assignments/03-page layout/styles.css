@@ -1,4 +1,4 @@
-/*GLOBAL & STRUCTURE*/
+/*STRUCTURE*/
 
 * {
     box-sizing: border-box;
@@ -72,7 +72,7 @@ header h1 {
     background-color: #1d1d1f;
     width: 100%;
     height: 100%;
-    align-items: center;
+    
 }
 
 #main-footer p {
@@ -145,7 +145,7 @@ header h1 {
     padding-bottom: 5px;
 }
 
-/*LARGER SCREENS (768px)*/
+/*LARGER SCREENS 768px*/
 
 @media only screen and (min-width: 768px) {
     #top-section {

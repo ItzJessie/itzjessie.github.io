@@ -1,0 +1,9 @@
+{
+    "css.format.enable": false,
+    "typescript.format.enable": false,
+    "css.format.preserveNewLines": false,
+    "css.format.spaceAroundSelectorSeparator": true,
+    "less.format.braceStyle": "expand",
+    "prettier.experimentalTernaries": true,
+    "html.format.indentInnerHtml": true
+}

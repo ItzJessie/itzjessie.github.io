@@ -1,0 +1,753 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #73000a;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.usc-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.top-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.top-nav a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Header */
+.main-header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.school-name {
+    font-size: 24px;
+    color: #73000a;
+}
+
+.school-name a {
+    color: #73000a;
+}
+
+/* Main Navigation */
+.main-nav {
+    background-color: #fff;
+    border-bottom: 3px solid #73000a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    font-size: 16px;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: #73000a;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
+}
+
+.hero-overlay-inner {
+    background-color: #73000a;
+    color: #fff;
+    max-width: 520px;
+    padding: 40px;
+    margin: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hero-overlay h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero-overlay p {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro-section h2 {
+    font-size: 32px;
+    color: #73000a;
+    margin-bottom: 18px;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Full Width Hero Sections */
+.full-width-hero {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text-box {
+    position: absolute;
+    background-color: #73000a;
+    color: #fff;
+    padding: 40px;
+    max-width: 500px;
+}
+
+.hero-text-box.right-bottom {
+    bottom: 40px;
+    right: 40px;
+}
+
+.hero-text-box.left-bottom {
+    bottom: 40px;
+    left: 40px;
+}
+
+.hero-text-box h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-text-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #73000a;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #fff;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+    background-color: #fff;
+    color: #73000a;
+}
+
+/* Quote Section */
+.quote-section {
+    background-color: #73000a;
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.quote-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.quote-text {
+    flex: 2;
+}
+
+.quote-text blockquote p {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.quote-text cite {
+    font-size: 16px;
+    font-style: normal;
+}
+
+.quote-image {
+    flex: 1;
+    max-width: 350px;
+}
+
+.quote-image img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* Cards Section */
+.cards-section {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+}
+
+.card-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-body h3 {
+    color: #73000a;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Stay Connected Section */
+.stay-connected {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.stay-connected-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.stay-connected-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.stay-connected .btn {
+    background-color: #73000a;
+    border-color: #73000a;
+    color: #fff;
+}
+
+.stay-connected .btn:hover {
+    background-color: transparent;
+    color: #73000a;
+}
+
+/* Footer */
+.footer {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 60px 20px 20px;
+}
+
+.footer-grid {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-intro h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-intro h3 a {
+    color: #73000a;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 14px;
+}
+
+.social-media a:hover {
+    color: #73000a;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #73000a;
+}
+
+.footer-contact address {
+    font-style: normal;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-bottom {
+    background-color: #000;
+    border-top: 1px solid #fff;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.footer-bottom a {
+    color: #fff;
+}
+
+.footer-bottom a:hover {
+    color: #73000a;
+}
+
+/* University Footer (site-wide links) */
+.university-footer {
+    background-color: #2b2b2b;
+    color: #fff;
+    margin: 40px -20px 0;
+    padding: 40px 20px;
+}
+
+.university-footer-images {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    justify-content: center;
+}
+
+.university-footer-images img {
+    flex: 0 0 35px;
+    max-width: 35px;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.usc-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.usc-brand img {
+    width: 60px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.usc-brand-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-decoration: none !important;
+    font-family: "Berlingske Sans Serif", "Georgia", serif;
+    color: #fff;
+    line-height: 1;
+}
+
+.usc-brand-link:hover {
+    text-decoration: none !important;
+}
+
+.usc-brand-top {
+    display: block;
+    font-size: 9px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.usc-brand-bottom {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.university-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.university-footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.university-footer-col a {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.university-footer-col a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-bar-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top-bar,
+    .main-header,
+    .main-nav {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .header-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .nav-list li a {
+        border-bottom: 1px solid #eee;
+        padding: 14px 16px;
+        font-size: 15px;
+        background-color: #fafafa;
+    }
+
+    .intro-section {
+        padding: 44px 12px;
+    }
+
+    .intro-section h2 {
+        font-size: 26px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hero-overlay {
+        position: static;
+        background: none;
+    }
+
+    .hero-overlay-inner {
+        margin: 20px 0 0;
+        max-width: 100%;
+        padding: 28px 22px;
+    }
+
+    .hero-section img {
+        min-height: 260px;
+        object-fit: cover;
+    }
+
+    .hero-text-box {
+        position: static;
+        max-width: 100%;
+        margin: 18px 12px;
+        padding: 28px 22px;
+    }
+
+    .full-width-hero {
+        min-height: auto;
+    }
+
+    .full-width-hero .hero-bg img {
+        min-height: 300px;
+        object-fit: cover;
+    }
+
+    .quote-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .quote-text blockquote p {
+        font-size: 18px;
+    }
+
+    .card-grid {
+        flex-direction: column;
+    }
+
+    .cards-section {
+        padding: 56px 16px;
+    }
+
+    .card-body {
+        padding: 24px 22px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-group .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .footer {
+        padding: 44px 16px 16px;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .university-footer-images {
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    .university-footer-images img {
+        flex: 0 0 35px;
+        max-width: 35px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .usc-brand {
+        align-items: center;
+    }
+
+    .usc-brand img {
+        width: 60px;
+        height: 40px;
+    }
+
+    .usc-brand-link {
+        align-items: flex-start;
+    }
+
+    .usc-brand-top {
+        font-size: 9px;
+    }
+
+    .usc-brand-bottom {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-list li a {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
+
+    .hero-overlay-inner,
+    .hero-text-box {
+        padding: 22px 18px;
+    }
+
+    .hero-overlay h2,
+    .hero-text-box h2 {
+        font-size: 26px;
+    }
+
+    .intro-section h2 {
+        font-size: 24px;
+    }
+
+    .stay-connected-content h2 {
+        font-size: 26px;
+    }
+
+    .stay-connected {
+        padding: 60px 14px;
+    }
+
+    .footer-bottom {
+        padding: 16px 12px;
+    }
+}

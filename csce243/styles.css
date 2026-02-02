@@ -67,7 +67,7 @@ main img {
 }
 
 /* LAYOUT - COLUMN STYLES */
-.col1of3 {
+.col1of4 {
     background-color: var(--col-color);
     padding: 5px;
     margin: 0 auto;
@@ -76,14 +76,15 @@ main img {
     color: var(--nav-border);
 }
 
-.col1of3 a {
+.col1of4 a {
     text-decoration: none;
     color: var(--nav-hover);
 }
 
 .col1,
 .col2,
-.col3 {
+.col3,
+.col4 {
     width: 80%;
     margin: 0 auto;
     padding-left: 0;
@@ -129,14 +130,15 @@ main img {
 
     .col1,
     .col2,
-    .col3 {
+    .col3,
+    .col4 {
         flex: 1;
         width: auto;
         display: flex;
         flex-direction: column;
     }
 
-    .col1of3 {
+    .col1of4 {
         flex: 1;
     }
 

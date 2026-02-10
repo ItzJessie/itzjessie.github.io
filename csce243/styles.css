@@ -70,7 +70,7 @@ main img {
 }
 
 /* LAYOUT - COLUMN STYLES */
-.col1of4 {
+.col1of5 {
     background-color: var(--col-color);
     padding: 5px;
     margin: 0;
@@ -80,7 +80,7 @@ main img {
     height: 100%;
 }
 
-.col1of4 a {
+.col1of5 a {
     text-decoration: none;
     color: var(--nav-hover);
 }
@@ -88,7 +88,8 @@ main img {
 .col1,
 .col2,
 .col3,
-.col4 {
+.col4,
+.col5 {
     flex: 1 1 260px;
     margin: 0;
     padding: 0 10px 10px;
@@ -132,13 +133,14 @@ main img {
     .col1,
     .col2,
     .col3,
-    .col4 {
+    .col4,
+    .col5 {
         flex: 1 1 0;
         display: flex;
         flex-direction: column;
     }
 
-    .col1of4 {
+    .col1of5 {
         flex: 1;
     }
 

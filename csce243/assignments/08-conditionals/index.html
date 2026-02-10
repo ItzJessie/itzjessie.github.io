@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Conditionals Practice</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="menu-bar">
+            <div class="menu-bar__inner">
+                <span class="menu-bar__brand">CSCE 243</span>
+                <button
+                    class="menu-bar__toggle"
+                    type="button"
+                    aria-expanded="false"
+                >
+                    Menu
+                    <span class="menu-bar__arrow" aria-hidden="true">▼</span>
+                </button>
+            </div>
+            <nav class="menu-bar__nav" aria-label="Primary">
+                <a href="#exercise-minutes">Exercise 1</a>
+                <a href="#exercise-countdown">Exercise 2</a>
+                <a href="../index.html">Assignments</a>
+            </nav>
+        </header>
+
+        <main class="page">
+            <header class="page__header">
+                <h1>Assignment 8</h1>
+                <p>If Statements</p>
+            </header>
+
+            <section class="card">
+                <div class="toggle">
+                    <button
+                        class="toggle__button is-active"
+                        type="button"
+                        data-target="minutes"
+                    >
+                        Exercise 1
+                    </button>
+                    <button
+                        class="toggle__button"
+                        type="button"
+                        data-target="countdown"
+                    >
+                        Exercise 2
+                    </button>
+                </div>
+
+                <section class="exercise" id="exercise-minutes">
+                    <h2>Exercise 1: How many minutes until class?</h2>
+                    <div class="form" id="minutes-form">
+                        <label class="form__row" for="minutes-range">
+                            <span>Minutes until class</span>
+                            <div class="range-field">
+                                <input
+                                    id="minutes-range"
+                                    name="minutes-range"
+                                    type="range"
+                                    min="0"
+                                    max="60"
+                                    value="30"
+                                />
+                                <span id="minutes-value">30</span>
+                            </div>
+                        </label>
+                    </div>
+                    <p class="result" id="minutes-result">
+                        Move the slider to see your message.
+                    </p>
+                </section>
+
+                <section class="exercise is-hidden" id="exercise-countdown">
+                    <h2>Exercise 2: Countdown till class</h2>
+                    <p class="countdown-note">
+                        Enter minutes until class starts at 8:30 AM.
+                    </p>
+                    <div class="form" id="countdown-form">
+                        <label class="form__row" for="countdown-input">
+                            <span>Minutes until class</span>
+                            <input
+                                id="countdown-input"
+                                name="countdown-input"
+                                type="number"
+                                min="-60"
+                                max="60"
+                                step="1"
+                                value="20"
+                            />
+                        </label>
+                    </div>
+                    <div class="countdown-highlight" aria-live="polite">
+                        <span id="countdown-minutes">0</span>
+                        <small>minutes</small>
+                    </div>
+                    <p class="result" id="countdown-result">
+                        Checking the clock...
+                    </p>
+                </section>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>

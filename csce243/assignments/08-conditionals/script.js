@@ -87,17 +87,17 @@ const applyCountdownMessage = (diffMinutes) => {
 	}
 
 	if (diffMinutes >= 10) {
-		countdownResult.textContent = "Between 10 and 15 minutes. Quick snack time. \ud83c\udf6a";
+		countdownResult.textContent = "Quick snack time. \ud83c\udf6a";
 		return;
 	}
 
 	if (diffMinutes >= 5) {
-		countdownResult.textContent = "Between 5 and 10 minutes. Pack up and head out. \ud83c\udf92";
+		countdownResult.textContent = "Pack up and head out. \ud83c\udf92";
 		return;
 	}
 
 	if (diffMinutes >= 0) {
-		countdownResult.textContent = "Between 0 and 5 minutes. Power walk to class! \ud83d\ude80";
+		countdownResult.textContent = "Power walk to class! \ud83d\ude80";
 		return;
 	}
 

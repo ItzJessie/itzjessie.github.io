@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>2020s | Japanese Animation History Archive</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main class="decade-page">
+            <section class="decade-stage">
+                <div class="decade-frame">
+                    <p class="decade-kicker">
+                        Japanese Animation History Archive
+                    </p>
+                    <div class="decade-header">
+                        <span aria-hidden="true"></span>
+                        <h1>2020s</h1>
+                        <span aria-hidden="true"></span>
+                    </div>
+
+                    <div class="decade-columns">
+                        <section class="decade-key">
+                            <h2>Key Developments</h2>
+                            <ul>
+                                <li>
+                                    Streaming-first releases and global
+                                    simulcasts make anime a weekly worldwide
+                                    event
+                                </li>
+                                <li>
+                                    Visual standards climb with hybrid 2D/3D
+                                    workflows and cinematic compositing
+                                </li>
+                                <li>
+                                    Major franchises expand into films, games,
+                                    and theme experiences with coordinated
+                                    campaigns
+                                </li>
+                                <li>
+                                    Global fandom accelerates, with social
+                                    platforms shaping breakout hits
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="decade-series">
+                            <h2>Influential Series</h2>
+                            <div class="series-layout">
+                                <div class="series-list">
+                                    <article class="series-item">
+                                        <h3>
+                                            <span>2020</span> - Jujutsu Kaisen
+                                        </h3>
+                                        <p>
+                                            A modern shounen milestone known for
+                                            kinetic battles and cinematic
+                                            animation.
+                                        </p>
+                                    </article>
+                                    <article class="series-item">
+                                        <h3><span>2021</span> - ODDTAXI</h3>
+                                        <p>
+                                            A noir mystery that spotlighted
+                                            tight writing and mature, grounded
+                                            storytelling.
+                                        </p>
+                                    </article>
+                                    <article class="series-item">
+                                        <h3>
+                                            <span>2022</span> - Cyberpunk:
+                                            Edgerunners
+                                        </h3>
+                                        <p>
+                                            A stylish, neon-drenched series that
+                                            helped drive global interest in
+                                            studio collaborations.
+                                        </p>
+                                    </article>
+                                </div>
+
+                                <figure class="series-figure">
+                                    <img
+                                        src="images/attack-on-titan.svg"
+                                        alt="2020s anime collage"
+                                    />
+                                </figure>
+                            </div>
+                        </section>
+                    </div>
+
+                    <button class="decade-close" type="button">CLOSE</button>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script>
+        const closeButton = document.querySelector(".decade-close");
+        if (closeButton) {
+            closeButton.addEventListener("click", () => {
+                window.location.href = "anime-eras.html";
+            });
+        }
+    </script>
+</html>

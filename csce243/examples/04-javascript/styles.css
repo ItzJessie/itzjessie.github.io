@@ -1,7 +1,6 @@
 /* Main Structure */
 :root {
     --main-background: #bde0fe;
-    --main-headers: purple;
 }
 
 body {
@@ -9,44 +8,10 @@ body {
     background: var(--main-background);
 }
 
-#main-content {
-    width: 80%;
-    margin: auto; /* Center */
-}
-
 #main-header {
     background: #00ced1;
+    border-radius: 5px;
     position: relative;
-}
-
-#sidebar {
-    background: lightcoral;
-}
-
-#main-footer {
-}
-
-/* Header */
-#logo {
-    margin: 10px;
-}
-
-#login-nav {
-    position: absolute;
-    right: 5%;
-    top: 5%;
-}
-
-#login-nav li:not(:last-child)::after {
-    content: "|";
-}
-
-/* Navigation */
-#toggle-nav div {
-    width: 25px;
-    height: 2px;
-    background-color: darkslateblue;
-    margin: 6px 0;
 }
 
 /* Images */
@@ -84,25 +49,12 @@ img {
     max-width: 40%;
 }
 
-#square {
-    width: 100px;
-    height: 100px;
-    background: lightsalmon;
-
-    /* Postition absolute is in respect to the upper left hand corner */
-
-    position: absolute;
-    top: 50px;
-    left: 50px;
-}
-
 /* Gallery */
 #gallery section {
-    background: AliceBlue;
+    background: #edf6f9;
     padding: 10px;
     border-radius: 5px;
     margin: 5px;
-    width: 30%;
 }
 
 #gallery section h3 {
@@ -114,28 +66,35 @@ button {
     padding: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
-}
-
-/* List */
-.item {
-    margin: 5px;
-    background: #cdb4db;
-}
-.item img {
-    display: block;
-    margin: auto;
+    border: 1px solid darkslategray;
+    color: darkslategray;
 }
 
 /* Navigation */
+#toggle-nav {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#toggle-nav div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+
 nav ul {
     padding-left: 0; /* Remove indentation */
 }
 
 nav li {
     list-style-type: none; /* Remove bullet */
-    background: #ffc8dd;
+    background: #90e0ef;
     padding: 5px;
-    border-bottom: 1px solid #cdb4db;
+}
+
+nav li:not(:last-child) {
+    border-bottom: 1px solid white;
 }
 
 nav a {
@@ -151,7 +110,7 @@ nav a {
 #ball {
     width: 25px;
     height: 25px;
-    background: magenta;
+    background: #e29578;
     border-radius: 25px;
     position: absolute;
 }
@@ -159,50 +118,88 @@ nav a {
 .bounce {
     animation-name: bounce;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
 
 @keyframes bounce {
     0% {
-        background: magenta;
-        top: 0px;
+        background: #ffa69e;
+        top: 100px;
     }
     25% {
-        background: orange;
+        background: #faf3dd;
     }
     50% {
-        background: green;
+        background: #b8f2e6;
         top: 200px;
     }
     75% {
-        background: red;
+        background: #aed9e0;
     }
     100% {
-        background: pink;
-        top: 0px;
+        background: #5e6472;
+        top: 100px;
     }
+}
+
+/* Thermometer */
+#thermometer {
+    width: 25%;
+    height: 200px;
+    margin-right: 10%;
+    border: 2px solid turquoise;
+    background: linear-gradient(
+        0deg,
+        red 0% var(--donation-percent),
+        white var(--donation-percent) 100%
+    );
+}
+
+/* Donations */
+#txt-donation {
+    max-width: 40%;
+}
+
+
+
+.error {
+    color: darkred;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#counter-section {
+    font-size: 1em;
+    text-align: center;
 }
 
 /* Typography */
 #main-header h1 {
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
     color: white;
 }
 
+h3 {
+    color: #05668d;
+}
+
+a {
+    color: #e29578;
+}
+
+/* Hide */
 .hide-small {
     display: none;
 }
 
 /* Larger devices */
 @media (min-width: 768px) {
-    .hide-small {
-        display: flex;
-    }
-
     #content {
-        justify-content: space-between;
-        gap: 1em;
+        margin: auto;
     }
 
     .columns {
@@ -211,7 +208,12 @@ nav a {
     }
 
     #gallery {
-        justify-content: space-around;
+        justify-content: flex-start;
+        gap: 1em;
+    }
+
+    #gallery section {
+        width: 22%;
     }
 
     .one {
@@ -237,6 +239,7 @@ nav a {
     nav li {
         background: transparent;
         flex: 1;
+        text-align: center;
     }
 
     nav a {
@@ -244,18 +247,18 @@ nav a {
     }
 
     nav a:hover {
-        border-bottom: 1px solid darkslateblue;
+        border-bottom: 1px solid white;
     }
 
-    .item img {
-        flex: 1;
-    }
-
-    .item div {
-        flex: 5;
+    nav li:not(:last-child) {
+        border-bottom: none;
     }
 
     #toggle-nav {
         display: none;
+    }
+
+    .hide-small {
+        display: flex;
     }
 }

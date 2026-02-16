@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <title>JavaScript Demo</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div id="main-content">
@@ -26,30 +26,58 @@
             <main id="content">
                 <div id="gallery" class="columns">
                     <section>
+                        <h3>Show Message</h3>
                         <button id="btn-show-message">Show</button>
                         <p id="p-message"></p>
                     </section>
                     <section>
+                        <h3>Click a Link</h3>
                         <p><a id="a-click" href="#">Click Me</a></p>
                     </section>
                     <section id="ball-playground">
+                        <h3>Animate a Ball</h3>
                         <button id="btn-bounce">Start</button>
                         <div id="ball"></div>
                     </section>
                     <section>
                         <h3>Plant Health</h3>
                         <p>
-                            <label for="txt-num-days">Enter Number of Days</label>
-                            <input type="number" id="txt-num-days">
+                            <label for="txt-num-days"
+                                >Enter Number of Days</label
+                            >
+                            <input type="number" id="txt-num-days" />
                         </p>
                         <p id="p-plant-message"></p>
                     </section>
+                    <section id="counter-section">
+                        <h3>Counter</h3>
+                        <button id="startBtn">Start</button>
+                        <button id="pauseBtn">Pause</button>
+                        <button id="stopBtn">Stop</button>
+                        <p id="count"></p>
+                    </section>
+                    <section>
+                        <h3 id="goal-display"></h3>
+                        <p>
+                            <label for="txt-donation">Enter Donation:</label>
+                        </p>
+                        <p>
+                            <input type="number" id="txt-donation" />
+                            <button id="btn-add-donation">Add</button>
+                            <span id="donation-error" class="error hidden"
+                                >* Invalid</span
+                            >
+                        </p>
+                        <div class="columns">
+                            <div id="thermometer"></div>
+                            <p id="donation-message"></p>
+                        </div>
+                    </section>
                 </div>
             </main>
-            <footer id="main-footer">
-
-            </footer>
+            <footer id="main-footer"></footer>
         </div>
-        <script src="js/script.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/intro.js"></script>
     </body>
 </html>

@@ -40,79 +40,58 @@ document.getElementById("txt-num-days").onchange = (e) => {
     }
 };
 
-// const countDisplay = document.getElementById("count");
-// const startButton = document.getElementById("startBtn");
-// const stopButton = document.getElementById("stopBtn");
-
-// let count = 0;
-// let intervalId = null;
-
-// startButton.addEventListener("click", () => {
-//     if (intervalId) return;
-//     intervalId = setInterval(() => {
-//         count++;
-//         countDisplay.textContent = count;
-//     }, 1000);
-// });
-
-// stopButton.addEventListener("click", () => {
-//     if (intervalId) {
-//         clearInterval(intervalId);
-//         intervalId = null;
-//     }
-// });
-
-const p = document.getElementById("count");
-
+const p =document.getElementById("p-count-display");
 let count = 0;
-let intervalId;
+let countInterval;
+const startButton = document.getElementById("btn-start-count");
 
-document.getElementById("startBtn").onclick = () => {
-    p.innerHTML = "Start";
-    countInterval = setInterval(() =>{
-        count++;
-        p.innerHTML = count;
-    }, 500);
+startButton.onclick = () => {
+    countInterval = setInterval(()=>{
+        startButton.disabled = true;
+        p.innerHTML = count++;
+    },500);
 };
 
-document.getElementById("pauseBtn").onclick = () => {
-    p.innerHTML = "Pause";
+document.getElementById("btn-pause-count").onclick = () => {
+    startButton.disabled = false;
     clearInterval(countInterval);
 };
 
-document.getElementById("stopBtn").onclick = () => {
-    clearInterval(countInterval);
+document.getElementById("btn-stop-count").onclick = () => {
+    startButton.disabled = false;
     count = 0;
-}
+    clearInterval(countInterval);
+};
 
-/* Donations thermometer */
-const GOAL = 1000;
-let donations = 0;
+/* Display the date */
+setInterval(()=>{
+    const today = new Date();
+    const month = today.getMonth();
+    const day = today.getDay();
+    const year = today.getFullYear();
+    const seconds = today.getSeconds();
+    const minutes = today.getMinutes();
+    const hours = today.getHours();
 
-document.getElementById("goal-display").innerHTML = `Goal $${GOAL}`;
+    document.getElementById("p-date").innerHTML = `${hours}:${minutes}:${seconds}, ${month}/${day}/${year}`;
+}, 500);
 
-document.getElementById("btn-add-donation").onclick = () => {
-    //validate donation amount
-    const donation = document.getElementById("txt-donation").value;
-    document.getElementById("donation-error").classList.add("hidden");
+/* Donations */
+document.getElementById("btn-display-donation").onclick = () => {
+    const errorP = document.getElementById("p-donation-error");
+    errorP.innerHTML = "";  //if you click the button twice
 
-    if(isNaN(donation) ||donation <= 0){
-        document.getElementById("donation-error").classList.remove("hidden");
+    const donationText = document.getElementById("txt-donation").value;
+
+    if(isNaN(donationText) || donationText < 0){
+        errorP.innerHTML = "* Invalid amount";
         return;
     }
 
-    //update donation
-    donations += parseFloat(donation);
-    donationPercent = donations / GOAL * 100;
+    donation = parseInt(donationText);
+    const percentGoal = donation/5000 * 100;
 
-    if(donations >= GOAL){
-        document.getElementById("donation-message").innerHTML = `Goal Reached!`;
-        donationPercent = 100;
-    } else {
-        //show donation message.
-    document.getElementById("donation-message").innerHTML = `$${GOAL - donations} to go!`;
-    }
+    document.getElementById("p-donation").innerHTML = `You've reached ${percentGoal}% of your goal.`
 
-    //update thermometer
-    document.getElementById("thermometer").style.setProperty("--donation-percent", donationPercent + "%");
-};
+    document.querySelector(":root").style.setProperty("--donation",percentGoal + "%");
+}

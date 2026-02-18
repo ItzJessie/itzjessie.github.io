@@ -1,11 +1,18 @@
 /* Main Structure */
 :root {
     --main-background: #bde0fe;
+    --donation: 0%;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: var(--main-background);
+    color: darkslategray;
+}
+
+#main-content {
+    width: 80%;
+    margin: auto;
 }
 
 #main-header {
@@ -49,6 +56,10 @@ img {
     max-width: 40%;
 }
 
+#movie {
+    width: 100%;
+}
+
 /* Gallery */
 #gallery section {
     background: #edf6f9;
@@ -68,6 +79,10 @@ button {
     border-radius: 5px;
     border: 1px solid darkslategray;
     color: darkslategray;
+}
+
+button:disabled {
+    background: gray;
 }
 
 /* Navigation */
@@ -100,6 +115,18 @@ nav li:not(:last-child) {
 nav a {
     text-decoration: none; /* Remove underline */
     color: white;
+}
+
+/* Date */
+#p-date {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    color: white;
+}
+
+.error {
+    color: #e29578;
 }
 
 /* Ball */
@@ -150,30 +177,9 @@ nav a {
     border: 2px solid turquoise;
     background: linear-gradient(
         0deg,
-        red 0% var(--donation-percent),
-        white var(--donation-percent) 100%
+        red 0% var(--donation),
+        white var(--donation) 100%
     );
-}
-
-/* Donations */
-#txt-donation {
-    max-width: 40%;
-}
-
-
-
-.error {
-    color: darkred;
-}
-
-h2 {
-    text-align: center;
-    font-size: 1.2em;
-}
-
-#counter-section {
-    font-size: 1em;
-    text-align: center;
 }
 
 /* Typography */
@@ -185,6 +191,11 @@ h2 {
 
 h3 {
     color: #05668d;
+}
+
+h4 {
+    color: #00a896;
+    font-weight: 200;
 }
 
 a {

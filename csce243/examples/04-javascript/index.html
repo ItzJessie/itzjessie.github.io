@@ -1,13 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>JavaScript Demo</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div id="main-content">
             <header id="main-header">
                 <h1>JavaScript</h1>
+                <p id="p-date"></p>
                 <nav id="main-nav">
                     <div id="toggle-nav">
                         <div></div>
@@ -16,10 +17,11 @@
                     </div>
                     <ul class="hide-small">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Loops</a></li>
-                        <li><a href="#">Arrays</a></li>
+                        <li><a href="intro.html">Intro</a></li>
+                        <li><a href="loops.html">Loops</a></li>
                         <li><a href="#">Classes</a></li>
                         <li><a href="#">JSON</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
             </header>
@@ -42,40 +44,39 @@
                     <section>
                         <h3>Plant Health</h3>
                         <p>
-                            <label for="txt-num-days"
-                                >Enter Number of Days</label
-                            >
-                            <input type="number" id="txt-num-days" />
+                            <label for="txt-num-days">Enter Number of Days</label>
+                            <input type="number" id="txt-num-days">
                         </p>
                         <p id="p-plant-message"></p>
                     </section>
-                    <section id="counter-section">
+                    <section>
                         <h3>Counter</h3>
-                        <button id="startBtn">Start</button>
-                        <button id="pauseBtn">Pause</button>
-                        <button id="stopBtn">Stop</button>
-                        <p id="count"></p>
+                        <p>
+                            <button id="btn-start-count">Start</button>
+                            <button id="btn-pause-count">Pause</button>
+                            <button id="btn-stop-count">Stop</button>
+                        </p>
+                        <p id="p-count-display"></p>
                     </section>
                     <section>
-                        <h3 id="goal-display"></h3>
+                        <h3>Money Raising</h3>
+                        <h4>Goal: $5000</h4>
+
+                        <p><label for="txt-donation">Enter Donation</label></p>
                         <p>
-                            <label for="txt-donation">Enter Donation:</label>
+                            <input type="number" id="txt-donation">
+                            <span id="p-donation-error" class="error"></span>
                         </p>
-                        <p>
-                            <input type="number" id="txt-donation" />
-                            <button id="btn-add-donation">Add</button>
-                            <span id="donation-error" class="error hidden"
-                                >* Invalid</span
-                            >
-                        </p>
-                        <div class="columns">
-                            <div id="thermometer"></div>
-                            <p id="donation-message"></p>
-                        </div>
+                        
+                        <p><button id="btn-display-donation">Display</button></p>
+                        <p id="p-donation"></p>
+                        <div id="thermometer"></div>
                     </section>
                 </div>
             </main>
-            <footer id="main-footer"></footer>
+            <footer id="main-footer">
+
+            </footer>
         </div>
         <script src="js/nav.js"></script>
         <script src="js/intro.js"></script>

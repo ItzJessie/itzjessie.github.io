@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Japanese Animation History Archive | User Feedback</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-inner">
+                <div class="brand">
+                    <div class="brand-mark" aria-hidden="true">
+                        <span>Japanese</span>
+                        <span>Animation</span>
+                        <span>Archive</span>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-title"
+                            >Japanese Animation History Archive</span
+                        >
+                    </div>
+                </div>
+                <nav class="main-nav" aria-label="Primary">
+                    <a href="home.html">Home</a>
+                    <a href="anime-eras.html">Anime Eras</a>
+                    <a href="studios-creators.html">Studios &amp; Creators</a>
+                    <a href="influential-series.html">Influential Series</a>
+                    <a class="is-active" href="user-feeback.html"
+                        >User Feedback Page</a
+                    >
+                    <a href="about.html">About</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="feedback-page">
+            <section class="feedback-hero">
+                <h1>User Feedback</h1>
+            </section>
+
+            <section class="feedback-layout">
+                <form class="feedback-card" action="#" method="post">
+                    <h2>Feedback Form</h2>
+                    <div class="feedback-grid">
+                        <label class="field" for="feedback-name">
+                            <span>Name:</span>
+                            <input
+                                id="feedback-name"
+                                type="text"
+                                name="name"
+                                placeholder="John Doe"
+                            />
+                        </label>
+                        <label class="field" for="feedback-phone">
+                            <span>Phone:</span>
+                            <input
+                                id="feedback-phone"
+                                type="tel"
+                                name="phone"
+                                placeholder="(555) 123-4567"
+                            />
+                        </label>
+                        <label class="field" for="feedback-age">
+                            <span>Age:</span>
+                            <input
+                                id="feedback-age"
+                                type="text"
+                                name="age"
+                                placeholder="19"
+                            />
+                        </label>
+                        <label class="field" for="feedback-email">
+                            <span>Email:</span>
+                            <input
+                                id="feedback-email"
+                                type="email"
+                                name="email"
+                                placeholder="john.doe@example.com"
+                            />
+                        </label>
+                    </div>
+                    <label class="field field-wide" for="feedback-satisfaction">
+                        <span>
+                            How satisfied were you with the product/service you
+                            received?
+                        </span>
+                        <textarea
+                            id="feedback-satisfaction"
+                            name="satisfaction"
+                            rows="3"
+                            placeholder="Tell us what worked well and what could improve."
+                        ></textarea>
+                    </label>
+                    <div class="rating-row">
+                        <span>Rate this page:</span>
+                        <div
+                            class="rating-stars"
+                            role="radiogroup"
+                            aria-label="Page rating"
+                        >
+                            <input
+                                id="rating-5"
+                                type="radio"
+                                name="rating"
+                                value="5"
+                            />
+                            <label for="rating-5" title="5 stars"
+                                >&#9733;</label
+                            >
+                            <input
+                                id="rating-4"
+                                type="radio"
+                                name="rating"
+                                value="4"
+                            />
+                            <label for="rating-4" title="4 stars"
+                                >&#9733;</label
+                            >
+                            <input
+                                id="rating-3"
+                                type="radio"
+                                name="rating"
+                                value="3"
+                            />
+                            <label for="rating-3" title="3 stars"
+                                >&#9733;</label
+                            >
+                            <input
+                                id="rating-2"
+                                type="radio"
+                                name="rating"
+                                value="2"
+                            />
+                            <label for="rating-2" title="2 stars"
+                                >&#9733;</label
+                            >
+                            <input
+                                id="rating-1"
+                                type="radio"
+                                name="rating"
+                                value="1"
+                            />
+                            <label for="rating-1" title="1 star">&#9733;</label>
+                        </div>
+                    </div>
+                    <label class="field field-wide" for="feedback-comments">
+                        <span>Comments (optional)</span>
+                        <textarea
+                            id="feedback-comments"
+                            name="comments"
+                            rows="3"
+                            placeholder="Optional details or suggestions."
+                        ></textarea>
+                    </label>
+                    <button class="feedback-submit" type="submit">
+                        Submit Feedback
+                    </button>
+                </form>
+
+                <section class="feedback-card feedback-summary">
+                    <h2>Feedback Summary</h2>
+                    <div class="summary-rating">
+                        <h3>Average Rating</h3>
+                        <div class="star-row is-gold" aria-hidden="true">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>
+                    </div>
+                    <div class="summary-scroll">
+                        <article class="summary-item">
+                            <p class="summary-name">Timmy Adams</p>
+                            <div class="star-row is-gold" aria-hidden="true">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <div class="summary-box">
+                                Loved the 1980s timeline highlights and the
+                                clean layout for studio profiles.
+                            </div>
+                        </article>
+                        <article class="summary-item">
+                            <p class="summary-name">Jim Walts</p>
+                            <div class="star-row is-gold" aria-hidden="true">
+                                &#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <div class="summary-box">
+                                Easy to navigate with strong visuals, but a
+                                quick filter for eras would be helpful.
+                            </div>
+                        </article>
+                        <article class="summary-item">
+                            <p class="summary-name">James Black</p>
+                            <div class="star-row is-gold" aria-hidden="true">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <div class="summary-box">
+                                Great mix of history and series details; would
+                                like more trivia snippets on each page.
+                            </div>
+                        </article>
+                        <article class="summary-item">
+                            <p class="summary-name">Sandra Wells</p>
+                            <div class="star-row is-gold" aria-hidden="true">
+                                &#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <div class="summary-box">
+                                Clear writing and nice color palette; the
+                                influential series list was the highlight.
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <p>The Japanese Animation History Archive is</p>
+                <span>
+                    This archive documents the evolution of Japanese animation
+                    through eras, studios, creators, and influential works that
+                    shaped both national culture and global media.
+                </span>
+                <div class="footer-links">
+                    <small>© Japanese Animation History Archive</small>
+                    <div>
+                        <a href="about.html">About</a>
+                        <span>|</span>
+                        <a href="#">References</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

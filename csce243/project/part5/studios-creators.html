@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Anime Archive | Studios &amp; Creators</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-inner">
+                <div class="brand">
+                    <div class="brand-mark" aria-hidden="true">
+                        <span>Japanese</span>
+                        <span>Animation</span>
+                        <span>Archive</span>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-title"
+                            >Japanese Animation History Archive</span
+                        >
+                    </div>
+                </div>
+                <nav class="main-nav" aria-label="Primary">
+                    <a href="home.html">Home</a>
+                    <a href="anime-eras.html">Anime Eras</a>
+                    <a class="is-active" href="studios-creators.html"
+                        >Studios &amp; Creators</a
+                    >
+                    <a href="influential-series.html">Influential Series</a>
+                    <a href="user-feeback.html">User Feedback Page</a>
+                    <a href="about.html">About</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="studios-hero">
+                <div class="studios-hero-inner">
+                    <h1>Studios &amp; Creators</h1>
+                    <p class="filter-title">Filter Bar</p>
+                    <div class="filter-bar" role="group" aria-label="Filters">
+                        <div class="filter-dropdown">
+                            <button
+                                type="button"
+                                class="filter-toggle"
+                                id="era-toggle"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Filter by Era
+                            </button>
+                            <div
+                                class="filter-menu"
+                                role="menu"
+                                aria-label="Era options"
+                            >
+                                <button type="button" role="menuitem">
+                                    1980
+                                </button>
+                                <button type="button" role="menuitem">
+                                    1990
+                                </button>
+                                <button type="button" role="menuitem">
+                                    2000
+                                </button>
+                                <button type="button" role="menuitem">
+                                    2010
+                                </button>
+                                <button type="button" role="menuitem">
+                                    2020
+                                </button>
+                            </div>
+                        </div>
+                        <button type="button">Filter by Role</button>
+                        <button type="button">Filter by Role</button>
+                    </div>
+                    <div class="filter-divider" aria-hidden="true">
+                        <span></span>
+                        <div class="filter-star">&#9733;</div>
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="studios-layout">
+                <div class="studios-columns">
+                    <div class="studios-column">
+                        <h2>Studios Section</h2>
+                        <article class="info-card studio-card">
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Studio Name: Wit Studio, Inc
+                                    </p>
+                                    <p class="info-meta">
+                                        Founding Year: June 1, 2012; 13 years
+                                        ago
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/attack-on-titan.svg"
+                                    alt="Wit Studio logo"
+                                />
+                            </div>
+                            <p class="info-body">
+                                Notable Works: Wit Studio is the Japanese
+                                animation studio responsible for producing the
+                                first three seasons of Attack on Titan.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="studios-column">
+                        <h2>Creators Section</h2>
+                        <article class="info-card creator-card">
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Creator Name: Eiichiro Oda
+                                    </p>
+                                    <p class="info-meta">
+                                        Role (Director, Writer, etc): Producer,
+                                        Writer, Actor
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/cowboy-bebop.svg"
+                                    alt="Eiichiro Oda portrait"
+                                />
+                            </div>
+                            <p class="info-sub">
+                                Studio Affiliations: Eiichiro Oda is a
+                                professional mangaka affiliated with Shueisha.
+                            </p>
+                            <p class="info-body">
+                                Notable Works: Eiichiro Oda is best known for
+                                creating the globally acclaimed manga series One
+                                Piece, which began serialization in 1997 and has
+                                become the best-selling manga in history.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <p>Japanese Animation History Archive</p>
+                <span>
+                    Exploring anime history through decades of innovation,
+                    artistry, and global influence.
+                </span>
+                <div class="footer-links">
+                    <small>© Japanese Animation History Archive</small>
+                    <div>
+                        <a href="about.html">About</a>
+                        <span>|</span>
+                        <a href="#">References</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

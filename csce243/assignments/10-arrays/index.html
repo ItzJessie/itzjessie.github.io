@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 10</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main class="page">
+            <header class="page__header">
+                <h1>Assignment 10</h1>
+                <h2>Arrays</h2>
+            </header>
+
+            <section class="mood">
+                <label class="mood__label" for="mood-select"
+                    >Pick Your Mood</label
+                >
+                <select id="mood-select" class="mood__select">
+                    <option value="">Select</option>
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                </select>
+            </section>
+
+            <section class="songs">
+                <ul id="song-list" class="songs__list"></ul>
+            </section>
+
+            <section class="video">
+                <div id="video-wrapper" class="video__wrapper" hidden>
+                    <iframe
+                        id="video-frame"
+                        class="video__frame"
+                        title="Selected song"
+                        src=""
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                        "
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </section>
+
+            <footer class="page__footer"></footer>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

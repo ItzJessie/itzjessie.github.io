@@ -1352,11 +1352,7 @@ a {
 
 .feedback-page {
     background:
-        linear-gradient(
-            180deg,
-            var(--era-bg-3),
-            var(--era-bg-4)
-        ),
+        linear-gradient(180deg, var(--era-bg-3), var(--era-bg-4)),
         url("images/hero-texture.jpg");
     background-size: cover;
     background-position: center;

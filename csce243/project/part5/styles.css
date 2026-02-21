@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 :root {
     color-scheme: light;
     --ink: #1e1b19;
@@ -281,6 +291,7 @@ main {
 
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -634,7 +645,8 @@ a {
     border-radius: 10px;
     background:
         linear-gradient(180deg, var(--grad-light-1), var(--grad-light-2)),
-        url("8cdda872fb16d0f0e09652bc6ec37728%201.png") center/cover no-repeat;
+        url("images/8cdda872fb16d0f0e09652bc6ec37728\ 1.png") center/cover
+            no-repeat;
     margin-bottom: 12px;
 }
 
@@ -1202,6 +1214,12 @@ a {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 26px;
+    align-items: stretch;
+}
+
+.studios-column {
+    display: flex;
+    flex-direction: column;
 }
 
 .studios-column h2 {
@@ -1218,6 +1236,7 @@ a {
     padding: 18px;
     box-shadow: 0 16px 30px var(--shadow-700);
     border: 1px solid var(--shadow-400);
+    flex: 1;
 }
 
 .info-header {
@@ -2253,26 +2272,227 @@ a {
 }
 
 @media (max-width: 720px) {
+    /* Header adjustments */
+    .site-header {
+        padding: 12px 0;
+    }
+
     .header-inner {
         flex-direction: column;
         align-items: flex-start;
+        padding: 0 16px;
+        gap: 12px;
+    }
+
+    .brand {
+        padding: 8px 12px;
+    }
+
+    .brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .brand-title {
+        font-size: 16px;
     }
 
     .main-nav {
-        gap: 10px;
+        gap: 8px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    /* Hero section */
+    .hero {
+        padding: 40px 20px;
+        min-height: auto;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 24px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Content sections */
+    .content-grid {
+        padding: 24px 16px;
+        gap: 24px;
+    }
+
+    .featured h2,
+    .archive h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .section-tag {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    /* Card adjustments */
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .era-card {
+        padding: 16px;
+    }
+
+    .era-card h3 {
+        font-size: 18px;
+    }
+
+    .era-card p {
+        font-size: 14px;
+    }
+
+    .card-meta {
+        font-size: 13px;
+    }
+
+    /* Archive section */
+    .archive-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .archive-card {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .archive-card img {
+        width: 100%;
+        height: 150px;
+        max-height: 150px;
+        object-fit: cover;
+    }
+
+    .archive-card h3 {
+        font-size: 18px;
+    }
+
+    .archive-card p {
+        font-size: 15px;
+    }
+
+    .archive-card span {
+        font-size: 14px;
+    }
+
+    /* Timeline section */
+    .timeline-card {
+        padding: 20px;
+    }
+
+    .timeline-card h3 {
+        font-size: 20px;
+    }
+
+    .timeline-card p {
+        font-size: 14px;
+    }
+
+    .timeline-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .timeline-links h4 {
+        font-size: 16px;
+    }
+
+    .timeline-links p {
+        font-size: 13px;
+    }
+
+    /* Footer adjustments */
+    .site-footer {
+        padding: 24px 0;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        padding: 0 16px;
+        gap: 20px;
+    }
+
+    .footer-copy {
+        padding: 20px 24px 18px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .footer-copy p {
+        font-size: 16px;
+    }
+
+    .footer-copy span {
+        font-size: 13px;
     }
 
     .footer-links {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
+    .footer-links small {
+        font-size: 12px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+    .footer-links div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Other page adjustments */
     .eras-hero h1 {
         padding: 0 24px;
+        font-size: 28px;
+    }
+
+    .eras-hero h1::before,
+    .eras-hero h1::after {
+        display: none;
     }
 
     .series-hero h1 {
         padding: 0 24px;
+        font-size: 28px;
+    }
+
+    .series-hero h1::before,
+    .series-hero h1::after {
+        display: none;
     }
 
     .carousel-shell {
@@ -2280,7 +2500,18 @@ a {
     }
 
     .carousel-arrow {
-        display: none;
+        display: grid;
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+
+    .carousel-arrow:first-of-type {
+        left: 8px;
+    }
+
+    .carousel-arrow:last-of-type {
+        right: 8px;
     }
 
     .feedback-grid {
@@ -2311,5 +2542,114 @@ a {
 
     .decade-close {
         letter-spacing: 0.12em;
+    }
+
+    .decade-header h1 {
+        text-align: center;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    /* Header */
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .brand {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .brand-title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .main-nav {
+        justify-content: center;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 24px 12px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 16px 12px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* Content */
+    .content-grid {
+        padding: 16px 12px;
+        gap: 20px;
+    }
+
+    .featured h2,
+    .archive h2 {
+        font-size: 20px;
+    }
+
+    /* Cards */
+    .era-card,
+    .archive-card,
+    .timeline-card {
+        padding: 12px;
+    }
+
+    /* Footer */
+    .footer-copy {
+        padding: 24px 16px 20px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .footer-copy p {
+        font-size: 14px;
+    }
+
+    .footer-copy span {
+        font-size: 12px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .decade-header h1 {
+        text-align: center;
     }
 }

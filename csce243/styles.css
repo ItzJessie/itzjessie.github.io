@@ -218,7 +218,7 @@ main img:hover {
 .col3,
 .col4,
 .col5 {
-    flex: 1 1 260px;
+    flex: 1 1 180px;
     margin: 0;
     padding: 0 10px 10px;
     animation: slideInLeft 0.8s ease-out;

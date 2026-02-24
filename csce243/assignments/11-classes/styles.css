@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #a9a9a9;
+    --bg-elevated: #888888;
+    --text-primary: #1a1a1a;
+    --text-secondary: #555555;
+    --text-accent: #c36f6f;
+    --accent-soft: #b99999;
+    --border: #999999;
+    --surface: #777777;
+    --link: #8ab4f8;
+    --shadow: rgba(0, 0, 0, 0.45);
+}
+
+body {
+    background-color: #b0b0b0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.page__header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page__header h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #66999b;
+}
+
+.page__header h2 {
+    margin: 10px 0 0;
+    font-size: 32px;
+    font-weight: 400;
+    color: #c36f6f;
+}
+
+/* Gallery Section */
+.gallery {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Song Card */
+.song-card {
+    background-color: #4a5d70;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.song-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.song-card__cover {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.song-card__info {
+    padding: 16px;
+    background-color: #3d4a56;
+    color: white;
+}
+
+.song-card__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.song-card__artist {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: #a9a9a9;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 980px;
+}
+
+.modal-main {
+    display: flex;
+    gap: 24px;
+    padding: 30px;
+    background-color: #9fa9b5;
+    align-items: flex-start;
+}
+
+.modal-body {
+    padding: 10px 0 0 0;
+    flex: 1;
+}
+
+.modal-title {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+.modal-artist {
+    margin: 8px 0;
+    font-size: 18px;
+    color: #33455d;
+    font-weight: 600;
+}
+
+.modal-album {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #445566;
+}
+
+.modal-details {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #556677;
+}
+
+.modal-genre {
+    margin: 12px 0 0 0;
+    font-size: 14px;
+    color: #556677;
+    font-style: italic;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    flex: 0 0 56%;
+    background-color: #777777;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.video-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Modal Close Button */
+.w3-button {
+    cursor: pointer;
+}
+
+.w3-button:hover {
+    background-color: #757575 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery__grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .page__header h1 {
+        font-size: 36px;
+    }
+
+    .page__header h2 {
+        font-size: 24px;
+    }
+
+    .modal-content {
+        max-width: 90%;
+    }
+
+    .modal-main {
+        flex-direction: column;
+    }
+
+    .video-wrapper {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .modal-body {
+        padding-top: 0;
+    }
+}

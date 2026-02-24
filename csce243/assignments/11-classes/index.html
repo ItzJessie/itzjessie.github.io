@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music Time - Song Gallery</title>
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="page__header">
+            <h1>Classes</h1>
+            <h2>Music Time</h2>
+        </header>
+
+        <section class="gallery">
+            <div id="songs-container" class="gallery__grid"></div>
+        </section>
+
+        <!-- Modal Dialog -->
+        <div id="song-modal" class="w3-modal">
+            <div class="w3-modal-content modal-content">
+                <span class="w3-button w3-display-topright" id="close-modal"
+                    >&times;</span
+                >
+
+                <div class="modal-main">
+                    <div id="video-wrapper" class="video-wrapper">
+                        <iframe
+                            id="video-frame"
+                            class="video-frame"
+                            title="Selected song"
+                            src=""
+                            frameborder="0"
+                            allow="
+                                accelerometer;
+                                autoplay;
+                                clipboard-write;
+                                encrypted-media;
+                                gyroscope;
+                                picture-in-picture;
+                            "
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+
+                    <div class="modal-body">
+                        <h2 id="modal-title" class="modal-title"></h2>
+                        <p id="modal-artist" class="modal-artist"></p>
+                        <p id="modal-album" class="modal-album"></p>
+                        <p id="modal-details" class="modal-details"></p>
+                        <p id="modal-genre" class="modal-genre"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

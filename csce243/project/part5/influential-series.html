@@ -47,7 +47,7 @@
         </header>
 
         <main>
-            <section class="series-hero">
+            <section class="series-hero reveal">
                 <div class="series-hero-inner">
                     <form class="series-search" aria-label="Search anime">
                         <input
@@ -71,68 +71,71 @@
                             </svg>
                         </button>
                     </form>
-                    <h1>Influential Series</h1>
+                    <h1 class="reveal">Influential Series</h1>
                 </div>
             </section>
 
             <section class="series-carousel">
-                <div class="carousel-shell">
+                <div class="carousel-shell reveal">
+                    <div class="carousel-progress" aria-hidden="true">
+                        <span class="carousel-progress__bar"></span>
+                    </div>
                     <button class="carousel-arrow" aria-label="Previous">
                         <span aria-hidden="true">&#8249;</span>
                     </button>
                     <div class="carousel-track">
-                        <article class="carousel-card">
+                        <article class="carousel-card tilt-card" id="series-demon-slayer">
                             <img
-                                src="images/slideshow..png"
+                                src="images/demon-1280x720.jpg"
                                 alt="Demon Slayer"
                             />
                             <span>Demon Slayer</span>
                         </article>
-                        <article class="carousel-card">
+                        <article class="carousel-card tilt-card">
                             <img
                                 src="images/fullmetal-alchemist-1280×720px.jpg"
                                 alt="Fullmetal Alchemist"
                             />
                             <span>Fullmetal Alchemist</span>
                         </article>
-                        <article class="carousel-card">
+                        <article class="carousel-card tilt-card">
                             <img
                                 src="images/hunterxhunter-1280×720px.jpg"
                                 alt="Hunter x Hunter"
                             />
                             <span>Hunter x Hunter</span>
                         </article>
-                        <article class="carousel-card">
+                        <article class="carousel-card tilt-card">
                             <img
                                 src="images/one-punch-man-1280x720.jpg"
                                 alt="One Punch Man"
                             />
                             <span>One Punch Man</span>
                         </article>
-                        <article class="carousel-card">
+                        <article class="carousel-card tilt-card">
                             <img
                                 src="images/chainsaw-man-1280x720.jpg"
                                 alt="Chainsaw Man"
                             />
                             <span>Chainsaw Man</span>
                         </article>
-                        <article class="carousel-card">
+                        <article class="carousel-card tilt-card">
                             <img
                                 src="images/jojo-bizarre-adventure-1280-720.jpg"
                                 alt="JoJo's Bizarre Adventure"
                             />
                             <span>JoJo's Bizarre Adventure</span>
                         </article>
-                        <article class="carousel-card">
+                        <article class="carousel-card tilt-card">
                             <img
                                 src="images/bleach-1280x720.jpg"
                                 alt="Bleach"
                             />
                             <span>Bleach</span>
                         </article>
-                        <article class="carousel-card">
+                        <article class="carousel-card tilt-card">
                             <img
-                                src="images/wp12255968 7 (1).png"
+                                src="images/cyberpunk-1280x260.jpg"
                                 alt="Cyberpunk: Edgerunners"
                             />
                             <span>Cyberpunk: Edgerunners</span>
@@ -145,15 +148,18 @@
             </section>
 
             <section class="series-archive">
-                <div class="archive-shell">
+                <div class="archive-shell reveal">
                     <div class="archive-heading">
-                        <h2>Archive Highlights</h2>
+                        <h2 class="reveal">Archive Highlights</h2>
                         <a href="all-influential-series.html">See All</a>
                     </div>
                     <div class="series-grid">
-                        <article class="series-card">
+                        <article
+                            class="series-card tilt-card"
+                            id="series-attack-on-titan"
+                        >
                             <img
-                                src="images/wp12255968 1 (2).png"
+                                src="images/attackontitan-400x226.webp"
                                 alt="Attack on Titan"
                             />
                             <span>Attack on Titan</span>
@@ -170,8 +176,11 @@
                                 </p>
                             </div>
                         </article>
-                        <article class="series-card">
-                            <img src="images/wp12255968 3.png" alt="Frieren" />
+                        <article class="series-card tilt-card">
+                            <img
+                                src="images/frieren-400x300.webp"
+                                alt="Frieren"
+                            />
                             <span>Frieren</span>
                             <div class="series-info" aria-hidden="true">
                                 <h3>Frieren</h3>
@@ -184,7 +193,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article class="series-card">
+                        <article class="series-card tilt-card" id="series-one-piece">
                             <img
                                 src="images/wp12255968 4.png"
                                 alt="One Piece"
@@ -203,9 +212,9 @@
                                 </p>
                             </div>
                         </article>
-                        <article class="series-card">
+                        <article class="series-card tilt-card">
                             <img
-                                src="images/wp12255968 2.png"
+                                src="images/deathnote-400x300.webp"
                                 alt="Death Note"
                             />
                             <span>Death Note</span>
@@ -220,9 +229,9 @@
                                 </p>
                             </div>
                         </article>
-                        <article class="series-card">
+                        <article class="series-card tilt-card" id="series-vinland-saga">
                             <img
-                                src="images/wp12255968 5.png"
+                                src="images/vinland-400x300.jpg"
                                 alt="Vinland Saga"
                             />
                             <span>Vinland Saga</span>
@@ -239,9 +248,9 @@
                                 </p>
                             </div>
                         </article>
-                        <article class="series-card">
+                        <article class="series-card tilt-card">
                             <img
-                                src="images/wp12255968 6.png"
+                                src="images/psychopass-400x300.jpg"
                                 alt="Psycho Pass"
                             />
                             <span>Psycho Pass</span>
@@ -290,5 +299,6 @@
         <script src="js/theme-toggle.js"></script>
         <script src="js/influential-series-search.js"></script>
         <script src="js/carousel-slideshow.js"></script>
+        <script src="js/eras-effects.js"></script>
     </body>
 </html>

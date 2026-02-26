@@ -49,10 +49,14 @@
 
         <main>
             <section class="studios-hero">
-                <div class="studios-hero-inner" data-parallax="0.06">
+                <div class="studios-hero-inner reveal" data-parallax="0.06">
                     <h1>Studios &amp; Creators</h1>
                     <p class="filter-title">Filter Bar</p>
-                    <div class="filter-bar" role="group" aria-label="Filters">
+                    <div
+                        class="filter-bar reveal"
+                        role="group"
+                        aria-label="Filters"
+                    >
                         <div class="filter-dropdown">
                             <button
                                 type="button"
@@ -408,7 +412,7 @@
                             Clear Filters
                         </button>
                     </div>
-                    <div class="filter-divider" aria-hidden="true">
+                    <div class="filter-divider reveal" aria-hidden="true">
                         <span></span>
                         <div class="filter-star">&#9733;</div>
                         <span></span>
@@ -418,12 +422,12 @@
 
             <section class="studios-layout">
                 <div class="studios-columns">
-                    <div class="studios-column">
-                        <h2>Studios Section</h2>
+                    <div class="studios-column reveal reveal-left">
+                        <h2 class="reveal reveal-left">Studios Section</h2>
 
                         <!-- Wit Studio -->
                         <article
-                            class="info-card studio-card"
+                            class="info-card studio-card reveal tilt-card reveal-left"
                             data-era="2010s"
                             data-studio="Wit Studio"
                         >
@@ -448,6 +452,17 @@
                                 for high-quality visuals and dynamic action
                                 sequences.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="influential-series.html#series-attack-on-titan"
+                                    >Attack on Titan</a
+                                >
+                                <a
+                                    href="influential-series.html#series-vinland-saga"
+                                    >Vinland Saga</a
+                                >
+                            </div>
                         </article>
 
                         <!-- MAPPA -->
@@ -474,6 +489,13 @@
                                 Fortress, and continued Attack on Titan's final
                                 seasons with acclaimed animation quality.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-chainsaw-man"
+                                    >Chainsaw Man</a
+                                >
+                            </div>
                         </article>
 
                         <!-- Kyoto Animation -->
@@ -502,6 +524,13 @@
                                 Animation is celebrated for exceptional art
                                 direction and character animation.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-violet-evergarden"
+                                    >Violet Evergarden</a
+                                >
+                            </div>
                         </article>
 
                         <!-- Toei Animation -->
@@ -520,8 +549,15 @@
                                     </p>
                                 </div>
                                 <img
+                                    class="toei-logo toei-logo-black"
                                     src="images/Toei-Animation-black.webp"
                                     alt="Toei Animation logo"
+                                />
+                                <img
+                                    class="toei-logo toei-logo-white"
+                                    src="images/Toei-Animation-white.webp"
+                                    alt="Toei Animation logo"
+                                    style="display: none"
                                 />
                             </div>
                             <p class="info-body">
@@ -530,6 +566,21 @@
                                 One of the most prolific studios in anime
                                 history.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-dragon-ball"
+                                    >Dragon Ball</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-dragon-ball-z"
+                                    >Dragon Ball Z</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-sailor-moon"
+                                    >Sailor Moon</a
+                                >
+                            </div>
                         </article>
 
                         <!-- Studio Ghibli -->
@@ -558,6 +609,17 @@
                                 Spirited Away, Howl's Moving Castle, and My
                                 Neighbor Totoro.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-spirited-away"
+                                    >Spirited Away</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-princess-mononoke"
+                                    >Princess Mononoke</a
+                                >
+                            </div>
                         </article>
 
                         <!-- Bones -->
@@ -583,6 +645,17 @@
                                 Eater, My Hero Academia, and Carole & Tuesday.
                                 Known for vibrant art style and dynamic action.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-fullmetal-alchemist"
+                                    >Fullmetal Alchemist</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-my-hero-academia"
+                                    >My Hero Academia</a
+                                >
+                            </div>
                         </article>
 
                         <!-- ufotable -->
@@ -611,15 +684,22 @@
                                 animation techniques and stunning visual
                                 effects.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="influential-series.html#series-demon-slayer"
+                                    >Demon Slayer</a
+                                >
+                            </div>
                         </article>
                     </div>
 
-                    <div class="studios-column">
-                        <h2>Creators Section</h2>
+                    <div class="studios-column reveal reveal-right">
+                        <h2 class="reveal reveal-right">Creators Section</h2>
 
                         <!-- Eiichiro Oda -->
                         <article
-                            class="info-card creator-card"
+                            class="info-card creator-card reveal tilt-card reveal-right"
                             data-era="1990s"
                             data-roles="Writer, Mangaka"
                             data-studios="Shueisha"
@@ -647,6 +727,13 @@
                                 serialization in 1997 and has become the
                                 best-selling manga series in history.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="influential-series.html#series-one-piece"
+                                    >One Piece</a
+                                >
+                            </div>
                         </article>
 
                         <!-- Hideaki Anno -->
@@ -679,6 +766,13 @@
                                 Neon Genesis Evangelion, known for psychological
                                 depth and experimental narrative techniques.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-neon-genesis-evangelion"
+                                    >Neon Genesis Evangelion</a
+                                >
+                            </div>
                         </article>
 
                         <!-- Yoshihiro Togashi -->
@@ -711,6 +805,17 @@
                                 Hunter x Hunter, two of the most influential
                                 manga series in anime history.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-yu-yu-hakusho"
+                                    >Yu Yu Hakusho</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-hunter-x-hunter"
+                                    >Hunter x Hunter</a
+                                >
+                            </div>
                         </article>
 
                         <!-- Hayao Miyazaki -->
@@ -743,6 +848,17 @@
                                 Away, Howl's Moving Castle, and Princess
                                 Mononoke. Multiple Academy Award winner.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-spirited-away"
+                                    >Spirited Away</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-princess-mononoke"
+                                    >Princess Mononoke</a
+                                >
+                            </div>
                         </article>
 
                         <!-- Kohei Horikoshi -->
@@ -775,6 +891,13 @@
                                 of the most popular modern manga and anime
                                 series worldwide.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-my-hero-academia"
+                                    >My Hero Academia</a
+                                >
+                            </div>
                         </article>
 
                         <!-- Kunihiko Ikuhara -->
@@ -794,7 +917,7 @@
                                     </p>
                                 </div>
                                 <img
-                                    src="images/ikuhara.png"
+                                    src="images/kunihiko-ikuhara.jpeg"
                                     alt="Kunihiko Ikuhara portrait"
                                 />
                             </div>
@@ -807,6 +930,13 @@
                                 Utena, known for groundbreaking storytelling and
                                 visual symbolism.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-sailor-moon"
+                                    >Sailor Moon</a
+                                >
+                            </div>
                         </article>
 
                         <!-- Ufotable Director -->
@@ -838,10 +968,20 @@
                                 and series, known for revolutionary animation
                                 techniques and visual innovation.
                             </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="influential-series.html#series-demon-slayer"
+                                    >Demon Slayer</a
+                                >
+                            </div>
                         </article>
                     </div>
                 </div>
             </section>
+            <div style="text-align: center; margin: 32px 0">
+                <!-- View Statistics & Analytics Dashboard button removed -->
+            </div>
         </main>
 
         <footer class="site-footer">

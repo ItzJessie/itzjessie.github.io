@@ -7,12 +7,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="styles.css" />
     </head>
-    <body>
+    <body class="page-home">
+        <div class="mouse-glow" aria-hidden="true"></div>
         <header class="site-header">
             <div class="header-inner">
                 <a
@@ -46,7 +47,12 @@
 
         <main>
             <section class="hero">
-                <div class="hero-content">
+                <div
+                    class="hero-parallax"
+                    aria-hidden="true"
+                    data-parallax="0.18"
+                ></div>
+                <div class="hero-content reveal reveal-up">
                     <h1>Japanese Animation History Archive</h1>
                     <p>
                         Preserving the history, artistry, and cultural impact of
@@ -57,11 +63,14 @@
             </section>
 
             <section class="content-grid">
-                <div class="featured">
+                <div class="featured reveal reveal-left">
                     <h2>Featured Sections</h2>
                     <p class="section-tag">Anime Eras</p>
                     <div class="card-grid">
-                        <article class="era-card gold-1">
+                        <article
+                            class="era-card gold-1 tilt-card reveal"
+                            data-tilt
+                        >
                             <img
                                 src="images/image%20(1).png"
                                 alt="Popular animation still"
@@ -73,7 +82,10 @@
                                 anime.</span
                             >
                         </article>
-                        <article class="era-card gold-2">
+                        <article
+                            class="era-card gold-2 tilt-card reveal"
+                            data-tilt
+                        >
                             <img
                                 src="images/image%20(2).png"
                                 alt="Longest animation still"
@@ -84,7 +96,10 @@
                                 >Explore the longest-running anime series.</span
                             >
                         </article>
-                        <article class="era-card gold-3">
+                        <article
+                            class="era-card gold-3 tilt-card reveal"
+                            data-tilt
+                        >
                             <img
                                 src="images/image%20(3).png"
                                 alt="Color animation still"
@@ -99,10 +114,13 @@
                     </div>
                 </div>
 
-                <div class="archive">
+                <div class="archive reveal reveal-right">
                     <h2>From the Archive</h2>
                     <div class="archive-grid">
-                        <article class="archive-card">
+                        <article
+                            class="archive-card tilt-card reveal"
+                            data-tilt
+                        >
                             <img
                                 src="images/image%20(4).png"
                                 alt="Early 1960s still"
@@ -117,7 +135,10 @@
                                 </span>
                             </div>
                         </article>
-                        <article class="archive-card">
+                        <article
+                            class="archive-card tilt-card reveal"
+                            data-tilt
+                        >
                             <img
                                 src="images/image.png"
                                 alt="Early 1980s still"
@@ -131,7 +152,10 @@
                                 </span>
                             </div>
                         </article>
-                        <article class="archive-card wide">
+                        <article
+                            class="archive-card wide tilt-card reveal"
+                            data-tilt
+                        >
                             <img
                                 src="images/image%20(5).png"
                                 alt="Late 1980s still"
@@ -150,10 +174,14 @@
                 </div>
 
                 <aside class="timeline">
-                    <div class="timeline-card">
+                    <div
+                        class="timeline-card tilt-card reveal reveal-up"
+                        data-tilt
+                    >
                         <div
                             class="timeline-illustration"
                             aria-hidden="true"
+                            data-parallax="0.02"
                         ></div>
                         <h3>Timeline of Japanese Animation</h3>
                         <p>1917–2020s</p>
@@ -161,7 +189,7 @@
                             >View Timeline</a
                         >
                     </div>
-                    <div class="timeline-links">
+                    <div class="timeline-links reveal reveal-up">
                         <p>1917 – 1930s – 1960s – 1980s – 2000s – 2020s</p>
                     </div>
                 </aside>
@@ -171,7 +199,7 @@
         <footer class="site-footer">
             <div class="footer-inner">
                 <div class="footer-copy">
-                    <p>The Japanese Animation History Archive is</p>
+                    <p>The Japanese Animation History Archive</p>
                     <span>
                         This archive documents the evolution of Japanese
                         animation through eras, studios, creators, and
@@ -181,13 +209,30 @@
                 </div>
                 <div class="footer-links">
                     <small>© Japanese Animation History Archive</small>
-                    <div>
-                        <a href="about.html">About</a>
-                        <span>|</span>
-                        <a href="#">References</a>
+                    <div class="footer-actions">
+                        <div class="footer-nav">
+                            <a href="about.html">About</a>
+                            <span>|</span>
+                            <a href="#">References</a>
+                        </div>
+                        <button
+                            class="theme-toggle"
+                            type="button"
+                            aria-pressed="false"
+                            aria-label="Switch to dark mode"
+                        >
+                            <span class="theme-toggle__label">Dark Mode</span>
+                            <span
+                                class="theme-toggle__icon"
+                                aria-hidden="true"
+                            ></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </footer>
+        <script src="js/about-effects.js"></script>
+        <script src="js/home-effects.js"></script>
+        <script src="js/theme-toggle.js"></script>
     </body>
 </html>

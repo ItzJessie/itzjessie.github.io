@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="styles.css" />
@@ -228,13 +228,28 @@
             <div class="footer-inner">
                 <div class="footer-links">
                     <small>© Japanese Animation History Archive</small>
-                    <div>
-                        <a href="about.html">About</a>
-                        <span>|</span>
-                        <a href="#">References</a>
+                    <div class="footer-actions">
+                        <div class="footer-nav">
+                            <a href="about.html">About</a>
+                            <span>|</span>
+                            <a href="#">References</a>
+                        </div>
+                        <button
+                            class="theme-toggle"
+                            type="button"
+                            aria-pressed="false"
+                            aria-label="Switch to dark mode"
+                        >
+                            <span class="theme-toggle__label">Dark Mode</span>
+                            <span
+                                class="theme-toggle__icon"
+                                aria-hidden="true"
+                            ></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </footer>
+        <script src="js/theme-toggle.js"></script>
     </body>
 </html>

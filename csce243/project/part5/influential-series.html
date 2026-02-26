@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="styles.css" />
@@ -87,6 +87,55 @@
                                 alt="Demon Slayer"
                             />
                             <span>Demon Slayer</span>
+                        </article>
+                        <article class="carousel-card">
+                            <img
+                                src="images/fullmetal-alchemist-1280×720px.jpg"
+                                alt="Fullmetal Alchemist"
+                            />
+                            <span>Fullmetal Alchemist</span>
+                        </article>
+                        <article class="carousel-card">
+                            <img
+                                src="images/hunterxhunter-1280×720px.jpg"
+                                alt="Hunter x Hunter"
+                            />
+                            <span>Hunter x Hunter</span>
+                        </article>
+                        <article class="carousel-card">
+                            <img
+                                src="images/one-punch-man-1280x720.jpg"
+                                alt="One Punch Man"
+                            />
+                            <span>One Punch Man</span>
+                        </article>
+                        <article class="carousel-card">
+                            <img
+                                src="images/chainsaw-man-1280x720.jpg"
+                                alt="Chainsaw Man"
+                            />
+                            <span>Chainsaw Man</span>
+                        </article>
+                        <article class="carousel-card">
+                            <img
+                                src="images/jojo-bizarre-adventure-1280-720.jpg"
+                                alt="JoJo's Bizarre Adventure"
+                            />
+                            <span>JoJo's Bizarre Adventure</span>
+                        </article>
+                        <article class="carousel-card">
+                            <img
+                                src="images/bleach-1280x720.jpg"
+                                alt="Bleach"
+                            />
+                            <span>Bleach</span>
+                        </article>
+                        <article class="carousel-card">
+                            <img
+                                src="images/wp12255968 7 (1).png"
+                                alt="Cyberpunk: Edgerunners"
+                            />
+                            <span>Cyberpunk: Edgerunners</span>
                         </article>
                     </div>
                     <button class="carousel-arrow" aria-label="Next">
@@ -216,13 +265,30 @@
             <div class="footer-inner">
                 <div class="footer-links">
                     <small>© Japanese Animation History Archive</small>
-                    <div>
-                        <a href="about.html">About</a>
-                        <span>|</span>
-                        <a href="#">References</a>
+                    <div class="footer-actions">
+                        <div class="footer-nav">
+                            <a href="about.html">About</a>
+                            <span>|</span>
+                            <a href="#">References</a>
+                        </div>
+                        <button
+                            class="theme-toggle"
+                            type="button"
+                            aria-pressed="false"
+                            aria-label="Switch to dark mode"
+                        >
+                            <span class="theme-toggle__label">Dark Mode</span>
+                            <span
+                                class="theme-toggle__icon"
+                                aria-hidden="true"
+                            ></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </footer>
+        <script src="js/theme-toggle.js"></script>
+        <script src="js/influential-series-search.js"></script>
+        <script src="js/carousel-slideshow.js"></script>
     </body>
 </html>

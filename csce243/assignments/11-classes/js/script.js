@@ -106,24 +106,6 @@ const songs = [
         "Pop",
         "images/anti-hero.webp",
         "r7lkelVVVAE"
-    ),
-    new Song(
-        "Heat Waves",
-        "Glass Animals",
-        "Dreamland",
-        2020,
-        "Indie-Pop",
-        "images/heat-wave.webp",
-        "mPFbJ-9tyts"
-    ),
-    new Song(
-        "Uptown Funk",
-        "Mark Ronson ft. Bruno Mars",
-        "Uptown Special",
-        2014,
-        "Funk-Pop",
-        "images/uptown-funk.webp",
-        "OPf0YbXqDm0"
     )
 ];
 

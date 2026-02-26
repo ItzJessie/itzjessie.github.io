@@ -3,115 +3,149 @@
 }
 
 :root {
-    --bg: #a9a9a9;
-    --bg-elevated: #888888;
-    --text-primary: #1a1a1a;
-    --text-secondary: #555555;
-    --text-accent: #c36f6f;
-    --accent-soft: #b99999;
-    --border: #999999;
-    --surface: #777777;
-    --link: #8ab4f8;
-    --shadow: rgba(0, 0, 0, 0.45);
+    --bg: #08140f;
+    --bg-2: #0b1e16;
+    --surface: rgba(18, 38, 30, 0.88);
+    --surface-strong: rgba(20, 52, 40, 0.95);
+    --text-primary: #e6fff4;
+    --text-secondary: #9fd9c1;
+    --text-muted: #78a593;
+    --accent: #6effb3;
+    --accent-2: #22d18f;
+    --border: rgba(110, 255, 179, 0.25);
+    --shadow: 0 22px 60px rgba(2, 18, 12, 0.55);
+    --glow: 0 0 24px rgba(110, 255, 179, 0.35);
 }
 
 body {
-    background-color: #b0b0b0;
-    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(
+            circle at 12% 0%,
+            rgba(34, 209, 143, 0.25),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 80% 12%,
+            rgba(110, 255, 179, 0.2),
+            transparent 45%
+        ),
+        linear-gradient(180deg, var(--bg), var(--bg-2));
+    color: var(--text-primary);
+    font-family:
+        "SF Pro Display", "SF Pro Text", "Segoe UI", "Helvetica Neue", Arial,
+        sans-serif;
     margin: 0;
-    padding: 20px;
+    min-height: 100vh;
+    padding: 40px 20px 80px;
+    letter-spacing: 0.2px;
 }
 
 .page__header {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 20px auto 48px;
+    max-width: 900px;
 }
 
 .page__header h1 {
     margin: 0;
-    font-size: 48px;
+    font-size: clamp(40px, 6vw, 64px);
     font-weight: 700;
-    letter-spacing: 2px;
-    color: #66999b;
+    letter-spacing: -0.8px;
+    color: var(--text-primary);
 }
 
 .page__header h2 {
     margin: 10px 0 0;
-    font-size: 32px;
-    font-weight: 400;
-    color: #c36f6f;
+    font-size: clamp(18px, 2.5vw, 26px);
+    font-weight: 500;
+    color: var(--text-secondary);
 }
 
 /* Gallery Section */
 .gallery {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 .gallery__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 20px;
+    gap: 28px;
+    padding: 10px;
 }
 
 /* Song Card */
 .song-card {
-    background-color: #4a5d70;
-    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
     overflow: hidden;
     cursor: pointer;
     transition:
         transform 0.3s ease,
-        box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
 }
 
 .song-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px) scale(1.01);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55);
+    border-color: rgba(110, 255, 179, 0.55);
 }
 
 .song-card__cover {
     width: 100%;
-    height: 250px;
+    height: 240px;
     object-fit: cover;
     display: block;
+    filter: saturate(1.05) contrast(1.02);
 }
 
 .song-card__info {
     padding: 16px;
-    background-color: #3d4a56;
-    color: white;
+    background: linear-gradient(
+        135deg,
+        rgba(18, 38, 30, 0.9),
+        rgba(20, 52, 40, 0.9)
+    );
+    color: var(--text-primary);
 }
 
 .song-card__title {
     margin: 0;
     font-size: 18px;
-    font-weight: 700;
-    color: white;
+    font-weight: 600;
+    color: var(--text-primary);
 }
 
 .song-card__artist {
     margin: 4px 0 0 0;
     font-size: 14px;
-    color: #b0b0b0;
+    color: var(--text-muted);
 }
 
 /* Modal Styles */
 .modal-content {
-    background-color: #a9a9a9;
-    border-radius: 8px;
+    background: var(--surface-strong);
+    border-radius: 20px;
+    border: 1px solid rgba(110, 255, 179, 0.3);
     overflow: hidden;
     max-width: 980px;
+    box-shadow: var(--shadow), var(--glow);
 }
 
 .modal-main {
     display: flex;
     gap: 24px;
     padding: 30px;
-    background-color: #9fa9b5;
+    background: linear-gradient(
+        135deg,
+        rgba(12, 34, 25, 0.95),
+        rgba(15, 48, 36, 0.95)
+    );
     align-items: flex-start;
 }
 
@@ -124,57 +158,75 @@ body {
     margin: 0 0 10px 0;
     font-size: 28px;
     font-weight: 700;
-    color: white;
+    color: var(--text-primary);
 }
 
 .modal-artist {
     margin: 8px 0;
     font-size: 18px;
-    color: #33455d;
+    color: var(--text-secondary);
     font-weight: 600;
 }
 
 .modal-album {
     margin: 8px 0;
     font-size: 16px;
-    color: #445566;
+    color: var(--text-muted);
 }
 
 .modal-details {
     margin: 8px 0;
     font-size: 14px;
-    color: #556677;
+    color: var(--text-muted);
 }
 
 .modal-genre {
     margin: 12px 0 0 0;
     font-size: 14px;
-    color: #556677;
+    color: var(--accent);
     font-style: italic;
 }
 
 /* Video Wrapper */
 .video-wrapper {
     flex: 0 0 56%;
-    background-color: #777777;
+    background: rgba(10, 22, 16, 0.8);
     padding: 16px;
-    border-radius: 8px;
+    border-radius: 16px;
+    border: 1px solid rgba(110, 255, 179, 0.2);
 }
 
 .video-frame {
     width: 100%;
     aspect-ratio: 16 / 9;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
 }
 
 /* Modal Close Button */
 .w3-button {
     cursor: pointer;
+    color: var(--text-primary) !important;
+    background: rgba(10, 22, 16, 0.8) !important;
+    border-radius: 999px !important;
+    padding: 8px 14px !important;
+    top: 18px !important;
+    right: 18px !important;
+    border: 1px solid rgba(110, 255, 179, 0.3) !important;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .w3-button:hover {
-    background-color: #757575 !important;
+    background-color: rgba(110, 255, 179, 0.15) !important;
+    transform: scale(1.06);
+    box-shadow: var(--glow);
+}
+
+.w3-modal {
+    backdrop-filter: blur(10px);
 }
 
 /* Responsive Design */
@@ -189,7 +241,7 @@ body {
     }
 
     .page__header h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .modal-content {

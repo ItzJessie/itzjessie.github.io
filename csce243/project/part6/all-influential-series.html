@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            All Influential Series | Japanese Animation History Archive
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body class="all-series-page">
+        <a
+            class="close-button"
+            href="influential-series.html"
+            aria-label="Back to Influential Series"
+        >
+            X
+        </a>
+        <button
+            class="theme-toggle all-series-toggle"
+            type="button"
+            aria-pressed="false"
+            aria-label="Switch to dark mode"
+        >
+            <span class="theme-toggle__label">Dark Mode</span>
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+
+        <main>
+            <section class="all-series-hero">
+                <div class="all-series-search-wrap">
+                    <form
+                        class="series-search all-series-search"
+                        aria-label="Search anime"
+                    >
+                        <input
+                            type="search"
+                            name="search"
+                            placeholder="search anime"
+                            autocomplete="off"
+                        />
+                        <button type="submit" aria-label="Search">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <circle cx="11" cy="11" r="7"></circle>
+                                <line
+                                    x1="16.65"
+                                    y1="16.65"
+                                    x2="21"
+                                    y2="21"
+                                ></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="all-series-hero-inner">
+                    <h1>All Influential Series</h1>
+                </div>
+            </section>
+
+            <section class="all-series-shell">
+                <div class="all-series-grid" aria-live="polite"></div>
+            </section>
+        </main>
+
+        <script src="js/theme-toggle.js"></script>
+        <script src="js/all-series.js" defer></script>
+        <script src="js/all-series-search.js" defer></script>
+    </body>
+</html>

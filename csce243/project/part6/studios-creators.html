@@ -1,0 +1,1016 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Anime Archive | Studios &amp; Creators</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body class="page-studios">
+        <div class="mouse-glow" aria-hidden="true"></div>
+        <header class="site-header">
+            <div class="header-inner">
+                <a
+                    class="brand"
+                    href="home.html"
+                    aria-label="Japanese Animation History Archive home"
+                >
+                    <img
+                        class="brand-logo"
+                        src="images/image-1771616736593.png"
+                        alt="Japanese Animation History Archive logo"
+                        width="56"
+                        height="56"
+                    />
+                    <div class="brand-text">
+                        <span class="brand-title"
+                            >Japanese Animation History Archive</span
+                        >
+                    </div>
+                </a>
+                <nav class="main-nav" aria-label="Primary">
+                    <a href="home.html">Home</a>
+                    <a href="anime-eras.html">Anime Eras</a>
+                    <a class="is-active" href="studios-creators.html"
+                        >Studios &amp; Creators</a
+                    >
+                    <a href="influential-series.html">Influential Series</a>
+                    <a href="user-feeback.html">User Feedback Page</a>
+                    <a href="about.html">About</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="studios-hero">
+                <div class="studios-hero-inner reveal" data-parallax="0.06">
+                    <h1>Studios &amp; Creators</h1>
+                    <p class="filter-title">Filter Bar</p>
+                    <div
+                        class="filter-bar reveal"
+                        role="group"
+                        aria-label="Filters"
+                    >
+                        <div class="filter-dropdown">
+                            <button
+                                type="button"
+                                class="filter-toggle"
+                                id="era-toggle"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Filter by Era
+                            </button>
+                            <div
+                                class="filter-menu"
+                                role="menu"
+                                aria-label="Era options"
+                            >
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-era="1980s"
+                                >
+                                    1980s
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-era="1990s"
+                                >
+                                    1990s
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-era="2000s"
+                                >
+                                    2000s
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-era="2010s"
+                                >
+                                    2010s
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-era="2020s"
+                                >
+                                    2020s
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="filter-dropdown">
+                            <button
+                                type="button"
+                                class="filter-toggle"
+                                id="creator-role-toggle"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Filter by Role
+                            </button>
+                            <div
+                                class="filter-menu"
+                                role="menu"
+                                aria-label="Creator role options"
+                            >
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-role="Director"
+                                >
+                                    Director
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-role="Writer"
+                                >
+                                    Writer
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-role="Producer"
+                                >
+                                    Producer
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-role="Character Designer"
+                                >
+                                    Character Designer
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-role="Composer"
+                                >
+                                    Composer
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="filter-dropdown">
+                            <button
+                                type="button"
+                                class="filter-toggle"
+                                id="studio-toggle"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Filter by Studio
+                            </button>
+                            <div
+                                class="filter-menu"
+                                role="menu"
+                                aria-label="Studio options"
+                            >
+                                <!-- 1980s - 1990s Established -->
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Toei Animation"
+                                    data-era="1980s"
+                                >
+                                    Toei Animation
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Sunrise"
+                                    data-era="1980s"
+                                >
+                                    Sunrise
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Tatsunoko Production"
+                                    data-era="1980s"
+                                >
+                                    Tatsunoko Production
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="J.C.Staff"
+                                    data-era="1990s"
+                                >
+                                    J.C.Staff
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Madhouse"
+                                    data-era="1990s"
+                                >
+                                    Madhouse
+                                </button>
+
+                                <!-- 2000s Major -->
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Shaft"
+                                    data-era="2000s"
+                                >
+                                    Shaft
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Bones"
+                                    data-era="2000s"
+                                >
+                                    Bones
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="TMS Entertainment"
+                                    data-era="2000s"
+                                >
+                                    TMS Entertainment
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Pierrot"
+                                    data-era="2000s"
+                                >
+                                    Pierrot
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Deen"
+                                    data-era="2000s"
+                                >
+                                    Deen
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Kyoto Animation"
+                                    data-era="2000s"
+                                >
+                                    Kyoto Animation
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Studio Ghibli"
+                                    data-era="1980s"
+                                >
+                                    Studio Ghibli
+                                </button>
+
+                                <!-- 2010s Modern -->
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="A-1 Pictures"
+                                    data-era="2010s"
+                                >
+                                    A-1 Pictures
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="ufotable"
+                                    data-era="2010s"
+                                >
+                                    ufotable
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="White Fox"
+                                    data-era="2010s"
+                                >
+                                    White Fox
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Wit Studio"
+                                    data-era="2010s"
+                                >
+                                    Wit Studio
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Trigger"
+                                    data-era="2010s"
+                                >
+                                    Trigger
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="David Production"
+                                    data-era="2010s"
+                                >
+                                    David Production
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Silver Link"
+                                    data-era="2010s"
+                                >
+                                    Silver Link
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="P.I.C.S"
+                                    data-era="2010s"
+                                >
+                                    P.I.C.S
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="CloverWorks"
+                                    data-era="2010s"
+                                >
+                                    CloverWorks
+                                </button>
+
+                                <!-- 2020s Current -->
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="MAPPA"
+                                    data-era="2020s"
+                                >
+                                    MAPPA
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="MAPPA"
+                                    data-era="2010s"
+                                >
+                                    MAPPA (2010s)
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="8-Bit Studio"
+                                    data-era="2020s"
+                                >
+                                    8-Bit Studio
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Science SARU"
+                                    data-era="2020s"
+                                >
+                                    Science SARU
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="Sentai Filmworks"
+                                    data-era="2020s"
+                                >
+                                    Sentai Filmworks
+                                </button>
+                                <button
+                                    type="button"
+                                    role="menuitem"
+                                    data-studio="MANA Planners"
+                                    data-era="2020s"
+                                >
+                                    MANA Planners
+                                </button>
+                            </div>
+                        </div>
+
+                        <button
+                            type="button"
+                            id="clear-filters"
+                            class="clear-filters-btn"
+                        >
+                            Clear Filters
+                        </button>
+                    </div>
+                    <div class="filter-divider reveal" aria-hidden="true">
+                        <span></span>
+                        <div class="filter-star">&#9733;</div>
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="studios-layout">
+                <div class="studios-columns">
+                    <div class="studios-column reveal reveal-left">
+                        <h2 class="reveal reveal-left">Studios Section</h2>
+
+                        <!-- Wit Studio -->
+                        <article
+                            class="info-card studio-card reveal tilt-card reveal-left"
+                            data-era="2010s"
+                            data-studio="Wit Studio"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Studio Name: Wit Studio, Inc
+                                    </p>
+                                    <p class="info-meta">
+                                        Founding Year: June 1, 2012; Era: 2010s
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/wit-studio-one-piece-remake-pros-and-cons-featured 1.png"
+                                    alt="Wit Studio logo"
+                                />
+                            </div>
+                            <p class="info-body">
+                                Notable Works: Wit Studio is the Japanese
+                                animation studio responsible for producing the
+                                first three seasons of Attack on Titan, known
+                                for high-quality visuals and dynamic action
+                                sequences.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="influential-series.html#series-attack-on-titan"
+                                    >Attack on Titan</a
+                                >
+                                <a
+                                    href="influential-series.html#series-vinland-saga"
+                                    >Vinland Saga</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- MAPPA -->
+                        <article
+                            class="info-card studio-card"
+                            data-era="2010s"
+                            data-studio="MAPPA"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">Studio Name: MAPPA</p>
+                                    <p class="info-meta">
+                                        Founding Year: June 2011; Era: 2010s
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/mappa-logo.webp"
+                                    alt="MAPPA logo"
+                                />
+                            </div>
+                            <p class="info-body">
+                                Notable Works: MAPPA produced popular series
+                                including Jujutsu Kaisen, Kabaneri of the Iron
+                                Fortress, and continued Attack on Titan's final
+                                seasons with acclaimed animation quality.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-chainsaw-man"
+                                    >Chainsaw Man</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Kyoto Animation -->
+                        <article
+                            class="info-card studio-card"
+                            data-era="2000s"
+                            data-studio="Kyoto Animation"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Studio Name: Kyoto Animation
+                                    </p>
+                                    <p class="info-meta">
+                                        Founding Year: 1981; Era: 2000s
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/kyoto-animation-logo.webp"
+                                    alt="Kyoto Animation logo"
+                                />
+                            </div>
+                            <p class="info-body">
+                                Notable Works: Known for The Melancholy of
+                                Haruhi Suzumiya, K-On!, and Silent Voice, Kyoto
+                                Animation is celebrated for exceptional art
+                                direction and character animation.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-violet-evergarden"
+                                    >Violet Evergarden</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Toei Animation -->
+                        <article
+                            class="info-card studio-card"
+                            data-era="1980s"
+                            data-studio="Toei Animation"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Studio Name: Toei Animation
+                                    </p>
+                                    <p class="info-meta">
+                                        Founding Year: 1956; Era: 1980s
+                                    </p>
+                                </div>
+                                <img
+                                    class="toei-logo toei-logo-black"
+                                    src="images/Toei-Animation-black.webp"
+                                    alt="Toei Animation logo"
+                                />
+                                <img
+                                    class="toei-logo toei-logo-white"
+                                    src="images/Toei-Animation-white.webp"
+                                    alt="Toei Animation logo"
+                                    style="display: none"
+                                />
+                            </div>
+                            <p class="info-body">
+                                Notable Works: Pioneering studio with Dragon
+                                Ball, Dragon Ball Z, One Piece, and Sailor Moon.
+                                One of the most prolific studios in anime
+                                history.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-dragon-ball"
+                                    >Dragon Ball</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-dragon-ball-z"
+                                    >Dragon Ball Z</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-sailor-moon"
+                                    >Sailor Moon</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Studio Ghibli -->
+                        <article
+                            class="info-card studio-card"
+                            data-era="1980s"
+                            data-studio="Studio Ghibli"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Studio Name: Studio Ghibli
+                                    </p>
+                                    <p class="info-meta">
+                                        Founding Year: June 15, 1985; Era: 1980s
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/Studio-Ghibli-black.webp"
+                                    alt="Studio Ghibli logo"
+                                />
+                            </div>
+                            <p class="info-body">
+                                Notable Works: Founded by Hayao Miyazaki and
+                                Isao Takahata, created masterpieces like
+                                Spirited Away, Howl's Moving Castle, and My
+                                Neighbor Totoro.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-spirited-away"
+                                    >Spirited Away</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-princess-mononoke"
+                                    >Princess Mononoke</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Bones -->
+                        <article
+                            class="info-card studio-card"
+                            data-era="2000s"
+                            data-studio="Bones"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">Studio Name: Bones</p>
+                                    <p class="info-meta">
+                                        Founding Year: 1998; Era: 2000s
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/Bones-logo.webp"
+                                    alt="Bones studio logo"
+                                />
+                            </div>
+                            <p class="info-body">
+                                Notable Works: Created Fullmetal Alchemist, Soul
+                                Eater, My Hero Academia, and Carole & Tuesday.
+                                Known for vibrant art style and dynamic action.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-fullmetal-alchemist"
+                                    >Fullmetal Alchemist</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-my-hero-academia"
+                                    >My Hero Academia</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- ufotable -->
+                        <article
+                            class="info-card studio-card"
+                            data-era="2010s"
+                            data-studio="ufotable"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Studio Name: ufotable
+                                    </p>
+                                    <p class="info-meta">
+                                        Founding Year: 2000; Era: 2010s
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/ufotable-logo-black.webp"
+                                    alt="ufotable logo"
+                                />
+                            </div>
+                            <p class="info-body">
+                                Notable Works: Produced the acclaimed Demon
+                                Slayer film and series with revolutionary
+                                animation techniques and stunning visual
+                                effects.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="influential-series.html#series-demon-slayer"
+                                    >Demon Slayer</a
+                                >
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="studios-column reveal reveal-right">
+                        <h2 class="reveal reveal-right">Creators Section</h2>
+
+                        <!-- Eiichiro Oda -->
+                        <article
+                            class="info-card creator-card reveal tilt-card reveal-right"
+                            data-era="1990s"
+                            data-roles="Writer, Mangaka"
+                            data-studios="Shueisha"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Creator Name: Eiichiro Oda
+                                    </p>
+                                    <p class="info-meta">
+                                        Role: Writer, Mangaka, Creator
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/oda 1.png"
+                                    alt="Eiichiro Oda portrait"
+                                />
+                            </div>
+                            <p class="info-sub">
+                                Studio Affiliations: Professional mangaka
+                                affiliated with Shueisha.
+                            </p>
+                            <p class="info-body">
+                                Notable Works: Created One Piece, which began
+                                serialization in 1997 and has become the
+                                best-selling manga series in history.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="influential-series.html#series-one-piece"
+                                    >One Piece</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Hideaki Anno -->
+                        <article
+                            class="info-card creator-card"
+                            data-era="1990s"
+                            data-roles="Director, Writer, Producer"
+                            data-studios="Gainax"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Creator Name: Hideaki Anno
+                                    </p>
+                                    <p class="info-meta">
+                                        Role: Director, Writer, Producer
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/Hideaki Anno.webp"
+                                    alt="Hideaki Anno portrait"
+                                />
+                            </div>
+                            <p class="info-sub">
+                                Studio Affiliations: Founded Gainax, created
+                                Neon Genesis Evangelion.
+                            </p>
+                            <p class="info-body">
+                                Notable Works: Revolutionary director behind
+                                Neon Genesis Evangelion, known for psychological
+                                depth and experimental narrative techniques.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-neon-genesis-evangelion"
+                                    >Neon Genesis Evangelion</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Yoshihiro Togashi -->
+                        <article
+                            class="info-card creator-card"
+                            data-era="1990s"
+                            data-roles="Writer, Mangaka"
+                            data-studios="Shueisha, Jump"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Creator Name: Yoshihiro Togashi
+                                    </p>
+                                    <p class="info-meta">
+                                        Role: Writer, Mangaka
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/Yoshihiro_Togashi.webp"
+                                    alt="Yoshihiro Togashi portrait"
+                                />
+                            </div>
+                            <p class="info-sub">
+                                Studio Affiliations: Published through
+                                Shueisha's Weekly Shonen Jump.
+                            </p>
+                            <p class="info-body">
+                                Notable Works: Creator of YuYu Hakusho and
+                                Hunter x Hunter, two of the most influential
+                                manga series in anime history.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-yu-yu-hakusho"
+                                    >Yu Yu Hakusho</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-hunter-x-hunter"
+                                    >Hunter x Hunter</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Hayao Miyazaki -->
+                        <article
+                            class="info-card creator-card"
+                            data-era="1980s"
+                            data-roles="Director, Producer, Writer"
+                            data-studios="Studio Ghibli"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Creator Name: Hayao Miyazaki
+                                    </p>
+                                    <p class="info-meta">
+                                        Role: Director, Producer, Writer
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/Hayao-Miyazaki.webp"
+                                    alt="Hayao Miyazaki portrait"
+                                />
+                            </div>
+                            <p class="info-sub">
+                                Studio Affiliations: Co-founder of Studio
+                                Ghibli.
+                            </p>
+                            <p class="info-body">
+                                Notable Works: Master filmmaker behind Spirited
+                                Away, Howl's Moving Castle, and Princess
+                                Mononoke. Multiple Academy Award winner.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-spirited-away"
+                                    >Spirited Away</a
+                                >
+                                <a
+                                    href="all-influential-series.html#series-princess-mononoke"
+                                    >Princess Mononoke</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Kohei Horikoshi -->
+                        <article
+                            class="info-card creator-card"
+                            data-era="2010s"
+                            data-roles="Writer, Mangaka"
+                            data-studios="Shueisha"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Creator Name: Kohei Horikoshi
+                                    </p>
+                                    <p class="info-meta">
+                                        Role: Writer, Mangaka
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/Kohei-Horikoshi.webp"
+                                    alt="Kohei Horikoshi portrait"
+                                />
+                            </div>
+                            <p class="info-sub">
+                                Studio Affiliations: Published through
+                                Shueisha's Weekly Shonen Jump.
+                            </p>
+                            <p class="info-body">
+                                Notable Works: Creator of My Hero Academia, one
+                                of the most popular modern manga and anime
+                                series worldwide.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-my-hero-academia"
+                                    >My Hero Academia</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Kunihiko Ikuhara -->
+                        <article
+                            class="info-card creator-card"
+                            data-era="1990s"
+                            data-roles="Director, Writer"
+                            data-studios="Toei Animation, Others"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Creator Name: Kunihiko Ikuhara
+                                    </p>
+                                    <p class="info-meta">
+                                        Role: Director, Writer, Producer
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/kunihiko-ikuhara.jpeg"
+                                    alt="Kunihiko Ikuhara portrait"
+                                />
+                            </div>
+                            <p class="info-sub">
+                                Studio Affiliations: Directed for Toei Animation
+                                and independent projects.
+                            </p>
+                            <p class="info-body">
+                                Notable Works: Director of Sailor Moon and
+                                Utena, known for groundbreaking storytelling and
+                                visual symbolism.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="all-influential-series.html#series-sailor-moon"
+                                    >Sailor Moon</a
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Ufotable Director -->
+                        <article
+                            class="info-card creator-card"
+                            data-era="2010s"
+                            data-roles="Director, Producer"
+                            data-studios="ufotable"
+                        >
+                            <div class="info-header">
+                                <div>
+                                    <p class="info-label">
+                                        Creator Name: Haruo Sotozaki
+                                    </p>
+                                    <p class="info-meta">
+                                        Role: Director, Producer
+                                    </p>
+                                </div>
+                                <img
+                                    src="images/Haruo-Sotozaki.webp"
+                                    alt="Haruo Sotozaki portrait"
+                                />
+                            </div>
+                            <p class="info-sub">
+                                Studio Affiliations: Director at ufotable.
+                            </p>
+                            <p class="info-body">
+                                Notable Works: Director of the Demon Slayer film
+                                and series, known for revolutionary animation
+                                techniques and visual innovation.
+                            </p>
+                            <div class="related-series">
+                                <span>Related series:</span>
+                                <a
+                                    href="influential-series.html#series-demon-slayer"
+                                    >Demon Slayer</a
+                                >
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <div style="text-align: center; margin: 32px 0">
+                <!-- View Statistics & Analytics Dashboard button removed -->
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-links">
+                    <small>© Japanese Animation History Archive</small>
+                    <div class="footer-actions">
+                        <div class="footer-nav">
+                            <a href="about.html">About</a>
+                            <span>|</span>
+                            <a href="#">References</a>
+                        </div>
+                        <button
+                            class="theme-toggle"
+                            type="button"
+                            aria-pressed="false"
+                            aria-label="Switch to dark mode"
+                        >
+                            <span class="theme-toggle__label">Dark Mode</span>
+                            <span
+                                class="theme-toggle__icon"
+                                aria-hidden="true"
+                            ></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/studios-creators.js"></script>
+        <script src="js/theme-toggle.js"></script>
+    </body>
+</html>

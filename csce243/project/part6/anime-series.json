@@ -438,5 +438,82 @@
     "synopsis": "A mysterious attacker triggers a citywide psychological spiral.",
     "studio": "Madhouse",
     "episodes": 13
+  },
+  {
+    "_id": 41,
+    "title": "One Piece",
+    "img_name": "images/wp12255968 1.png",
+    "year": 1999,
+    "era": "1990s",
+    "genre": "Action, Adventure, Shonen",
+    "synopsis": "Monkey D. Luffy and his crew search for the ultimate treasure, the One Piece.",
+    "studio": "Toei Animation",
+    "episodes": 1000
+  },
+  {
+    "_id": 42,
+    "title": "Death Note",
+    "img_name": "images/wp12255968 2.png",
+    "year": 2006,
+    "era": "2000s",
+    "genre": "Psychological, Thriller, Supernatural",
+    "synopsis": "A high school student discovers a supernatural notebook that can kill anyone whose name is written in it.",
+    "studio": "Madhouse",
+    "episodes": 37
+  },
+  {
+    "_id": 43,
+    "title": "Attack on Titan",
+    "img_name": "images/wp12255968 3.png",
+    "year": 2013,
+    "era": "2010s",
+    "genre": "Action, Dark Fantasy, Drama",
+    "synopsis": "Humanity fights for survival against giant humanoid Titans behind massive walls.",
+    "studio": "Wit Studio",
+    "episodes": 87
+  },
+  {
+    "_id": 44,
+    "title": "Demon Slayer",
+    "img_name": "images/wp12255968 4.png",
+    "year": 2019,
+    "era": "2010s",
+    "genre": "Action, Adventure, Dark Fantasy",
+    "synopsis": "Tanjiro joins the Demon Slayer Corps to avenge his family and cure his sister.",
+    "studio": "ufotable",
+    "episodes": 55
+  },
+  {
+    "_id": 45,
+    "title": "Jujutsu Kaisen",
+    "img_name": "images/jujutsu-kaisen 1.png",
+    "year": 2020,
+    "era": "2020s",
+    "genre": "Action, Dark Fantasy, Supernatural",
+    "synopsis": "A high school student joins a secret organization to fight deadly curses.",
+    "studio": "MAPPA",
+    "episodes": 47
+  },
+  {
+    "_id": 46,
+    "title": "ODDTAXI",
+    "img_name": "images/wp12255968 6.png",
+    "year": 2021,
+    "era": "2020s",
+    "genre": "Mystery, Psychological, Drama",
+    "synopsis": "A walrus taxi driver becomes entangled in a missing person case.",
+    "studio": "OLM",
+    "episodes": 13
+  },
+  {
+    "_id": 47,
+    "title": "Puella Magi Madoka Magica",
+    "img_name": "images/wp12255968 7.png",
+    "year": 2011,
+    "era": "2010s",
+    "genre": "Dark Fantasy, Psychological, Magical Girl",
+    "synopsis": "A seemingly innocent magical girl story that subverts the genre with dark themes.",
+    "studio": "Shaft",
+    "episodes": 12
   }
 ]

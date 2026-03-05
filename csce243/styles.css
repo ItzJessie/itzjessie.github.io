@@ -245,6 +245,10 @@ main img:hover {
     animation: slideInLeft 0.8s ease-out;
 }
 
+.white nav a{
+    color: #ffffff;
+}
+
 .col2 {
     animation: slideInLeft 0.8s ease-out 0.1s backwards;
 }

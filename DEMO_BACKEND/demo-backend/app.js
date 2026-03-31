@@ -2,6 +2,12 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 require("dotenv").config();
+const multer = require("multer");
+app.use(express.static("public"));
+app.use(express.json());
+app.use(cors());
+
+
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -76,6 +82,7 @@ app.get("/", (req, res) => {
   res.send("Contact form backend is running!");
 });
 
+// Listen for incoming requests
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
